@@ -1,0 +1,6 @@
+{
+  "name": "Chennai Surprise",
+  "description": "An adorable, soft Kawaii-inspired surprise planning service in Chennai offering personalized airport, beach, yacht, mall, music, and flash mob surprises.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

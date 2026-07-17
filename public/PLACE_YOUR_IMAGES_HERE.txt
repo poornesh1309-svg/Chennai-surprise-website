@@ -1,0 +1,7 @@
+Hello! 🌸
+
+You can upload your custom images into this 'public' folder. 
+Once you upload an image here (for example, named 'beach.jpg'), you can update its path in '/src/data.ts' like this:
+image: '/beach.jpg'
+
+Below is the list of all image names we recommend preparing!
