@@ -307,66 +307,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     location: 'Royapuram Marina Coast',
     description: 'An exclusive romantic couple sunset cruise decorated with high-end helium balloons.'
   },
-  {
-    id: 'g15',
-    title: 'Seaside Fairy Light Picnic',
-    serviceId: 'beach-surprise',
-    serviceName: 'Beach Surprise and decor',
-    image: '/IMG-20260709-WA0022.jpg',
-    tag: 'photo',
-    location: 'ECR Beach, Chennai',
-    description: 'An enchanting beachside picnic decorated with delicate fairy lights and fresh rose pathways.'
-  },
-  {
-    id: 'g16',
-    title: 'High-Energy Flash Mob Dance',
-    serviceId: 'flashmob-surprise',
-    serviceName: 'Flash Mob Surprise',
-    image: '/IMG-20260709-WA0023.jpg',
-    tag: 'photo',
-    location: 'Phoenix Marketcity, Chennai',
-    description: 'Surprising a birthday celebrant with a sudden synchronized Bollywood dance performance by our pro dancers.'
-  },
-  {
-    id: 'g17',
-    title: 'Cozy LED Fairy-Lit Room Surprise',
-    serviceId: 'romantic-room-decor',
-    serviceName: 'Romantic Room Decor',
-    image: '/IMG-20260709-WA0024.jpg',
-    tag: 'photo',
-    location: 'Anna Nagar, Chennai',
-    description: 'Bespoke room decor with hanging photographs, warm fairy lights, and elegant balloon bunches.'
-  },
-  {
-    id: 'g18',
-    title: 'Magical Golden Birthday Setup',
-    serviceId: 'birthday-decor',
-    serviceName: 'Birthday surprise and Decor',
-    image: '/IMG-20260709-WA0025.jpg',
-    tag: 'photo',
-    location: 'Adyar, Chennai',
-    description: 'Premium metallic gold and silver balloon styling with LED number lighting and photo memories.'
-  },
-  {
-    id: 'g19',
-    title: 'Beachside Neon Proposal',
-    serviceId: 'proposal-surprise',
-    serviceName: 'Proposal planning and Decor',
-    image: '/IMG-20260709-WA0026.jpg',
-    tag: 'photo',
-    location: 'Mahabalipuram Beach, Chennai',
-    description: 'A private beach proposal setup featuring giant glowing neon letters and romantic violin tunes.'
-  },
-  {
-    id: 'g20',
-    title: 'Luxury Yacht Proposal Cruise',
-    serviceId: 'boat-yacht-surprise',
-    serviceName: 'Yacht & Boat Surprise',
-    image: '/IMG-20260709-WA0027.jpg',
-    tag: 'photo',
-    location: 'Chennai Coast',
-    description: 'Pop the question with a scenic backdrop on an exclusive sunset yacht sailing trip off Chennai.'
-  },
+
   {
     id: 'g21',
     title: 'Aesthetic Indoor Fairy-Lit Setup',
