@@ -42,7 +42,7 @@ export default function Footer({ onNavClick }: FooterProps) {
           </div>
 
           <p className="font-sans text-xs sm:text-sm text-gray-500 leading-relaxed">
-            We turn ordinary days into magical fairytales. Serving smiles, hugs, and stealthy coordinate surprises all across Chennai since 2021.
+            We turn ordinary days into magical fairytales. Serving smiles, hugs, and stealthy coordinate surprises all across Chennai.
           </p>
 
 
