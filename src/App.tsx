@@ -111,7 +111,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#FFF0F3] to-[#FFFDF0] flex flex-col justify-between selection:bg-[#FFCCD5] selection:text-[#4A3E3D]">
+    <div className="min-h-screen overflow-x-hidden bg-gradient-to-b from-[#FFF0F3] to-[#FFFDF0] flex flex-col justify-between selection:bg-[#FFCCD5] selection:text-[#4A3E3D]">
       {/* Custom Mouse Trailing Hearts Effect on Desktop */}
       <HeartTrailCursor />
 
