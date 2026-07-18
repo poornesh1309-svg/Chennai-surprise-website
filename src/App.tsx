@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, Suspense, lazy } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -11,17 +11,19 @@ import ImageCarousel from './components/ImageCarousel';
 import Categories from './components/Categories';
 import Services from './components/Services';
 import GalleryStrip from './components/GalleryStrip';
-import FullGallery from './components/FullGallery';
-import HowItWorks from './components/HowItWorks';
-import Testimonials from './components/Testimonials';
-import FAQAccordion from './components/FAQAccordion';
-import ContactForm from './components/ContactForm';
-import SEOContent from './components/SEOContent';
-import Footer from './components/Footer';
 import HeartTrailCursor from './components/HeartTrailCursor';
 import { LightboxProvider } from './context/LightboxContext';
 import GlobalLightbox from './components/GlobalLightbox';
 import SEOHelmet from './components/SEOHelmet';
+
+// Lazy loaded components (Below the fold)
+const FullGallery = lazy(() => import('./components/FullGallery'));
+const HowItWorks = lazy(() => import('./components/HowItWorks'));
+const Testimonials = lazy(() => import('./components/Testimonials'));
+const FAQAccordion = lazy(() => import('./components/FAQAccordion'));
+const ContactForm = lazy(() => import('./components/ContactForm'));
+const SEOContent = lazy(() => import('./components/SEOContent'));
+const Footer = lazy(() => import('./components/Footer'));
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<'home' | 'gallery'>('home');
@@ -138,77 +140,74 @@ export default function App() {
       <div className="min-h-screen overflow-x-hidden bg-gradient-to-b from-[#FFF0F3] to-[#FFFDF0] flex flex-col justify-between selection:bg-[#FFCCD5] selection:text-[#4A3E3D]">
         <GlobalLightbox />
         {/* Custom Mouse Trailing Hearts Effect on Desktop */}
-      <HeartTrailCursor />
+        <HeartTrailCursor />
 
-      {/* Dynamic Header & Navigation */}
-      <Navbar 
-        activeTab={activeTab} 
-        setActiveTab={setActiveTab} 
-        onPlanClick={scrollToBooking} 
-        onCategoryClick={handleCategoryClick}
-      />
+        {/* Dynamic Header & Navigation */}
+        <Navbar 
+          activeTab={activeTab} 
+          setActiveTab={setActiveTab} 
+          onPlanClick={scrollToBooking} 
+          onCategoryClick={handleCategoryClick}
+        />
 
-      <main className="flex-grow">
         {activeTab === 'home' ? (
-          /* Home View Page Content */
-          <>
-            {/* Soft, Adorable Hero Header */}
-            <Hero 
-              onPlanClick={scrollToBooking} 
-              onServicesClick={scrollToServices} 
-            />
-
-            {/* A Beautiful Image Carousel */}
-            <ImageCarousel />
-
-            {/* Categories Section */}
-            <Categories 
-              onSelectService={handleSelectServiceFromCard} 
-              expandedCategoryId={expandedCategoryId}
-              onExpandedCategoryChange={setExpandedCategoryId}
-            />
-
-            {/* Interactive Grid of All 9 Services */}
-            <Services onSelectService={handleSelectServiceFromCard} />
-
-            {/* Homepage Polaroid Gallery Strip Preview */}
-            <GalleryStrip onViewAllClick={() => {
-              setActiveTab('gallery');
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }} />
-
-            {/* About / Why Us Section */}
-            <About />
-
-            {/* Secret Roadmap Timeline (How It Works) */}
-            <HowItWorks />
-
-            {/* Adorable Speech-Bubble Testimonials */}
-            <Testimonials />
-
-            {/* Chennai Local Guide & On-Page SEO Component */}
-            <SEOContent />
-
-            {/* Interactive FAQ Accordion */}
-            <FAQAccordion />
-
-            {/* Sweet Custom Booking Letter / Form */}
-            <div id="contact-booking">
-              <ContactForm 
-                selectedServiceId={selectedServiceId} 
-                setSelectedServiceId={setSelectedServiceId} 
+          <main className="flex-1 w-full">
+            <div id="home">
+              <Hero onPlanClick={scrollToBooking} onServicesClick={scrollToServices} />
+            </div>
+            <div id="about">
+              <About />
+            </div>
+            <div className="py-8 bg-white border-y border-pink-100 hidden md:block">
+              <ImageCarousel />
+            </div>
+            <div id="categories">
+              <Categories 
+                onSelectService={handleSelectServiceFromCard} 
+                expandedCategoryId={expandedCategoryId} 
+                onExpandedCategoryChange={setExpandedCategoryId} 
               />
             </div>
-          </>
+            <div id="services">
+              <Services onSelectService={handleSelectServiceFromCard} />
+            </div>
+            <div id="gallery-strip" className="mb-12">
+              <GalleryStrip onViewAllClick={() => {
+                setActiveTab('gallery');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }} />
+            </div>
+            <Suspense fallback={<div className="h-40 flex items-center justify-center text-pink-300">Loading magical moments...</div>}>
+              <div id="how-it-works">
+                <HowItWorks />
+              </div>
+              <div id="testimonials">
+                <Testimonials />
+              </div>
+              <div id="faq">
+                <FAQAccordion />
+              </div>
+              <div id="contact-booking" ref={bookingSectionRef}>
+                <ContactForm 
+                  selectedServiceId={selectedServiceId} 
+                  setSelectedServiceId={setSelectedServiceId} 
+                />
+              </div>
+              <SEOContent />
+            </Suspense>
+          </main>
         ) : (
-          /* Full Gallery View Page Content */
-          <FullGallery onSelectService={handleSelectServiceFromCard} />
+          <main className="flex-1 w-full" id="gallery">
+            <Suspense fallback={<div className="h-40 flex items-center justify-center text-pink-300">Loading gallery...</div>}>
+              <FullGallery onSelectService={handleSelectServiceFromCard} />
+            </Suspense>
+          </main>
         )}
-      </main>
 
-      {/* Cheerful Footer & Credits */}
-      <Footer onNavClick={setActiveTab} />
-    </div>
+        <Suspense fallback={<div className="h-20 bg-pink-50"></div>}>
+          <Footer onNavClick={setActiveTab} />
+        </Suspense>
+      </div>
     </LightboxProvider>
   );
 }
