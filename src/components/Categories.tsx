@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
 import { 
   Plane, 
   Palmtree, 
@@ -123,7 +124,13 @@ export default function Categories({ onSelectService }: CategoriesProps) {
       <div className="max-w-7xl mx-auto">
         
         {/* Header Title */}
-        <div className="text-center space-y-4 max-w-2xl mx-auto mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, type: "spring", bounce: 0.4 }}
+          className="text-center space-y-4 max-w-2xl mx-auto mb-16"
+        >
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-sky-50 border border-sky-100 rounded-full">
             <Sparkles className="w-3.5 h-3.5 text-sky-400" />
             <span className="font-display text-xs font-bold text-sky-500 uppercase tracking-wider">
@@ -138,18 +145,32 @@ export default function Categories({ onSelectService }: CategoriesProps) {
           <p className="font-sans text-gray-500">
             Select an occasion below to discover handpicked surprises curated specially for your magical moments.
           </p>
-        </div>
+        </motion.div>
 
         {/* Categories Grid (Styled like Service Cards) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <motion.div 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
+          }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
           {CATEGORY_DATA.map((category) => {
             const IconComponent = iconMap[category.iconName as string] || Heart;
             const theme = getThemeStyles(category.colorTheme as string);
 
             return (
-              <div
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, y: 40, scale: 0.95 },
+                  visible: { opacity: 1, y: 0, scale: 1, transition: { type: "spring", bounce: 0.4 } }
+                }}
+                whileHover={{ y: -8 }}
                 key={category.id}
-                className={`flex flex-col bg-white border-2 ${theme.border} rounded-3xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300 group cursor-pointer`}
+                className={`flex flex-col bg-white border-2 ${theme.border} rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group cursor-pointer`}
                 onClick={() => setExpandedCategory(category.id)}
               >
                 {/* Image & Tag */}
@@ -188,26 +209,40 @@ export default function Categories({ onSelectService }: CategoriesProps) {
                       <span className="font-display text-base font-bold text-pink-400">{category.services.length} Options</span>
                     </div>
 
-                    <button
+                    <motion.button
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
                       onClick={(e) => {
                         e.stopPropagation();
                         setExpandedCategory(category.id);
                       }}
-                      className="cute-btn-yellow !py-1.5 !px-3.5 !text-sm flex items-center gap-1 group-hover:scale-105 transition-transform font-bold"
+                      className="cute-btn-yellow !py-1.5 !px-3.5 !text-sm flex items-center gap-1 font-bold"
                     >
                       View Services
-                    </button>
+                    </motion.button>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
 
         {/* Modal Popup for Category Details */}
+        <AnimatePresence>
         {selectedCategoryData && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-fade-in">
-            <div className="bg-white border border-pink-100 rounded-[32px] w-full max-w-5xl max-h-[90vh] overflow-y-auto shadow-2xl relative">
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs"
+          >
+            <motion.div 
+              initial={{ scale: 0.9, y: 20, opacity: 0 }}
+              animate={{ scale: 1, y: 0, opacity: 1 }}
+              exit={{ scale: 0.9, y: 20, opacity: 0 }}
+              transition={{ type: "spring", bounce: 0.35, duration: 0.5 }}
+              className="bg-white border border-pink-100 rounded-[32px] w-full max-w-5xl max-h-[90vh] overflow-y-auto shadow-2xl relative"
+            >
               
               {/* Close Button */}
               <button
@@ -266,9 +301,10 @@ export default function Categories({ onSelectService }: CategoriesProps) {
                       const theme = getThemeStyles(s.colorTheme);
 
                       return (
-                        <div
+                        <motion.div
+                          whileHover={{ y: -4 }}
                           key={s.id}
-                          className={`flex flex-col bg-white border-2 ${theme.border} rounded-2xl overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 group`}
+                          className={`flex flex-col bg-white border-2 ${theme.border} rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group`}
                         >
                           <div className="h-40 overflow-hidden relative border-b border-pink-50">
                             <img
@@ -302,24 +338,27 @@ export default function Categories({ onSelectService }: CategoriesProps) {
                                 <span className="text-[10px] font-bold text-gray-400 block uppercase tracking-wider">Plan Option</span>
                                 <span className="font-display text-sm font-bold text-pink-400">Custom Setup</span>
                               </div>
-                              <button
+                              <motion.button
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
                                 onClick={() => setSelectedServiceDetails(s)}
                                 className="cute-btn-yellow !py-1 !px-3 !text-xs flex items-center gap-1 font-bold"
                               >
                                 Enquire now
-                              </button>
+                              </motion.button>
                             </div>
                           </div>
-                        </div>
+                        </motion.div>
                       );
                     })}
                   </div>
                 </div>
 
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         )}
+        </AnimatePresence>
 
         {/* Service Details Modal */}
         {selectedServiceDetails && (

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
 import { 
   Plane, 
   Palmtree, 
@@ -123,7 +124,13 @@ export default function Services({ onSelectService }: ServicesProps) {
       <div className="max-w-7xl mx-auto">
         
         {/* Header Title */}
-        <div className="text-center space-y-4 max-w-2xl mx-auto mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, type: "spring", bounce: 0.4 }}
+          className="text-center space-y-4 max-w-2xl mx-auto mb-16"
+        >
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-pink-50 border border-pink-100 rounded-full">
             <Sparkles className="w-3.5 h-3.5 text-pink-400" />
             <span className="font-display text-xs font-bold text-pink-500 uppercase tracking-wider">
@@ -138,19 +145,33 @@ export default function Services({ onSelectService }: ServicesProps) {
           <p className="font-sans text-gray-500">
             Click on any theme card to view what is included, see special custom features, and book on WhatsApp or via our booking letter!
           </p>
-        </div>
+        </motion.div>
 
         {/* 9 Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <motion.div 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
+          }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
           {SERVICES.map((s) => {
             const IconComponent = iconMap[s.iconName] || Heart;
             const theme = getThemeStyles(s.colorTheme);
 
             return (
-              <div
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, y: 40, scale: 0.95 },
+                  visible: { opacity: 1, y: 0, scale: 1, transition: { type: "spring", bounce: 0.4 } }
+                }}
+                whileHover={{ y: -8 }}
                 key={s.id}
                 id={`service-card-${s.id}`}
-                className={`flex flex-col bg-white border-2 ${theme.border} rounded-3xl overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300 group`}
+                className={`flex flex-col bg-white border-2 ${theme.border} rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group`}
               >
                 {/* Image & Tag */}
                 <div className="h-48 overflow-hidden relative border-b border-pink-50">
@@ -192,21 +213,24 @@ export default function Services({ onSelectService }: ServicesProps) {
                       <span className="font-display text-base font-bold text-pink-400">Custom Setup</span>
                     </div>
 
-                    <button
+                    <motion.button
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
                       id={`view-details-${s.id}`}
                       onClick={() => setSelectedService(s)}
-                      className="cute-btn-yellow !py-1.5 !px-3.5 !text-sm flex items-center gap-1 group-hover:scale-105 transition-transform font-bold"
+                      className="cute-btn-yellow !py-1.5 !px-3.5 !text-sm flex items-center gap-1 font-bold"
                     >
                       Enquire now
-                    </button>
+                    </motion.button>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
 
         {/* Modal for Service Details */}
+        <AnimatePresence>
         {selectedService && (
           <ServiceModal 
             selectedService={selectedService} 
@@ -217,6 +241,7 @@ export default function Services({ onSelectService }: ServicesProps) {
             }} 
           />
         )}
+        </AnimatePresence>
       </div>
     </section>
   );

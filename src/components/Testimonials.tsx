@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'motion/react';
 import { Star, Heart, Quote, MapPin } from 'lucide-react';
 import { TESTIMONIALS } from '../data';
 
@@ -8,7 +9,13 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto">
         
         {/* Header Block */}
-        <div className="text-center space-y-4 max-w-2xl mx-auto mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, type: "spring", bounce: 0.4 }}
+          className="text-center space-y-4 max-w-2xl mx-auto mb-16"
+        >
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-pink-50 border border-pink-100 rounded-full">
             <Heart className="w-3.5 h-3.5 text-pink-400 fill-pink-300" />
             <span className="font-display text-xs font-bold text-pink-500 uppercase tracking-wider">
@@ -23,15 +30,28 @@ export default function Testimonials() {
           <p className="font-sans text-gray-500">
             Read what our wonderful clients in Chennai say about their sneaky surprises, beach setups, and balloon celebrations!
           </p>
-        </div>
+        </motion.div>
 
         {/* Speech Bubble Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <motion.div 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
+          }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto"
+        >
           {TESTIMONIALS.map((t, idx) => {
             const isRightSide = idx % 2 === 1;
 
             return (
-              <div 
+              <motion.div 
+                variants={{
+                  hidden: { opacity: 0, y: 40, scale: 0.95 },
+                  visible: { opacity: 1, y: 0, scale: 1, transition: { type: "spring", bounce: 0.4 } }
+                }}
                 key={t.id} 
                 id={`testimonial-card-${t.id}`}
                 className="space-y-6 flex flex-col justify-between"
@@ -93,10 +113,10 @@ export default function Testimonials() {
                     </span>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
 
       </div>
     </section>

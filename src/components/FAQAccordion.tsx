@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
 import { HelpCircle, ChevronDown, ChevronUp, Sparkles, Heart } from 'lucide-react';
 import { FAQS } from '../data';
 
@@ -14,7 +15,13 @@ export default function FAQAccordion() {
       <div className="max-w-4xl mx-auto space-y-12">
         
         {/* Header Block */}
-        <div className="text-center space-y-4">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, type: "spring", bounce: 0.4 }}
+          className="text-center space-y-4"
+        >
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-pink-50 border border-pink-100 rounded-full">
             <HelpCircle className="w-3.5 h-3.5 text-pink-400" />
             <span className="font-display text-xs font-bold text-pink-500 uppercase tracking-wider">
@@ -27,14 +34,27 @@ export default function FAQAccordion() {
           <p className="font-sans text-gray-500 max-w-xl mx-auto">
             Have a question about planning, venue bookings, or how we operate in Chennai? We have all the sweet answers right here!
           </p>
-        </div>
+        </motion.div>
 
         {/* FAQs List */}
-        <div className="space-y-4">
+        <motion.div 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: { opacity: 1, transition: { staggerChildren: 0.1 } }
+          }}
+          className="space-y-4"
+        >
           {FAQS.map((faq, index) => {
             const isOpen = openIndex === index;
             return (
-              <div
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  visible: { opacity: 1, y: 0, transition: { type: "spring", bounce: 0.4 } }
+                }}
                 key={index}
                 id={`faq-item-${index}`}
                 className="bg-white border border-pink-100 rounded-3xl overflow-hidden shadow-xs hover:shadow-sm transition-all"
@@ -59,24 +79,31 @@ export default function FAQAccordion() {
                 </button>
 
                 {/* Accordion Content with smooth height */}
-                <div
-                  className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                    isOpen ? 'max-h-[500px] border-t border-pink-50 p-5 bg-pink-50/10' : 'max-h-0'
-                  }`}
-                >
-                  <div className="font-sans text-gray-500 text-sm sm:text-base leading-relaxed space-y-2">
-                    <p>{faq.answer}</p>
-                    <div className="flex justify-end pt-2">
-                      <span className="inline-flex items-center gap-1 text-[10px] uppercase font-bold px-2 py-0.5 bg-pink-50 border border-pink-100 text-pink-500 rounded-full">
-                        <Sparkles className="w-3 h-3 text-yellow-500" /> {faq.category}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                <AnimatePresence>
+                  {isOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3, ease: 'easeInOut' }}
+                    >
+                      <div className="border-t border-pink-50 p-5 bg-pink-50/10">
+                        <div className="font-sans text-gray-500 text-sm sm:text-base leading-relaxed space-y-2">
+                          <p>{faq.answer}</p>
+                          <div className="flex justify-end pt-2">
+                            <span className="inline-flex items-center gap-1 text-[10px] uppercase font-bold px-2 py-0.5 bg-pink-50 border border-pink-100 text-pink-500 rounded-full">
+                              <Sparkles className="w-3 h-3 text-yellow-500" /> {faq.category}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
 
       </div>
     </section>

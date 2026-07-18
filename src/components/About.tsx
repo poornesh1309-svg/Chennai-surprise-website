@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'motion/react';
 import { Heart, ShieldCheck, MapPin, Sparkles } from 'lucide-react';
 
 export default function About() {
@@ -32,7 +33,13 @@ export default function About() {
   return (
     <section id="about" className="py-16 px-4 sm:py-24 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center space-y-4 max-w-2xl mx-auto mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, type: "spring", bounce: 0.4 }}
+          className="text-center space-y-4 max-w-2xl mx-auto mb-16"
+        >
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#FFF9FB] border border-pink-100 rounded-full">
             <Heart className="w-3.5 h-3.5 text-pink-400 fill-pink-300" />
             <span className="font-display text-xs font-bold text-pink-500 uppercase tracking-wider">
@@ -47,11 +54,17 @@ export default function About() {
           <p className="font-sans text-gray-500">
             We are the highest-rated Chennai surprise planners and creative experience designers, dedicated to creating soft, magical memories for the people you cherish most.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Column: Story / Details */}
-          <div className="lg:col-span-7 space-y-8">
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, type: "spring", bounce: 0.4 }}
+            className="lg:col-span-7 space-y-8"
+          >
             <h3 className="font-display text-2xl sm:text-3xl text-gray-700 text-center lg:text-left font-bold">
               Why Chennai Chooses Our Lovable Crew
             </h3>
@@ -77,14 +90,27 @@ export default function About() {
                 <span className="text-xs font-semibold text-gray-400 uppercase tracking-wide block mt-1">Adorable Services</span>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Column: Key Trust Badges */}
-          <div className="lg:col-span-5 space-y-6">
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
+            }}
+            className="lg:col-span-5 space-y-6"
+          >
             {highlights.map((h, i) => {
               const IconComp = h.icon;
               return (
-                <div 
+                <motion.div 
+                  variants={{
+                    hidden: { opacity: 0, x: 30 },
+                    visible: { opacity: 1, x: 0, transition: { type: "spring", bounce: 0.4 } }
+                  }}
                   key={i}
                   className="cute-card p-6 flex flex-col sm:flex-row gap-4 items-center sm:items-start text-center sm:text-left hover:-translate-y-1 hover:shadow-lg transition-all"
                 >
@@ -99,10 +125,10 @@ export default function About() {
                       {h.desc}
                     </p>
                   </div>
-                </div>
+                </motion.div>
               );
             })}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

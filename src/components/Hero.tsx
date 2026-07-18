@@ -1,5 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { motion, animate } from 'motion/react';
 import { Gift, Sparkles, Heart, MessageCircle } from 'lucide-react';
+
+function AnimatedCounter({ from, to, duration = 2, format = (v: number) => Math.round(v).toString() }: { from: number, to: number, duration?: number, format?: (v: number) => string }) {
+  const [value, setValue] = useState(format(from));
+
+  useEffect(() => {
+    const controls = animate(from, to, {
+      duration,
+      onUpdate(v) {
+        setValue(format(v));
+      }
+    });
+    return () => controls.stop();
+  }, [from, to, duration, format]);
+
+  return <span>{value}</span>;
+}
+
 
 interface HeroProps {
   onPlanClick: () => void;
@@ -76,62 +94,100 @@ export default function Hero({ onPlanClick, onServicesClick }: HeroProps) {
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
         {/* Left column: Text */}
-        <div className="lg:col-span-7 space-y-4 sm:space-y-5 text-center lg:text-left" id="hero-text-container">
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#4A4A4A] leading-[1.15] tracking-tight font-extrabold">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, type: 'spring', bounce: 0.4 }}
+          className="lg:col-span-7 space-y-4 sm:space-y-5 text-center lg:text-left" 
+          id="hero-text-container"
+        >
+          <motion.h1 
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="font-display text-4xl sm:text-5xl lg:text-6xl text-[#4A4A4A] leading-[1.15] tracking-tight font-extrabold"
+          >
             Best <span className="text-pink-400 relative inline-block">
               Surprise Planners in Chennai
             </span> for Magical Celebrations!
-          </h1>
+          </motion.h1>
 
           <p className="font-sans text-base sm:text-lg text-gray-500 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
             Welcome to the home of elite Chennai surprise planners. Whether you need creative birthday surprise planners Chennai, professional birthday decorators in Chennai for top-tier birthday decoration services Chennai, or premium proposal planners Chennai to arrange a magnificent marriage proposal surprise Chennai, we deliver customized, stress-free perfection!
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
-            <button
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               id="hero-plan-btn"
               onClick={onPlanClick}
               className="cute-btn-pink text-xl font-bold px-10 py-4 shadow-lg"
             >
               <Gift className="w-6 h-6 animate-wiggle" />
               Plan My Surprise!
-            </button>
+            </motion.button>
             
-            <button
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               id="hero-services-btn"
               onClick={onServicesClick}
               className="cute-btn-yellow text-lg font-bold px-8 py-4 border-2 border-yellow-200"
             >
               Explore Themes
-            </button>
+            </motion.button>
           </div>
 
           {/* Quick Stats Candy */}
-          <div className="grid grid-cols-3 gap-3 pt-6 max-w-md mx-auto lg:mx-0">
-            <div className="p-4 bg-white border-2 border-pink-50 rounded-3xl text-center shadow-xs">
-              <div className="font-display text-2xl font-bold text-pink-400">10+</div>
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4, staggerChildren: 0.1 }}
+            className="grid grid-cols-3 gap-3 pt-6 max-w-md mx-auto lg:mx-0"
+          >
+            <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="p-4 bg-white border-2 border-pink-50 rounded-3xl text-center shadow-xs">
+              <div className="font-display text-2xl font-bold text-pink-400">
+                <AnimatedCounter from={0} to={10} format={(v) => Math.round(v) + '+'} />
+              </div>
               <div className="text-[10px] uppercase font-bold text-gray-400 tracking-wider">Years of Service</div>
-            </div>
-            <div className="p-4 bg-white border-2 border-sky-100 rounded-3xl text-center shadow-xs">
-              <div className="font-display text-2xl font-bold text-sky-500">4.7 ★</div>
+            </motion.div>
+            <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="p-4 bg-white border-2 border-sky-100 rounded-3xl text-center shadow-xs">
+              <div className="font-display text-2xl font-bold text-sky-500">
+                <AnimatedCounter from={0} to={4.7} format={(v) => v.toFixed(1) + ' ★'} />
+              </div>
               <div className="text-[10px] uppercase font-bold text-gray-400 tracking-wider">Reviews</div>
-            </div>
-            <div className="p-4 bg-white border-2 border-yellow-100 rounded-3xl text-center shadow-xs">
-              <div className="font-display text-2xl font-bold text-yellow-500">100%</div>
+            </motion.div>
+            <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="p-4 bg-white border-2 border-yellow-100 rounded-3xl text-center shadow-xs">
+              <div className="font-display text-2xl font-bold text-yellow-500">
+                <AnimatedCounter from={0} to={100} duration={2.5} format={(v) => Math.round(v) + '%'} />
+              </div>
               <div className="text-[10px] uppercase font-bold text-gray-400 tracking-wider">Happiness</div>
-            </div>
-          </div>
-        </div>
+            </motion.div>
+          </motion.div>
+        </motion.div>
 
         {/* Right column: Cute Illustration / Mascot with bubble interaction */}
-        <div className="lg:col-span-5 flex flex-col items-center relative" id="hero-mascot-container">
+        <motion.div 
+          initial={{ opacity: 0, x: 30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, type: 'spring', bounce: 0.4, delay: 0.2 }}
+          className="lg:col-span-5 flex flex-col items-center relative" 
+          id="hero-mascot-container"
+        >
           {/* Interactive Puffy Mascot Speech Bubble */}
           <div className="mb-6 w-full max-w-sm relative animate-float">
-            <div className="kawaii-speech-bubble shadow-md border-2 border-pink-100 bg-white">
+            <motion.div 
+              key={mascotBubble}
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ type: 'spring', bounce: 0.5 }}
+              className="kawaii-speech-bubble shadow-md border-2 border-pink-100 bg-white"
+            >
               <p className="font-sans font-medium text-sm text-[#5D4E60] leading-relaxed">
                 {mascotBubble}
               </p>
-            </div>
+            </motion.div>
           </div>
 
           {/* Adorable Illustrated Mascot Card */}
@@ -195,7 +251,7 @@ export default function Hero({ onPlanClick, onServicesClick }: HeroProps) {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </header>
   );

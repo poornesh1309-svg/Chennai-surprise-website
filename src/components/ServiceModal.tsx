@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
 import { X, Sparkles, Image as ImageIcon } from 'lucide-react';
 import { Service } from '../types';
 
@@ -17,8 +18,17 @@ export default function ServiceModal({ selectedService, onClose, onBookNow }: Se
 
   return (
     <>
-      <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-fade-in">
-        <div 
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs"
+      >
+        <motion.div 
+          initial={{ scale: 0.9, y: 20, opacity: 0 }}
+          animate={{ scale: 1, y: 0, opacity: 1 }}
+          exit={{ scale: 0.9, y: 20, opacity: 0 }}
+          transition={{ type: "spring", bounce: 0.35, duration: 0.5 }}
           id="service-details-modal"
           className="bg-white border border-pink-100 rounded-[32px] w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl relative"
         >
@@ -74,16 +84,20 @@ export default function ServiceModal({ selectedService, onClose, onBookNow }: Se
               </div>
 
               <div className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
-                <button
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                   id="modal-book-btn"
                   onClick={() => handleBookNow(selectedService.id)}
                   className="cute-btn-pink text-base w-full sm:w-auto font-bold"
                 >
                   Plan My Surprise
-                </button>
+                </motion.button>
                 
                 {/* Quick WhatsApp CTA */}
-                <a
+                <motion.a
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                   id="modal-whatsapp-link"
                   href={`https://wa.me/919791197692?text=Hi%20Chennai%20Surprise!%20I%20am%20interested%20in%20booking%20the%20${encodeURIComponent(selectedService.name)}.`}
                   target="_blank"
@@ -94,7 +108,7 @@ export default function ServiceModal({ selectedService, onClose, onBookNow }: Se
                     <path d="M12.031 2c-5.514 0-9.989 4.475-9.989 9.989 0 1.763.459 3.42 1.258 4.876L2 22l5.314-1.395c1.417.771 3.033 1.205 4.717 1.205 5.514 0 9.989-4.475 9.989-9.989S17.545 2 12.031 2zm4.84 13.568c-.27.754-1.347 1.378-1.855 1.419-.508.041-1.01.218-3.275-.675-2.73-1.077-4.46-3.854-4.597-4.037-.137-.182-1.11-1.474-1.11-2.81 0-1.337.701-1.996.95-2.259.25-.262.543-.329.725-.329.182 0 .365.004.523.012.162.008.38-.033.593.479.218.528.746 1.816.811 1.948.065.132.109.284.02.463-.089.178-.134.293-.267.449-.134.156-.282.348-.403.468-.134.132-.275.276-.118.545.158.269.7 1.15 1.5 1.861.802.712 1.476.932 1.684 1.022.208.09.333.078.458-.066.125-.144.536-.622.681-.836.145-.213.29-.178.489-.103.199.074 1.261.593 1.478.7.218.107.363.161.416.252.054.091.054.528-.162 1.282z" />
                   </svg>
                   Enquire on WhatsApp
-                </a>
+                </motion.a>
               </div>
             </div>
 
@@ -106,25 +120,30 @@ export default function ServiceModal({ selectedService, onClose, onBookNow }: Se
                 </h4>
                 <div className="flex gap-4 overflow-x-auto w-full pb-4 snap-x snap-mandatory hide-scrollbar">
                   {selectedService.popupGallery.map((img, idx) => (
-                    <div 
+                    <motion.div 
+                      whileHover={{ y: -4 }}
                       key={idx} 
                       className="shrink-0 w-36 h-28 sm:w-48 sm:h-32 rounded-xl overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border-2 border-transparent hover:border-pink-300 snap-center shadow-sm"
                       onClick={() => setLightboxImage(img)}
                     >
                       <img src={img} alt={`${selectedService.name} - ${idx}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-                    </div>
+                    </motion.div>
                   ))}
                 </div>
               </div>
             )}
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       {/* Lightbox for Gallery */}
+      <AnimatePresence>
       {lightboxImage && (
-        <div 
-          className="fixed inset-0 z-[70] flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm animate-fade-in"
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 z-[70] flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm"
           onClick={() => setLightboxImage(null)}
         >
           <button 
@@ -133,14 +152,19 @@ export default function ServiceModal({ selectedService, onClose, onBookNow }: Se
           >
             <X className="w-6 h-6" />
           </button>
-          <img 
+          <motion.img 
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.9, opacity: 0 }}
+            transition={{ type: "spring", bounce: 0.3 }}
             src={lightboxImage} 
             alt="Enlarged gallery view" 
             className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           />
-        </div>
+        </motion.div>
       )}
+      </AnimatePresence>
     </>
   );
 }

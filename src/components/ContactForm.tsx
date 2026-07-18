@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
 import { Mail, Gift, Phone, Heart, Sparkles, MessageSquare, Check, Calendar, User, Upload, Trash2, Loader2, Image as ImageIcon, FileImage, AlertCircle } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import heic2any from 'heic2any';
@@ -189,7 +190,13 @@ export default function ContactForm({ selectedServiceId, setSelectedServiceId }:
       <div className="max-w-4xl mx-auto space-y-12 relative z-10">
         
         {/* Header Block */}
-        <div className="text-center space-y-4 max-w-2xl mx-auto">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, type: "spring", bounce: 0.4 }}
+          className="text-center space-y-4 max-w-2xl mx-auto"
+        >
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-pink-50 border border-pink-100 rounded-full">
             <Gift className="w-3.5 h-3.5 text-pink-400 animate-wiggle" />
             <span className="font-display text-xs font-bold text-pink-500 uppercase tracking-wider">
@@ -204,10 +211,16 @@ export default function ContactForm({ selectedServiceId, setSelectedServiceId }:
           <p className="font-sans text-gray-500">
             Write down your ideas in our sweet love-letter booking form! We will sneakily reach out to you within 2-3 hours via WhatsApp or phone to finalize the secret coordinate.
           </p>
-        </div>
+        </motion.div>
 
         {/* The Letter Form Container */}
-        <div className="bg-[#FFF9FB] p-6 sm:p-10 relative border border-pink-100 rounded-[32px] shadow-sm">
+        <motion.div 
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.8, type: "spring", bounce: 0.3 }}
+          className="bg-[#FFF9FB] p-6 sm:p-10 relative border border-pink-100 rounded-[32px] shadow-sm"
+        >
           
           {/* Post Stamp Watermark */}
           <div className="absolute top-6 right-6 w-16 h-16 border border-dashed border-pink-200 rounded-xl flex items-center justify-center text-pink-300 font-display text-xs rotate-12 hidden sm:flex">
@@ -319,7 +332,9 @@ export default function ContactForm({ selectedServiceId, setSelectedServiceId }:
 
               <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
                 {/* Instant WhatsApp Send */}
-                <a
+                <motion.a
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.95 }}
                   id="direct-whatsapp-book"
                   href={`https://wa.me/919791197692?text=${getWhatsAppMessage()}`}
                   target="_blank"
@@ -330,13 +345,13 @@ export default function ContactForm({ selectedServiceId, setSelectedServiceId }:
                     <path d="M12.031 2c-5.514 0-9.989 4.475-9.989 9.989 0 1.763.459 3.42 1.258 4.876L2 22l5.314-1.395c1.417.771 3.033 1.205 4.717 1.205 5.514 0 9.989-4.475 9.989-9.989S17.545 2 12.031 2zm4.84 13.568c-.27.754-1.347 1.378-1.855 1.419-.508.041-1.01.218-3.275-.675-2.73-1.077-4.46-3.854-4.597-4.037-.137-.182-1.11-1.474-1.11-2.81 0-1.337.701-1.996.95-2.259.25-.262.543-.329.725-.329.182 0 .365.004.523.012.162.008.38-.033.593.479.218.528.746 1.816.811 1.948.065.132.109.284.02.463-.089.178-.134.293-.267.449-.134.156-.282.348-.403.468-.134.132-.275.276-.118.545.158.269.7 1.15 1.5 1.861.802.712 1.476.932 1.684 1.022.208.09.333.078.458-.066.125-.144.536-.622.681-.836.145-.213.29-.178.489-.103.199.074 1.261.593 1.478.7.218.107.363.161.416.252.054.091.054.528-.162 1.282z" />
                   </svg>
                   Enquire on WhatsApp
-                </a>
+                </motion.a>
 
               </div>
             </div>
 
           </form>
-        </div>
+        </motion.div>
 
         {/* Hot Quick Connect Info cards */}
         <div className="grid grid-cols-1 gap-6 max-w-xs mx-auto">
@@ -357,9 +372,19 @@ export default function ContactForm({ selectedServiceId, setSelectedServiceId }:
       </div>
 
       {/* Booking Success Cute Mascot Dialog */}
+      <AnimatePresence>
       {isSubmitted && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-fade-in">
-          <div 
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs"
+        >
+          <motion.div 
+            initial={{ scale: 0.9, y: 20, opacity: 0 }}
+            animate={{ scale: 1, y: 0, opacity: 1 }}
+            exit={{ scale: 0.9, y: 20, opacity: 0 }}
+            transition={{ type: "spring", bounce: 0.35, duration: 0.5 }}
             id="booking-success-modal"
             className="bg-white border border-pink-100 rounded-[32px] p-8 max-w-md w-full text-center shadow-2xl relative space-y-6"
           >
@@ -397,7 +422,9 @@ export default function ContactForm({ selectedServiceId, setSelectedServiceId }:
             </div>
 
             <div className="flex flex-col gap-2">
-              <a
+              <motion.a
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
                 id="success-whatsapp-send"
                 href={`https://wa.me/919791197692?text=${getWhatsAppMessage()}`}
                 target="_blank"
@@ -408,20 +435,23 @@ export default function ContactForm({ selectedServiceId, setSelectedServiceId }:
                   <path d="M12.031 2c-5.514 0-9.989 4.475-9.989 9.989 0 1.763.459 3.42 1.258 4.876L2 22l5.314-1.395c1.417.771 3.033 1.205 4.717 1.205 5.514 0 9.989-4.475 9.989-9.989S17.545 2 12.031 2zm4.84 13.568c-.27.754-1.347 1.378-1.855 1.419-.508.041-1.01.218-3.275-.675-2.73-1.077-4.46-3.854-4.597-4.037-.137-.182-1.11-1.474-1.11-2.81 0-1.337.701-1.996.95-2.259.25-.262.543-.329.725-.329.182 0 .365.004.523.012.162.008.38-.033.593.479.218.528.746 1.816.811 1.948.065.132.109.284.02.463-.089.178-.134.293-.267.449-.134.156-.282.348-.403.468-.134.132-.275.276-.118.545.158.269.7 1.15 1.5 1.861.802.712 1.476.932 1.684 1.022.208.09.333.078.458-.066.125-.144.536-.622.681-.836.145-.213.29-.178.489-.103.199.074 1.261.593 1.478.7.218.107.363.161.416.252.054.091.054.528-.162 1.282z" />
                 </svg>
                 Send Details via WhatsApp
-              </a>
+              </motion.a>
 
-              <button
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
                 id="close-success-btn"
                 onClick={handleCloseSuccess}
                 className="cute-btn-pink text-sm w-full !bg-white !text-gray-500 border border-pink-100 hover:!bg-pink-50/50 font-bold"
               >
                 Got It, Thank You!
-              </button>
+              </motion.button>
             </div>
 
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       )}
+      </AnimatePresence>
 
     </section>
   );

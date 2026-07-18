@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'motion/react';
 import { Mail, Compass, Shield, Heart, Sparkles } from 'lucide-react';
 
 export default function HowItWorks() {
@@ -38,7 +39,13 @@ export default function HowItWorks() {
       <div className="max-w-7xl mx-auto">
         
         {/* Header Section */}
-        <div className="text-center space-y-4 max-w-2xl mx-auto mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, type: "spring", bounce: 0.4 }}
+          className="text-center space-y-4 max-w-2xl mx-auto mb-16"
+        >
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-pink-50 border border-pink-100 rounded-full">
             <Sparkles className="w-3.5 h-3.5 text-pink-400 animate-spin" />
             <span className="font-display text-xs font-bold text-pink-500 uppercase tracking-wider">
@@ -53,18 +60,32 @@ export default function HowItWorks() {
           <p className="font-sans text-gray-500">
             Planning an absolute secret can feel scary. But do not worry! Our simple, cute process guarantees everything is stress-free and hyper-coordinated.
           </p>
-        </div>
+        </motion.div>
 
         {/* Steps Timeline Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
+        <motion.div 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
+          }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10"
+        >
           
           {steps.map((step, idx) => {
             const IconComponent = step.icon;
             return (
-              <div
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, y: 40, scale: 0.95 },
+                  visible: { opacity: 1, y: 0, scale: 1, transition: { type: "spring", bounce: 0.4 } }
+                }}
+                whileHover={{ y: -8 }}
                 key={idx}
                 id={`how-it-works-step-${idx}`}
-                className="bg-white border border-pink-100 p-6 relative rounded-3xl shadow-xs hover:-translate-y-2 hover:shadow-sm transition-all duration-300 flex flex-col justify-between"
+                className="bg-white border border-pink-100 p-6 relative rounded-3xl shadow-xs hover:shadow-sm transition-all duration-300 flex flex-col justify-between"
               >
                 {/* Step Number Bubble */}
                 <div className="absolute -top-6 left-6 font-display text-2xl font-bold px-3 py-1 bg-yellow-100 text-yellow-600 border border-yellow-200 rounded-full shadow-xs z-10 animate-bounce-subtle">
@@ -92,18 +113,24 @@ export default function HowItWorks() {
                     Step {step.num} / 04
                   </span>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
 
-        </div>
+        </motion.div>
 
         {/* Floating Sparkle Callout */}
-        <div className="mt-12 text-center p-5 max-w-xl mx-auto border border-dashed border-pink-100 bg-white rounded-[2rem] shadow-xs">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.6, type: 'spring' }}
+          className="mt-12 text-center p-5 max-w-xl mx-auto border border-dashed border-pink-100 bg-white rounded-[2rem] shadow-xs"
+        >
           <p className="font-sans text-sm text-gray-500">
             <strong>Sneak-Safe Policy:</strong> We use secondary whatsapp numbers or custom labels so your partner won’t see our messages on your lock screen!
           </p>
-        </div>
+        </motion.div>
 
       </div>
     </section>
