@@ -19,10 +19,14 @@ import ContactForm from './components/ContactForm';
 import SEOContent from './components/SEOContent';
 import Footer from './components/Footer';
 import HeartTrailCursor from './components/HeartTrailCursor';
+import { LightboxProvider } from './context/LightboxContext';
+import GlobalLightbox from './components/GlobalLightbox';
+import SEOHelmet from './components/SEOHelmet';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<'home' | 'gallery'>('home');
   const [selectedServiceId, setSelectedServiceId] = useState<string>('');
+  const [expandedCategoryId, setExpandedCategoryId] = useState<string | null>(null);
   const bookingSectionRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -110,9 +114,30 @@ export default function App() {
     }, 100);
   };
 
+  const handleCategoryClick = (categoryId?: string) => {
+    if (activeTab !== 'home') {
+      setActiveTab('home');
+    }
+    setTimeout(() => {
+      const element = document.getElementById('categories');
+      if (element) {
+        const offset = 88;
+        const bodyRect = document.body.getBoundingClientRect().top;
+        const elementRect = element.getBoundingClientRect().top;
+        window.scrollTo({ top: elementRect - bodyRect - offset, behavior: 'smooth' });
+      }
+      if (categoryId) {
+        setExpandedCategoryId(categoryId);
+      }
+    }, 150);
+  };
+
   return (
-    <div className="min-h-screen overflow-x-hidden bg-gradient-to-b from-[#FFF0F3] to-[#FFFDF0] flex flex-col justify-between selection:bg-[#FFCCD5] selection:text-[#4A3E3D]">
-      {/* Custom Mouse Trailing Hearts Effect on Desktop */}
+    <LightboxProvider>
+      <SEOHelmet />
+      <div className="min-h-screen overflow-x-hidden bg-gradient-to-b from-[#FFF0F3] to-[#FFFDF0] flex flex-col justify-between selection:bg-[#FFCCD5] selection:text-[#4A3E3D]">
+        <GlobalLightbox />
+        {/* Custom Mouse Trailing Hearts Effect on Desktop */}
       <HeartTrailCursor />
 
       {/* Dynamic Header & Navigation */}
@@ -120,6 +145,7 @@ export default function App() {
         activeTab={activeTab} 
         setActiveTab={setActiveTab} 
         onPlanClick={scrollToBooking} 
+        onCategoryClick={handleCategoryClick}
       />
 
       <main className="flex-grow">
@@ -136,7 +162,11 @@ export default function App() {
             <ImageCarousel />
 
             {/* Categories Section */}
-            <Categories onSelectService={handleSelectServiceFromCard} />
+            <Categories 
+              onSelectService={handleSelectServiceFromCard} 
+              expandedCategoryId={expandedCategoryId}
+              onExpandedCategoryChange={setExpandedCategoryId}
+            />
 
             {/* Interactive Grid of All 9 Services */}
             <Services onSelectService={handleSelectServiceFromCard} />
@@ -179,5 +209,6 @@ export default function App() {
       {/* Cheerful Footer & Credits */}
       <Footer onNavClick={setActiveTab} />
     </div>
+    </LightboxProvider>
   );
 }

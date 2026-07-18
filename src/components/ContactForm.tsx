@@ -4,7 +4,7 @@ import { Mail, Gift, Phone, Heart, Sparkles, MessageSquare, Check, Calendar, Use
 import confetti from 'canvas-confetti';
 import heic2any from 'heic2any';
 import { SERVICES } from '../data';
-
+import { useBodyScrollLock } from '../hooks/useBodyScrollLock';
 interface AttachedPhoto {
   id: string;
   name: string;
@@ -33,6 +33,8 @@ export default function ContactForm({ selectedServiceId, setSelectedServiceId }:
   const [isConverting, setIsConverting] = useState(false);
   const [conversionProgress, setConversionProgress] = useState('');
   const [fileError, setFileError] = useState<string | null>(null);
+
+  useBodyScrollLock(isSubmitted);
 
   // Sync selectedServiceId prop with local state
   useEffect(() => {

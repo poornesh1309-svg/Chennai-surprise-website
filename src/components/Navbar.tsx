@@ -1,16 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Gift } from 'lucide-react';
+import { Menu, X, Gift, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import Logo from './Logo';
+import { CATEGORY_DATA } from '../data';
 
 interface NavbarProps {
   activeTab: 'home' | 'gallery';
   setActiveTab: (tab: 'home' | 'gallery') => void;
   onPlanClick: () => void;
+  onCategoryClick?: (categoryId?: string) => void;
 }
 
 const NAV_ITEMS = [
   { label: 'Home', id: 'home', isTab: true, tabName: 'home' as const },
+  { label: 'Categories', id: 'categories', isTab: false, hasDropdown: true },
   { label: 'Services', id: 'services', isTab: false },
   { label: 'About', id: 'about', isTab: false },
   { label: 'How It Works', id: 'how-it-works', isTab: false },
@@ -20,9 +23,11 @@ const NAV_ITEMS = [
   { label: 'Gallery', id: 'gallery', isTab: true, tabName: 'gallery' as const },
 ];
 
-export default function Navbar({ activeTab, setActiveTab, onPlanClick }: NavbarProps) {
+export default function Navbar({ activeTab, setActiveTab, onPlanClick, onCategoryClick }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState<string>('home');
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
 
   useEffect(() => {
     if (activeTab !== 'home') {
@@ -43,7 +48,7 @@ export default function Navbar({ activeTab, setActiveTab, onPlanClick }: NavbarP
 
     window.addEventListener('scroll', handleScroll);
 
-    const sections = ['about', 'services', 'how-it-works', 'testimonials', 'faq', 'contact-booking'];
+    const sections = ['about', 'categories', 'services', 'how-it-works', 'testimonials', 'faq', 'contact-booking'];
     
     const observerCallback = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
@@ -81,6 +86,8 @@ export default function Navbar({ activeTab, setActiveTab, onPlanClick }: NavbarP
     } else {
       if (id === 'contact-booking') {
         onPlanClick();
+      } else if (id === 'categories' && onCategoryClick) {
+        onCategoryClick();
       } else {
         if (activeTab !== 'home') {
           setActiveTab('home');
@@ -129,18 +136,64 @@ export default function Navbar({ activeTab, setActiveTab, onPlanClick }: NavbarP
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center gap-1.5 xl:gap-3 flex-wrap justify-end">
           {NAV_ITEMS.map((item) => (
-            <button
-              key={item.id}
-              id={`nav-${item.id}-btn`}
-              onClick={() => handleItemClick(item.id, item.isTab, item.tabName)}
-              className={`font-display text-xs xl:text-sm px-3 py-1.5 rounded-full uppercase tracking-wider transition-all duration-200 cursor-pointer ${
-                isItemActive(item)
-                  ? 'bg-pink-100/50 text-pink-500 border border-pink-200/80 font-bold scale-[1.03]'
-                  : 'text-pink-300 hover:text-pink-500 hover:bg-pink-50/30 border border-transparent'
-              }`}
-            >
-              {item.label}
-            </button>
+            item.hasDropdown ? (
+              <div 
+                key={item.id}
+                className="relative group"
+                onMouseEnter={() => setDropdownOpen(true)}
+                onMouseLeave={() => setDropdownOpen(false)}
+              >
+                <button
+                  id={`nav-${item.id}-btn`}
+                  onClick={() => handleItemClick(item.id, item.isTab, item.tabName)}
+                  className={`font-display text-xs xl:text-sm px-3 py-1.5 rounded-full uppercase tracking-wider transition-all duration-200 cursor-pointer flex items-center gap-1 ${
+                    isItemActive(item as any)
+                      ? 'bg-pink-100/50 text-pink-500 border border-pink-200/80 font-bold scale-[1.03]'
+                      : 'text-pink-300 hover:text-pink-500 hover:bg-pink-50/30 border border-transparent'
+                  }`}
+                >
+                  {item.label}
+                  <ChevronDown className="w-3 h-3" />
+                </button>
+                <AnimatePresence>
+                  {dropdownOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 10 }}
+                      transition={{ duration: 0.2 }}
+                      className="absolute top-full left-0 mt-2 w-48 bg-white border border-pink-100 rounded-xl shadow-lg overflow-hidden flex flex-col"
+                    >
+                      {CATEGORY_DATA.map((cat) => (
+                        <button
+                          key={cat.id}
+                          onClick={() => {
+                            setDropdownOpen(false);
+                            if (onCategoryClick) onCategoryClick(cat.id);
+                          }}
+                          className="text-left px-4 py-2.5 text-sm text-pink-400 hover:bg-pink-50 hover:text-pink-600 transition-colors"
+                        >
+                          {cat.name}
+                        </button>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            ) : (
+              <button
+                key={item.id}
+                id={`nav-${item.id}-btn`}
+                onClick={() => handleItemClick(item.id, item.isTab, item.tabName)}
+                className={`font-display text-xs xl:text-sm px-3 py-1.5 rounded-full uppercase tracking-wider transition-all duration-200 cursor-pointer ${
+                  isItemActive(item as any)
+                    ? 'bg-pink-100/50 text-pink-500 border border-pink-200/80 font-bold scale-[1.03]'
+                    : 'text-pink-300 hover:text-pink-500 hover:bg-pink-50/30 border border-transparent'
+                }`}
+              >
+                {item.label}
+              </button>
+            )
           ))}
 
           <a
@@ -178,18 +231,51 @@ export default function Navbar({ activeTab, setActiveTab, onPlanClick }: NavbarP
             className="lg:hidden mt-3 p-4 bg-white border-t border-pink-100 rounded-2xl flex flex-col gap-1.5 shadow-inner overflow-hidden max-h-[80vh] overflow-y-auto"
           >
             {NAV_ITEMS.map((item) => (
-              <button
-                key={item.id}
-                id={`mobile-nav-${item.id}`}
-                onClick={() => handleItemClick(item.id, item.isTab, item.tabName)}
-                className={`font-display text-sm py-2.5 px-4 rounded-xl text-left uppercase tracking-wider transition-all ${
-                  isItemActive(item)
-                    ? 'bg-[#FFF9FB] text-pink-500 font-bold border-l-4 border-pink-400 shadow-xs'
-                    : 'text-pink-300 hover:bg-[#FFF9FB]'
-                }`}
-              >
-                {item.label}
-              </button>
+              <div key={item.id} className="flex flex-col">
+                <button
+                  id={`mobile-nav-${item.id}`}
+                  onClick={() => {
+                    if (item.hasDropdown) {
+                      setMobileDropdownOpen(!mobileDropdownOpen);
+                    } else {
+                      handleItemClick(item.id, item.isTab, item.tabName);
+                    }
+                  }}
+                  className={`font-display text-sm py-2.5 px-4 rounded-xl text-left uppercase tracking-wider flex items-center justify-between transition-all ${
+                    isItemActive(item as any)
+                      ? 'bg-[#FFF9FB] text-pink-500 font-bold border-l-4 border-pink-400 shadow-xs'
+                      : 'text-pink-300 hover:bg-[#FFF9FB]'
+                  }`}
+                >
+                  {item.label}
+                  {item.hasDropdown && (
+                    <ChevronDown className={`w-4 h-4 transition-transform ${mobileDropdownOpen ? 'rotate-180' : ''}`} />
+                  )}
+                </button>
+                <AnimatePresence>
+                  {item.hasDropdown && mobileDropdownOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      className="overflow-hidden flex flex-col pl-4 mt-1 border-l-2 border-pink-50 ml-4"
+                    >
+                      {CATEGORY_DATA.map((cat) => (
+                        <button
+                          key={cat.id}
+                          onClick={() => {
+                            setIsOpen(false);
+                            if (onCategoryClick) onCategoryClick(cat.id);
+                          }}
+                          className="text-left py-2.5 px-2 text-sm text-pink-400 hover:text-pink-600 transition-colors"
+                        >
+                          {cat.name}
+                        </button>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
             ))}
 
             <a

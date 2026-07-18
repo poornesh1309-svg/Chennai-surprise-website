@@ -34,7 +34,32 @@ export default function Hero({ onPlanClick, onServicesClick }: HeroProps) {
     "Let's scatter some shiny fairy lights!",
     "Wanna hear a secret? Guitars make everyone blush!",
     "We plan the best surprises in all of Chennai!",
-    "Mascot high-five! Tap me again!"
+    "Mascot high-five! Tap me again!",
+    "I'm purr-fectly ready to plan your next big surprise!",
+    "Paws and reflect on how awesome today is going to be!",
+    "Sending you a giant virtual hug right now!",
+    "Did someone say CAKE? I love cake!",
+    "I've got a pocket full of stardust just for you!",
+    "You're the sprinkle to my cupcake!",
+    "Let's make some core memories today!",
+    "Sneaking around to set up surprises is my cardio!",
+    "Boop my nose again for good luck!",
+    "I just know they are going to say YES!",
+    "Did you know a good surprise adds ten years to your life? True story!",
+    "I'm currently practicing my 'Happy Birthday' song in meows!",
+    "Surprises are just magic you can actually schedule!",
+    "I've hidden extra confetti in my fur for emergencies!",
+    "My whiskers tingle when a good surprise is coming together!",
+    "Balloons? Check! Cake? Check! Meow? Meow!",
+    "Nothing beats the look of pure joy on their face!",
+    "A little birdie told me someone special deserves a treat!",
+    "Let's turn an ordinary day into a spectacular memory!",
+    "Need a hug? I give the best virtual hugs in Chennai!",
+    "I've got the 'purr-suasion' skills to get you the best venues!",
+    "Surprise planning tip: Always bring more balloons than you think you need!",
+    "Every love story deserves a beautiful celebration!",
+    "Did you check out our beach setups? They're totally pawsome!",
+    "Teehee! Keeping secrets is my absolute favorite hobby!"
   ];
 
   const playPopSound = () => {

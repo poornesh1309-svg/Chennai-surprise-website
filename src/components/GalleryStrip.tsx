@@ -1,5 +1,7 @@
 import React from 'react';
+import { motion } from 'motion/react';
 import { Camera, ArrowRight, Heart } from 'lucide-react';
+import ZoomableImage from './ZoomableImage';
 import { GALLERY_ITEMS } from '../data';
 
 interface GalleryStripProps {
@@ -71,7 +73,7 @@ export default function GalleryStrip({ onViewAllClick }: GalleryStripProps) {
                     className="w-full h-full"
                   ></iframe>
                 ) : (
-                  <img
+                  <ZoomableImage
                     src={item.image}
                     alt={item.title}
                     referrerPolicy="no-referrer"

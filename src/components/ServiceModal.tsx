@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Sparkles, Image as ImageIcon } from 'lucide-react';
 import { Service } from '../types';
-
+import { useBodyScrollLock } from '../hooks/useBodyScrollLock';
+import ZoomableImage from './ZoomableImage';
 interface ServiceModalProps {
   selectedService: Service;
   onClose: () => void;
@@ -11,6 +12,8 @@ interface ServiceModalProps {
 
 export default function ServiceModal({ selectedService, onClose, onBookNow }: ServiceModalProps) {
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
+
+  useBodyScrollLock(true);
 
   const handleBookNow = (id: string) => {
     onBookNow(id);
@@ -43,7 +46,7 @@ export default function ServiceModal({ selectedService, onClose, onBookNow }: Se
 
           {/* Modal Banner */}
           <div className="h-56 relative border-b border-pink-50">
-            <img
+            <ZoomableImage
               src={selectedService.image}
               alt={selectedService.name}
               referrerPolicy="no-referrer"
@@ -126,7 +129,7 @@ export default function ServiceModal({ selectedService, onClose, onBookNow }: Se
                       className="shrink-0 w-36 h-28 sm:w-48 sm:h-32 rounded-xl overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border-2 border-transparent hover:border-pink-300 snap-center shadow-sm"
                       onClick={() => setLightboxImage(img)}
                     >
-                      <img src={img} alt={`${selectedService.name} - ${idx}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                      <ZoomableImage src={img} alt={`${selectedService.name} - ${idx}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                     </motion.div>
                   ))}
                 </div>

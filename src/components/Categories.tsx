@@ -16,7 +16,8 @@ import {
 import { CATEGORY_DATA, SERVICES } from '../data';
 import { Service } from '../types';
 import ServiceModal from './ServiceModal';
-
+import { useBodyScrollLock } from '../hooks/useBodyScrollLock';
+import ZoomableImage from './ZoomableImage';
 // Map icon name string to Lucide React component
 const iconMap: Record<string, React.ComponentType<any>> = {
   Plane,
@@ -33,11 +34,21 @@ const iconMap: Record<string, React.ComponentType<any>> = {
 
 interface CategoriesProps {
   onSelectService: (serviceId: string) => void;
+  expandedCategoryId?: string | null;
+  onExpandedCategoryChange?: (id: string | null) => void;
 }
 
-export default function Categories({ onSelectService }: CategoriesProps) {
-  const [expandedCategory, setExpandedCategory] = useState<string | null>(null);
+export default function Categories({ onSelectService, expandedCategoryId, onExpandedCategoryChange }: CategoriesProps) {
+  const [localExpandedCategory, setLocalExpandedCategory] = useState<string | null>(null);
   const [selectedServiceDetails, setSelectedServiceDetails] = useState<Service | null>(null);
+
+  const expandedCategory = expandedCategoryId !== undefined ? expandedCategoryId : localExpandedCategory;
+  const setExpandedCategory = (id: string | null) => {
+    if (onExpandedCategoryChange) onExpandedCategoryChange(id);
+    setLocalExpandedCategory(id);
+  };
+
+  useBodyScrollLock(!!expandedCategory);
 
   // Helper for color styles based on service theme
   const getThemeStyles = (theme: string) => {
@@ -175,7 +186,7 @@ export default function Categories({ onSelectService }: CategoriesProps) {
               >
                 {/* Image & Tag */}
                 <div className="h-48 overflow-hidden relative border-b border-pink-50">
-                  <img
+                  <ZoomableImage
                     src={category.image}
                     alt={category.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -254,7 +265,7 @@ export default function Categories({ onSelectService }: CategoriesProps) {
 
               {/* Banner */}
               <div className="h-56 md:h-72 relative border-b border-pink-50">
-                <img
+                <ZoomableImage
                   src={selectedCategoryData.image}
                   alt={selectedCategoryData.name}
                   className="w-full h-full object-cover"
@@ -307,7 +318,7 @@ export default function Categories({ onSelectService }: CategoriesProps) {
                           className={`flex flex-col bg-white border-2 ${theme.border} rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group`}
                         >
                           <div className="h-40 overflow-hidden relative border-b border-pink-50">
-                            <img
+                            <ZoomableImage
                               src={s.image}
                               alt={s.name}
                               referrerPolicy="no-referrer"

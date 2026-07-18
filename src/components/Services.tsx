@@ -18,6 +18,7 @@ import {
 } from 'lucide-react';
 import { Service } from '../types';
 import { SERVICES } from '../data';
+import ZoomableImage from './ZoomableImage';
 import ServiceModal from './ServiceModal';
 
 // Map icon name string to Lucide React component
@@ -175,7 +176,7 @@ export default function Services({ onSelectService }: ServicesProps) {
               >
                 {/* Image & Tag */}
                 <div className="h-48 overflow-hidden relative border-b border-pink-50">
-                  <img
+                  <ZoomableImage
                     src={s.image}
                     alt={s.name}
                     referrerPolicy="no-referrer"

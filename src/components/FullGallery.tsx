@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Camera, Video, Heart, MapPin, X, MessageSquare, Sparkles } from 'lucide-react';
-import { GALLERY_ITEMS, SERVICES } from '../data';
 import { GalleryItem } from '../types';
-
+import { useBodyScrollLock } from '../hooks/useBodyScrollLock';
+import ZoomableImage from './ZoomableImage';
+import { GALLERY_ITEMS, SERVICES } from '../data';
 interface FullGalleryProps {
   onSelectService: (serviceId: string) => void;
 }
@@ -16,6 +17,8 @@ function getYoutubeEmbedUrl(url?: string): string | null {
 
 export default function FullGallery({ onSelectService }: FullGalleryProps) {
   const [activeGalleryItem, setActiveGalleryItem] = useState<GalleryItem | null>(null);
+
+  useBodyScrollLock(!!activeGalleryItem);
 
   const handleBookService = (serviceId: string) => {
     setActiveGalleryItem(null);
@@ -72,7 +75,7 @@ export default function FullGallery({ onSelectService }: FullGalleryProps) {
                       ></iframe>
                     ) : (
                       <>
-                        <img
+                        <ZoomableImage
                           src={item.image}
                           alt={item.title}
                           referrerPolicy="no-referrer"
@@ -161,7 +164,7 @@ export default function FullGallery({ onSelectService }: FullGalleryProps) {
                     ></iframe>
                   ) : (
                     <>
-                      <img
+                      <ZoomableImage
                         src={activeGalleryItem.image}
                         alt={activeGalleryItem.title}
                         referrerPolicy="no-referrer"

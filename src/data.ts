@@ -9,7 +9,7 @@ export const SERVICES: Service[] = [
     iconName: 'Cake',
     colorTheme: 'yellow',
     tag: 'Sweet Celebrations',
-    image: '/birth day party.JPG',
+    image: '/IMG_1820.jpg_2K_202607182059.jpeg',
     priceStart: '₹4,499',
     whatsIncluded: [
       '200+ High-quality matte aesthetic balloons',
@@ -67,6 +67,14 @@ export const SERVICES: Service[] = [
       'Theme-based entrance gate decor with beautiful signage',
       'Cake cutting table setup with themed props & cake stands',
       'Dynamic LED focus lights & spotlights for the stage'
+    ],
+    popupGallery: [
+      '/birthday-surprise/IMG_2049.JPG',
+      '/birthday-surprise/IMG_8956.JPG',
+      '/birthday-surprise/IMG-20260709-WA0006.jpg',
+      '/birthday-surprise/IMG-20260709-WA0010.jpg',
+      '/birthday-surprise/IMG-20260709-WA0013.jpg',
+      '/birthday-surprise/IMG-20260709-WA0020.jpg'
     ]
   },
   {
@@ -103,7 +111,7 @@ export const SERVICES: Service[] = [
     iconName: 'Palmtree',
     colorTheme: 'pink',
     tag: 'Romantic Seaside',
-    image: '/IMG_7228.JPEG',
+    image: '/Young_friends_surprising_friend_…_202607182105.jpeg',
     priceStart: '₹8,499',
     whatsIncluded: [
       'Handcrafted aesthetic beach tent setup',
@@ -121,7 +129,7 @@ export const SERVICES: Service[] = [
     iconName: 'ShoppingBag',
     colorTheme: 'yellow',
     tag: 'Public Spotlight',
-    image: '/mall.jpg',
+    image: '/Young_friends_surprising_friend_…_202607182108.jpeg',
     priceStart: '₹6,499',
     whatsIncluded: [
       'Mall authorization & venue coordination',
@@ -157,7 +165,7 @@ export const SERVICES: Service[] = [
     iconName: 'Music',
     colorTheme: 'peach',
     tag: 'Sweet Harmony',
-    image: '/music.jpg',
+    image: '/ff.jpg_202607182053.jpeg',
     priceStart: '₹3,499',
     whatsIncluded: [
       'Professional acoustic vocalist & guitarist',
@@ -723,7 +731,7 @@ export const CATEGORY_DATA = [
   {
     id: 'surprise',
     name: 'Surprise',
-    image: '/ff.jpg',
+    image: '/Young_friends_surprising_friend_2K_202607182136.jpeg',
     tag: 'All Occasions',
     iconName: 'Sparkles',
     colorTheme: 'peach',
@@ -774,7 +782,7 @@ export const CATEGORY_DATA = [
   {
     id: 'proposal',
     name: 'Proposal',
-    image: '/carousel/IMG_8521.jpg',
+    image: '/Young_man_proposing_to_lover_202607182128.jpeg',
     tag: 'He Said Yes!',
     iconName: 'HeartHandshake',
     colorTheme: 'pink',

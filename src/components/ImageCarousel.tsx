@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import heic2any from 'heic2any';
+import ZoomableImage from './ZoomableImage';
 
 const carouselImages = [
   'IMG_8951.JPG.jpeg',
@@ -36,7 +36,7 @@ const SmartImage = ({ src, alt, className }: { src: string; alt: string; classNa
   return (
     <>
       {!error && (
-        <img
+        <ZoomableImage
           src={src}
           alt={alt}
           className={className}
