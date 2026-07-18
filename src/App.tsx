@@ -7,6 +7,8 @@ import React, { useState, useRef, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import ImageCarousel from './components/ImageCarousel';
+import Categories from './components/Categories';
 import Services from './components/Services';
 import GalleryStrip from './components/GalleryStrip';
 import FullGallery from './components/FullGallery';
@@ -129,6 +131,12 @@ export default function App() {
               onPlanClick={scrollToBooking} 
               onServicesClick={scrollToServices} 
             />
+
+            {/* A Beautiful Image Carousel */}
+            <ImageCarousel />
+
+            {/* Categories Section */}
+            <Categories onSelectService={handleSelectServiceFromCard} />
 
             {/* Interactive Grid of All 9 Services */}
             <Services onSelectService={handleSelectServiceFromCard} />

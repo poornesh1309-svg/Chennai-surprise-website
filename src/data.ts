@@ -17,6 +17,14 @@ export const SERVICES: Service[] = [
       'Cute "Happy Birthday" neon light banner (rented)',
       'Fairy lights mesh backdrop & elegant hanging ribbons',
       'Adorable birthday crown & custom party poppers'
+    ],
+    popupGallery: [
+      '/birthday-surprise/IMG_2049.JPG',
+      '/birthday-surprise/IMG_8956.JPG',
+      '/birthday-surprise/IMG-20260709-WA0006.jpg',
+      '/birthday-surprise/IMG-20260709-WA0010.jpg',
+      '/birthday-surprise/IMG-20260709-WA0013.jpg',
+      '/birthday-surprise/IMG-20260709-WA0020.jpg'
     ]
   },
   {
@@ -35,6 +43,12 @@ export const SERVICES: Service[] = [
       'Heavy fog dry-ice machine for the magical moment',
       '2 Cold-fire pyrotechnic sparkler guns',
       'Champagne glass set with non-alcoholic sparkly cider'
+    ],
+    popupGallery: [
+      '/proposal-planning/IMG_0482.JPG.jpeg',
+      '/proposal-planning/IMG_3755.jpg',
+      '/proposal-planning/IMG_5681.JPG',
+      '/proposal-planning/IMG_7009.jpg'
     ]
   },
   {
@@ -63,14 +77,22 @@ export const SERVICES: Service[] = [
     iconName: 'Heart',
     colorTheme: 'purple',
     tag: 'Cozy Love',
-    image: '/canopy.jpg',
+    image: '/IMG-20260709-WA0021.jpg',
     priceStart: '₹5,999',
     whatsIncluded: [
       'Dreamy white fabric frame setup with warm fairy lights',
       'Premium fresh rose petals (heart design on bed)',
       '50+ electronic warm flicker candles (completely safe)',
       '15-20 customized polaroid prints hung with cute wooden clips',
+      'Helium-finish ceiling balloons (10-15 pcs)',
       'Scented wax melts with warm, lovely rose-vanilla fragrance'
+    ],
+    popupGallery: [
+      '/romantic-room/IMG_2481.JPG.jpeg',
+      '/romantic-room/IMG_5411.JPG.jpeg',
+      '/romantic-room/IMG_5414.JPG.jpeg',
+      '/romantic-room/IMG_9042.JPG.jpeg',
+      '/romantic-room/IMG_9048.JPG.jpeg'
     ]
   },
   {
@@ -81,7 +103,7 @@ export const SERVICES: Service[] = [
     iconName: 'Palmtree',
     colorTheme: 'pink',
     tag: 'Romantic Seaside',
-    image: '/beach.jpg',
+    image: '/IMG_7228.JPEG',
     priceStart: '₹8,499',
     whatsIncluded: [
       'Handcrafted aesthetic beach tent setup',
@@ -694,5 +716,92 @@ export const FAQS: FAQItem[] = [
     question: 'What is the pricing for a luxury yacht birthday celebration Chennai?',
     answer: 'Our yacht surprise Chennai and yacht birthday celebration Chennai packages are premium offerings starting on the Bay of Bengal waters. It includes private boat decoration, custom cakes, drone photography, and optional live musicians. We also coordinate smaller boat surprise Chennai trips for intimate couples.',
     category: 'booking'
+  }
+];
+
+export const CATEGORY_DATA = [
+  {
+    id: 'surprise',
+    name: 'Surprise',
+    image: '/ff.jpg',
+    tag: 'All Occasions',
+    iconName: 'Sparkles',
+    colorTheme: 'peach',
+    shortDesc: 'Explore our wide range of surprise setups for every special occasion.',
+    seoDesc: 'Explore our wide range of surprise setups including birthdays, proposals, beach events, mall flash mobs, music serenades, and yacht experiences. We craft unforgettable magical moments for every occasion.',
+    services: [
+      'birthday-decor',
+      'proposal-surprise',
+      'beach-surprise',
+      'mall-surprise',
+      'flash-mob',
+      'music-surprise',
+      'airport-surprise',
+      'boat-yacht-surprise'
+    ]
+  },
+  {
+    id: 'birthday',
+    name: 'Birthday',
+    image: '/IMG-0506-Copy-scaled.jpg',
+    tag: 'Sweet Celebrations',
+    iconName: 'Cake',
+    colorTheme: 'yellow',
+    shortDesc: 'Make birthdays extra special with our premium decor and surprise packages.',
+    seoDesc: 'Make birthdays extra special with our premium birthday surprise and decor packages, grand party setups, and thrilling flash mobs designed to leave them speechless.',
+    services: [
+      'birthday-decor',
+      'birthday-party-decor',
+      'flash-mob'
+    ]
+  },
+  {
+    id: 'anniversary',
+    name: 'Anniversary',
+    image: '/carousel/IMG_6997.jpg',
+    tag: 'Romantic Milestones',
+    iconName: 'Heart',
+    colorTheme: 'purple',
+    shortDesc: 'Celebrate your beautiful journey with romantic and unforgettable setups.',
+    seoDesc: 'Celebrate your beautiful journey with romantic room decor, beachside surprises, proposal-style anniversary setups, or an exclusive yacht and boat cruise for two.',
+    services: [
+      'proposal-surprise',
+      'beach-surprise',
+      'romantic-room-decor',
+      'boat-yacht-surprise'
+    ]
+  },
+  {
+    id: 'proposal',
+    name: 'Proposal',
+    image: '/carousel/IMG_8521.jpg',
+    tag: 'He Said Yes!',
+    iconName: 'HeartHandshake',
+    colorTheme: 'pink',
+    shortDesc: 'Pop the big question with our expert proposal planning services.',
+    seoDesc: 'Pop the big question with our expert proposal planning services. Choose from breathtaking beach setups, melodious music serenades, or a dramatic mall surprise.',
+    services: [
+      'proposal-surprise',
+      'beach-surprise',
+      'music-surprise',
+      'mall-surprise'
+    ]
+  },
+  {
+    id: 'decor',
+    name: 'Decor',
+    image: '/81Y1OwaQp4L._AC_SL1500_-600x600.jpg',
+    tag: 'Premium Styling',
+    iconName: 'Palmtree',
+    colorTheme: 'mint',
+    shortDesc: 'Elevate your venue with our professional and aesthetic decoration services.',
+    seoDesc: 'Elevate your venue with our professional decoration services. From birthday balloon arches to romantic hotel room setups, we bring your vision to life.',
+    services: [
+      'birthday-decor',
+      'birthday-party-decor',
+      'proposal-surprise',
+      'romantic-room-decor',
+      'beach-surprise'
+    ]
   }
 ];
