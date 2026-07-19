@@ -158,7 +158,7 @@ export default function App() {
             <div id="about">
               <About />
             </div>
-            <div className="py-8 bg-white border-y border-pink-100 hidden md:block">
+            <div className="py-8 bg-white border-y border-pink-100">
               <ImageCarousel />
             </div>
             <div id="categories">
