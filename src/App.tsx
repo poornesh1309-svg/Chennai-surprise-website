@@ -155,9 +155,6 @@ export default function App() {
             <div id="home">
               <Hero onPlanClick={scrollToBooking} onServicesClick={scrollToServices} />
             </div>
-            <div id="about">
-              <About />
-            </div>
             <div className="py-8 bg-white border-y border-pink-100">
               <ImageCarousel />
             </div>
@@ -170,6 +167,9 @@ export default function App() {
             </div>
             <div id="services">
               <Services onSelectService={handleSelectServiceFromCard} />
+            </div>
+            <div id="about">
+              <About />
             </div>
             <div id="gallery-strip" className="mb-12">
               <GalleryStrip onViewAllClick={() => {
