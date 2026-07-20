@@ -263,7 +263,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Surprise Planning in Action',
     serviceId: 'romantic-room-decor',
     serviceName: 'Room Decor Surprise',
-    image: '/canopy.jpg',
+    image: '/music.jpg',
     tag: 'video',
     location: 'Chennai',
     description: 'See how we bring magical room surprises to life.',
