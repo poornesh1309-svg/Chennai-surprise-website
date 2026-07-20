@@ -685,6 +685,15 @@ export const GALLERY_ITEMS: GalleryItem[] = [
 
 export const TESTIMONIALS: Testimonial[] = [
   {
+    id: 't0',
+    name: 'Malavika ML',
+    location: 'Chennai',
+    quote: 'What an amazing experience! The surprise team did a fantastic job, from planning to execution within a short span, everything was flawless. The prank was insanely real hats off to the team lead Mr.Vijay for coordinating it so smoothly. And the dancers, Mr. Sandy, Santosh, Jakier Kamalesh and team WOW! Such an energetic, absolutely entertaining and stunning performance. You guys made the day unforgettable. Thank you team for turning the birthday into a beautiful memory. Highly recommended for anyone looking to create a truly unforgettable unique surprise!!',
+    rating: 5,
+    avatarSeed: 'malavika',
+    serviceName: 'Flash Mob Surprise'
+  },
+  {
     id: 't1',
     name: 'Ananya & Ashwin',
     location: 'Adyar, Chennai',
