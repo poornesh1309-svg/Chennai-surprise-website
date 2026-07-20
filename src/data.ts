@@ -695,39 +695,48 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: 't1',
-    name: 'Ananya & Ashwin',
-    location: 'Adyar, Chennai',
-    quote: 'Oh my gosh, I was literally crying! Ashwin surprised me with the ECR Beach Picnic. The fairy lights, the guitarist singing "Neeyum Naanum", and the cute balloon arch were perfect. The Chennai Surprise Planners team was so polite and sneaky!',
+    name: 'Niyaz Karippal',
+    location: 'Chennai',
+    quote: 'Perfect gift and excellent service! I ordered a birthday cake and flowers for my friend, and everything arrived exactly on time. The cake was delicious and the flowers were beautiful. I was kept updated throughout the entire delivery process by their staff Vijay. This is my first time using this service, and I\'m very satisfied. Highly recommend and will use again!',
     rating: 5,
-    avatarSeed: 'ananya',
-    serviceName: 'Beach Surprise and decor'
+    avatarSeed: 'niyaz',
+    serviceName: 'Birthday Cake & Flowers'
   },
   {
     id: 't2',
-    name: 'Dr. Vignesh',
-    location: 'Nungambakkam, Chennai',
-    quote: 'Booked the Airport Welcome for my mother returning from the US after 4 years. Puffy the mascot was an absolute hit! The look of sheer surprise and happiness on her face was priceless. Well worth every single rupee.',
+    name: 'Vini Sha',
+    location: 'Chennai',
+    quote: 'I came across their page randomly through a reel and loved how they surprised people. Chennai Surprise did a fantastic job! I truly want to thank them for the effort and the beautiful decoration they did. I strongly recommend their service. They didn’t even ask for an advance payment, even after knowing I was out of the city, thank you for that. ♥️ A special thanks to Vijay and Arjun for their patience. They literally waited for 3 hours to make sure the person I wanted to surprise was genuinely surprised by the plan they executed.',
     rating: 5,
-    avatarSeed: 'vignesh',
-    serviceName: 'Airport Welcome Surprise'
+    avatarSeed: 'vini',
+    serviceName: 'Surprise Decoration'
   },
   {
     id: 't3',
-    name: 'Suhasini Jayakumar',
-    location: 'Anna Nagar, Chennai',
-    quote: 'The team did a stellar job with the Aesthetic Birthday Decor for my daughter’s 1st birthday. No harsh plastic smell, they used premium matte balloons. They arrived exactly on time and finished ahead of schedule. Highly recommended!',
+    name: 'Arya Nepaul',
+    location: 'Chennai',
+    quote: 'Vijay, and his team , Kamlesh and Saran— did a wonderful job for a birthday decoration, on very short notice.. they came and set up everything and put in so much hardwork! Truly a great team to rely on for last minute surprises and big time events! I was able to trust them, and they set all this up within a matter of an hour and we were right on time for the birthday!! I recommend them for all your decorations!',
     rating: 5,
-    avatarSeed: 'suhasini',
-    serviceName: 'Birthday surprise and Decor'
+    avatarSeed: 'arya',
+    serviceName: 'Birthday Decoration'
   },
   {
     id: 't4',
-    name: 'Meera & Riaz',
-    location: 'Velachery, Chennai',
-    quote: 'The Melodious Music Surprise was incredibly romantic. The guitarist has an angelic voice and sang all our favorite Tamil movie hits. It felt like we were in our own little romantic movie. Thank you for this adorable memory!',
+    name: 'Priyasargunaseelan',
+    location: 'Chennai',
+    quote: 'I have booked Chennai Surprise for my fiance\'s birthday. The surprise was really amazing. My fiance and I were very much happy. Vijay and their team did a wonderful surprise. I really don\'t have any words to explain the surprise. They have made our day more special and memorable. Thank you Chennai Surprise team for the wonderful surprise event.',
     rating: 5,
-    avatarSeed: 'meera',
-    serviceName: 'Melodious Music Surprise'
+    avatarSeed: 'priya',
+    serviceName: 'Fiance Birthday Surprise'
+  },
+  {
+    id: 't5',
+    name: 'Teena Vinu',
+    location: 'Chennai',
+    quote: 'big thank you to the Chennai Surprise Team! ❤️ Thank you so much🙏🏼🙏🏼🙏🏼 Vijay sir for beautifully planning and arranging my friend’s birthday surprise. Even though I’m in Sri Lanka, being able to surprise my friend in India was such a special moment for me. The way you organized everything was truly impressive! 🥰 A heartfelt thanks for all your efforts please keep spreading happiness to many more people like this!',
+    rating: 5,
+    avatarSeed: 'teena',
+    serviceName: 'Remote Birthday Surprise'
   }
 ];
 

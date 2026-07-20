@@ -41,11 +41,10 @@ export default function Testimonials() {
             hidden: { opacity: 0 },
             visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
           }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 max-w-7xl mx-auto"
         >
           {TESTIMONIALS.map((t, idx) => {
-            const isTopReview = idx === 0;
-            const isRightSide = isTopReview ? false : idx % 2 === 0;
+            const isRightSide = idx % 2 === 1;
 
             return (
               <motion.div 
@@ -55,36 +54,26 @@ export default function Testimonials() {
                 }}
                 key={t.id} 
                 id={`testimonial-card-${t.id}`}
-                className={`space-y-6 flex flex-col justify-between ${
-                  isTopReview ? 'md:col-span-2 max-w-3xl mx-auto w-full' : ''
-                }`}
+                className="space-y-6 flex flex-col justify-between"
               >
                 {/* Speech Bubble Section */}
                 <div 
                   className={`relative p-8 bg-white border border-pink-100 rounded-[32px] shadow-sm transition-transform duration-300 hover:scale-[1.02] ${
-                    isTopReview ? 'hover:scale-[1.01]' : isRightSide ? 'hover:-rotate-1' : 'hover:rotate-1'
+                    isRightSide ? 'hover:-rotate-1' : 'hover:rotate-1'
                   }`}
                 >
                   {/* Triangular tail wrapper */}
                   <div 
                     className="absolute bottom-[-16px] w-0 h-0 border-l-[16px] border-l-transparent border-r-[16px] border-r-transparent border-t-[16px] border-t-pink-100"
-                    style={{ 
-                      left: isTopReview ? '50%' : isRightSide ? 'auto' : '48px', 
-                      right: isTopReview ? 'auto' : isRightSide ? '48px' : 'auto',
-                      transform: isTopReview ? 'translateX(-50%)' : 'none'
-                    }}
+                    style={{ left: isRightSide ? 'auto' : '48px', right: isRightSide ? '48px' : 'auto' }}
                   />
                   <div 
                     className="absolute bottom-[-14px] w-0 h-0 border-l-[14px] border-l-transparent border-r-[14px] border-r-transparent border-t-[14px] border-t-white"
-                    style={{ 
-                      left: isTopReview ? '50%' : isRightSide ? 'auto' : '50px', 
-                      right: isTopReview ? 'auto' : isRightSide ? '50px' : 'auto',
-                      transform: isTopReview ? 'translateX(-50%)' : 'none'
-                    }}
+                    style={{ left: isRightSide ? 'auto' : '50px', right: isRightSide ? '50px' : 'auto' }}
                   />
 
                   {/* Stars Row */}
-                  <div className={`flex items-center gap-1 mb-4 text-yellow-400 ${isTopReview ? 'justify-center' : ''}`}>
+                  <div className="flex items-center gap-1 mb-4 text-yellow-400">
                     {[...Array(t.rating)].map((_, i) => (
                       <Star key={i} className="w-5 h-5 fill-current stroke-yellow-400" />
                     ))}
@@ -93,13 +82,13 @@ export default function Testimonials() {
                   {/* Testimonial Quote */}
                   <div className="relative">
                     <Quote className="w-10 h-10 text-pink-100 absolute -top-5 -left-4 -z-10 opacity-60" />
-                    <p className={`font-sans text-gray-500 italic text-sm sm:text-base leading-relaxed relative z-10 ${isTopReview ? 'text-center' : ''}`}>
+                    <p className="font-sans text-gray-500 italic text-sm sm:text-base leading-relaxed relative z-10">
                       "{t.quote}"
                     </p>
                   </div>
 
                   {/* Service tag inside bubble */}
-                  <div className={isTopReview ? 'text-center' : ''}>
+                  <div>
                     <span className="inline-block mt-4 text-[10px] font-display font-bold px-2.5 py-1 bg-pink-50 text-pink-500 border border-pink-100 rounded-full">
                       {t.serviceName}
                     </span>
@@ -109,7 +98,6 @@ export default function Testimonials() {
                 {/* Avatar and Name details below the tail */}
                 <div 
                   className={`flex items-center gap-4 px-6 ${
-                    isTopReview ? 'justify-center text-center flex-col sm:flex-row' :
                     isRightSide ? 'flex-row-reverse text-right' : 'flex-row'
                   }`}
                 >
@@ -121,7 +109,7 @@ export default function Testimonials() {
                     <h4 className="font-display text-base font-bold text-gray-700">
                       {t.name}
                     </h4>
-                    <span className={`text-xs font-semibold text-gray-400 uppercase tracking-wider flex items-center gap-1 mt-0.5 ${isTopReview ? 'justify-center' : isRightSide ? 'justify-end' : ''}`}>
+                    <span className={`text-xs font-semibold text-gray-400 uppercase tracking-wider flex items-center gap-1 mt-0.5 ${isRightSide ? 'justify-end' : ''}`}>
                       <MapPin className="w-3.5 h-3.5 text-pink-400" />
                       {t.location}
                     </span>
