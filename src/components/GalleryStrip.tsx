@@ -16,8 +16,8 @@ function getYoutubeEmbedUrl(url?: string): string | null {
 }
 
 export default function GalleryStrip({ onViewAllClick }: GalleryStripProps) {
-  // Take first items for the homepage strip, filtering out the requested room decor photo (g5 / /canopy.jpg)
-  const previewItems = GALLERY_ITEMS.filter(item => item.id !== 'g5' && item.image !== '/canopy.jpg').slice(0, 3);
+  // Take first 6 items for the homepage strip
+  const previewItems = GALLERY_ITEMS.filter(item => item.id !== 'g5' && item.image !== '/canopy.jpg').slice(0, 6);
 
   return (
     <section className="py-16 px-4 bg-[#FFF9FB] border-t border-pink-50/50 overflow-hidden">
@@ -51,7 +51,7 @@ export default function GalleryStrip({ onViewAllClick }: GalleryStripProps) {
         </div>
 
         {/* Polaroid Strip Grid */}
-        <div className={`grid grid-cols-1 sm:grid-cols-2 ${previewItems.length === 3 ? 'lg:grid-cols-3 max-w-5xl' : 'lg:grid-cols-4'} mx-auto gap-8`}>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto gap-8">
           {previewItems.map((item, index) => (
             <div
               key={item.id}

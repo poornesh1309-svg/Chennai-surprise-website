@@ -215,28 +215,6 @@ export const SERVICES: Service[] = [
 
 export const GALLERY_ITEMS: GalleryItem[] = [
   {
-    id: 'v1',
-    title: 'Beachside Romance Surprise Walkthrough',
-    serviceId: 'beach-surprise',
-    serviceName: 'Beach Surprise and decor',
-    image: '/beach.jpg',
-    tag: 'video',
-    location: 'ECR Private Beach, Chennai',
-    description: 'Watch our breathtaking beach canopy surprise setup in action with live acoustic music and custom styling.',
-    videoUrl: 'https://www.youtube.com/watch?v=9wBLN-r5C74'
-  },
-  {
-    id: 'v2',
-    title: 'Magical Flute & Guitar Melody Serenade',
-    serviceId: 'music-surprise',
-    serviceName: 'Melodious Music Surprise',
-    image: '/music.jpg',
-    tag: 'video',
-    location: 'Guindy, Chennai',
-    description: 'An emotional home doorstep music surprise with live acoustic singers creating unforgettable memories.',
-    videoUrl: 'https://www.youtube.com/watch?v=enU-wJ5rUlg'
-  },
-  {
     id: 'v3',
     title: 'Fairytale Candlelight Proposal surprise',
     serviceId: 'proposal-surprise',
@@ -246,6 +224,61 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     location: 'ECR Resort Garden, Chennai',
     description: 'Watch this dream-like proposal walkthrough with neon marquee signs, dry-ice fog, and cold fire sparklers.',
     videoUrl: 'https://www.youtube.com/watch?v=CvcdDx7e5R0'
+  },
+  {
+    id: 'v4',
+    title: 'Heartwarming Birthday Surprise',
+    serviceId: 'birthday-surprise',
+    serviceName: 'Birthday Surprise',
+    image: '/beach.jpg',
+    tag: 'video',
+    location: 'Chennai',
+    description: 'A beautiful birthday celebration captured live.',
+    videoUrl: 'https://youtu.be/oqJwNSH_feA'
+  },
+  {
+    id: 'v5',
+    title: 'Magical Surprise Moment',
+    serviceId: 'anniversary-surprise',
+    serviceName: 'Anniversary Surprise',
+    image: '/music.jpg',
+    tag: 'video',
+    location: 'Chennai',
+    description: 'An unforgettable anniversary surprise experience.',
+    videoUrl: 'https://youtube.com/shorts/GJ-AwADCL-E'
+  },
+  {
+    id: 'v6',
+    title: 'Spectacular Decor Setup',
+    serviceId: 'premium-decor',
+    serviceName: 'Premium Decor',
+    image: '/proposal.jpg',
+    tag: 'video',
+    location: 'Chennai',
+    description: 'A glimpse into our premium decoration setups.',
+    videoUrl: 'https://youtube.com/shorts/0PmpUdnNykc'
+  },
+  {
+    id: 'v7',
+    title: 'Surprise Planning in Action',
+    serviceId: 'romantic-room-decor',
+    serviceName: 'Room Decor Surprise',
+    image: '/canopy.jpg',
+    tag: 'video',
+    location: 'Chennai',
+    description: 'See how we bring magical room surprises to life.',
+    videoUrl: 'https://youtube.com/shorts/-AJyyJRL7Zg'
+  },
+  {
+    id: 'v8',
+    title: 'Joyful Moments Captured',
+    serviceId: 'beach-surprise',
+    serviceName: 'Flash Mob Surprise',
+    image: '/beach.jpg',
+    tag: 'video',
+    location: 'Chennai',
+    description: 'Smiles, hugs, and unexpected joy from our latest events.',
+    videoUrl: 'https://youtube.com/shorts/u-HoIaaUTKM'
   },
   {
     id: 'g5',
