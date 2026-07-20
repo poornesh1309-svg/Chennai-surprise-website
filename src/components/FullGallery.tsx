@@ -11,7 +11,7 @@ interface FullGalleryProps {
 // Helper to parse YouTube URLs and return embed URL
 function getYoutubeEmbedUrl(url?: string): string | null {
   if (!url) return null;
-  const match = url.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i);
+  const match = url.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?|shorts)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i);
   return match ? `https://www.youtube.com/embed/${match[1]}` : null;
 }
 
