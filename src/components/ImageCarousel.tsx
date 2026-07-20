@@ -7,7 +7,6 @@ const carouselImages = [
   'IMG_8951.JPG.jpeg',
   'IMG_8521.jpg',
   'IMG_1635.jpg',
-  'IMG_6997.jpg',
   'IMG_9082.JPG.jpeg',
   'IMG_7660.JPG.jpeg',
   'IMG_7658.JPG.jpeg',
