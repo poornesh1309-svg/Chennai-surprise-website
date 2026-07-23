@@ -5,7 +5,7 @@ import ZoomableImage from './ZoomableImage';
 
 const carouselImages = [
   'new_img_2.png',
-  'new_img_7.png',
+  'new_img_10.png',
   'new_img_5.png',
   'new_img_6.png',
   'new_img_1.png',
@@ -13,7 +13,7 @@ const carouselImages = [
   'new_img_4.png',
   'new_img_8.png',
   'new_img_9.png',
-  'new_img_10.png',
+  'new_img_7.png',
   'IMG_8521.jpg',
   'IMG_6997.jpg',
   'IMG_7660.JPG.jpeg',
