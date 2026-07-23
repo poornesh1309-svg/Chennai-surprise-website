@@ -19,12 +19,15 @@ export const SERVICES: Service[] = [
       'Adorable birthday crown & custom party poppers'
     ],
     popupGallery: [
-      '/birthday-surprise/IMG_2049.JPG',
-      '/birthday-surprise/IMG_8956.JPG',
+      '/birthday-surprise/bday_new_1.png',
+      '/birthday-surprise/bday_new_2.png',
+      '/birthday-surprise/bday_new_3.png',
+      '/birthday-surprise/bday_new_4.png',
       '/birthday-surprise/IMG-20260709-WA0006.jpg',
       '/birthday-surprise/IMG-20260709-WA0010.jpg',
-      '/birthday-surprise/IMG-20260709-WA0013.jpg',
-      '/birthday-surprise/IMG-20260709-WA0020.jpg'
+      '/IMG-20260709-WA0003.jpg',
+      '/IMG_9296.JPG',
+      '/2.png'
     ]
   },
   {
@@ -48,7 +51,11 @@ export const SERVICES: Service[] = [
       '/proposal-planning/IMG_0482.JPG.jpeg',
       '/proposal-planning/IMG_3755.jpg',
       '/proposal-planning/IMG_5681.JPG',
-      '/proposal-planning/IMG_7009.jpg'
+      '/proposal-planning/IMG_7009.jpg',
+      '/proposal-planning/prop_new_1.png',
+      '/proposal-planning/prop_new_2.png',
+      '/proposal-planning/prop_new_3.png',
+      '/proposal-planning/Untitled-design-86.png'
     ]
   },
   {
@@ -69,12 +76,14 @@ export const SERVICES: Service[] = [
       'Dynamic LED focus lights & spotlights for the stage'
     ],
     popupGallery: [
+      '/birthday-surprise/IMG-20260709-WA0013.jpg',
+      '/birthday-surprise/IMG-20260709-WA0020.jpg',
       '/birthday-surprise/IMG_2049.JPG',
       '/birthday-surprise/IMG_8956.JPG',
-      '/birthday-surprise/IMG-20260709-WA0006.jpg',
-      '/birthday-surprise/IMG-20260709-WA0010.jpg',
-      '/birthday-surprise/IMG-20260709-WA0013.jpg',
-      '/birthday-surprise/IMG-20260709-WA0020.jpg'
+      '/carousel/IMG_7660.JPG.jpeg',
+      '/carousel/IMG_8951.JPG.jpeg',
+      '/IMG-0506-Copy-scaled.jpg',
+      '/ff.jpg'
     ]
   },
   {

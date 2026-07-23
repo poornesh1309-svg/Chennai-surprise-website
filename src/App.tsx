@@ -168,14 +168,14 @@ export default function App() {
             <div id="services">
               <Services onSelectService={handleSelectServiceFromCard} />
             </div>
-            <div id="about">
-              <About />
-            </div>
             <div id="gallery-strip" className="mb-12">
               <GalleryStrip onViewAllClick={() => {
                 setActiveTab('gallery');
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }} />
+            </div>
+            <div id="about">
+              <About />
             </div>
             <Suspense fallback={<div className="h-40 flex items-center justify-center text-pink-300">Loading magical moments...</div>}>
               <div id="how-it-works">
