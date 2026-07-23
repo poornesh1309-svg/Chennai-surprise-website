@@ -4,6 +4,13 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import ZoomableImage from './ZoomableImage';
 
 const carouselImages = [
+  'new_img_1.png',
+  'new_img_2.png',
+  'new_img_3.png',
+  'new_img_4.png',
+  'new_img_5.png',
+  'new_img_6.png',
+  'new_img_7.png',
   'IMG_8951.JPG.jpeg',
   'IMG_8521.jpg',
   'IMG_6997.jpg',
