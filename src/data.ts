@@ -26,8 +26,8 @@ export const SERVICES: Service[] = [
       '/birthday-surprise/IMG-20260709-WA0006.jpg',
       '/birthday-surprise/IMG-20260709-WA0010.jpg',
       '/IMG-20260709-WA0003.jpg',
-      '/IMG_9296.JPG',
-      '/2.png'
+      '/1-1.png',
+      '/carousel/IMG_1635.jpg'
     ]
   },
   {
@@ -55,7 +55,8 @@ export const SERVICES: Service[] = [
       '/proposal-planning/prop_new_1.png',
       '/proposal-planning/prop_new_2.png',
       '/proposal-planning/prop_new_3.png',
-      '/proposal-planning/Untitled-design-86.png'
+      '/proposal-planning/Untitled-design-86.png',
+      '/IMG_1840.JPG'
     ]
   },
   {
@@ -76,14 +77,16 @@ export const SERVICES: Service[] = [
       'Dynamic LED focus lights & spotlights for the stage'
     ],
     popupGallery: [
-      '/birthday-surprise/IMG-20260709-WA0013.jpg',
-      '/birthday-surprise/IMG-20260709-WA0020.jpg',
       '/birthday-surprise/IMG_2049.JPG',
       '/birthday-surprise/IMG_8956.JPG',
       '/carousel/IMG_7660.JPG.jpeg',
+      '/birthday-surprise/IMG-20260709-WA0013.jpg',
+      '/birthday-surprise/IMG-20260709-WA0020.jpg',
       '/carousel/IMG_8951.JPG.jpeg',
       '/IMG-0506-Copy-scaled.jpg',
-      '/ff.jpg'
+      '/ff.jpg',
+      '/IMG_9296.JPG',
+      '/2.png'
     ]
   },
   {
@@ -128,6 +131,13 @@ export const SERVICES: Service[] = [
       'Fairy lights, warm lanterns & heart candles',
       'Personal unplugged guitarist for 20 mins',
       'Cute customized cake & refreshing mocktails'
+    ],
+    popupGallery: [
+      '/carousel/IMG_1819.jpg',
+      '/carousel/IMG_1820.jpg',
+      '/carousel/IMG_1836.JPG.jpeg',
+      '/carousel/IMG_7228.JPEG',
+      '/IMG-20260709-WA0004.jpg'
     ]
   },
   {

@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, Sparkles, Image as ImageIcon } from 'lucide-react';
+import { X, Sparkles, Image as ImageIcon, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Service } from '../types';
 import { useBodyScrollLock } from '../hooks/useBodyScrollLock';
 import ZoomableImage from './ZoomableImage';
@@ -12,8 +12,16 @@ interface ServiceModalProps {
 
 export default function ServiceModal({ selectedService, onClose, onBookNow }: ServiceModalProps) {
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   useBodyScrollLock(true);
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (scrollContainerRef.current) {
+      const scrollAmount = direction === 'left' ? -240 : 240;
+      scrollContainerRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  };
 
   const handleBookNow = (id: string) => {
     onBookNow(id);
@@ -118,10 +126,23 @@ export default function ServiceModal({ selectedService, onClose, onBookNow }: Se
             {/* Popup Gallery */}
             {selectedService.popupGallery && selectedService.popupGallery.length > 0 && (
               <div className="pt-6 border-t border-pink-50 w-full min-w-0 overflow-hidden">
-                <h4 className="font-display text-lg text-gray-700 font-bold mb-4 flex items-center gap-2">
-                  <ImageIcon className="w-5 h-5 text-pink-400" /> Inspiration Gallery
-                </h4>
-                <div className="flex gap-4 overflow-x-auto w-full pb-4 snap-x snap-mandatory hide-scrollbar">
+                <div className="flex items-center justify-between mb-4">
+                  <h4 className="font-display text-lg text-gray-700 font-bold flex items-center gap-2">
+                    <ImageIcon className="w-5 h-5 text-pink-400" /> Inspiration Gallery
+                  </h4>
+                  <div className="flex gap-2">
+                    <button onClick={() => scroll('left')} className="p-1.5 rounded-full bg-pink-50 hover:bg-pink-100 text-pink-500 transition-colors">
+                      <ChevronLeft className="w-4 h-4" />
+                    </button>
+                    <button onClick={() => scroll('right')} className="p-1.5 rounded-full bg-pink-50 hover:bg-pink-100 text-pink-500 transition-colors">
+                      <ChevronRight className="w-4 h-4" />
+                    </button>
+                  </div>
+                </div>
+                <div 
+                  ref={scrollContainerRef}
+                  className="flex gap-4 overflow-x-auto w-full pb-4 snap-x snap-mandatory hide-scrollbar scroll-smooth"
+                >
                   {selectedService.popupGallery.map((img, idx) => (
                     <motion.div 
                       whileHover={{ y: -4 }}
