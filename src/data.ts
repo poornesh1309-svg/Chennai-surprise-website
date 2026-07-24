@@ -86,7 +86,10 @@ export const SERVICES: Service[] = [
       '/IMG-0506-Copy-scaled.jpg',
       '/ff.jpg',
       '/IMG_9296.JPG',
-      '/2.png'
+      '/2.png',
+      '/IMG_1641.HEIC',
+      '/IMG_1688.HEIC',
+      '/carousel/IMG_8097 (1).jpg'
     ]
   },
   {
