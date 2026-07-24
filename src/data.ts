@@ -37,7 +37,7 @@ export const SERVICES: Service[] = [
     longDesc: 'Pop the most important question of your life in absolute style! As dedicated proposal planners Chennai couples trust, we coordinate the ultimate marriage proposal surprise Chennai experience. We build a breathtaking, romantic setup using glowing neon "MARRY ME" letters, red-carpet walkways lined with candle jars, heavy dry-ice fog, and premium rose arches at resort lawns or private beach gardens across Chennai.',
     iconName: 'HeartHandshake',
     colorTheme: 'pink',
-    tag: 'He Said Yes!',
+    tag: 'She Said Yes!',
     image: '/proposal.jpg',
     priceStart: '₹12,499',
     whatsIncluded: [
@@ -853,7 +853,7 @@ export const CATEGORY_DATA = [
     id: 'proposal',
     name: 'Proposal',
     image: '/Young_man_proposing_to_lover_202607182128.jpeg',
-    tag: 'He Said Yes!',
+    tag: 'She Said Yes!',
     iconName: 'HeartHandshake',
     colorTheme: 'pink',
     shortDesc: 'Pop the big question with our expert proposal planning services.',
