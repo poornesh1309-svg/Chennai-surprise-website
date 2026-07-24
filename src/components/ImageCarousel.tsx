@@ -24,7 +24,7 @@ const carouselImages = [
 
 const errorCache = new Set<string>();
 
-const SmartImage = ({ src, alt, className }: { src: string; alt: string; className: string }) => {
+const SmartImage = ({ src, alt, className, priority }: { src: string; alt: string; className: string; priority?: boolean }) => {
   const [error, setError] = useState<boolean>(errorCache.has(src));
 
   // The browser will inherently show a blank state or partial image while loading JPEGs,
@@ -36,6 +36,7 @@ const SmartImage = ({ src, alt, className }: { src: string; alt: string; classNa
           src={src}
           alt={alt}
           className={className}
+          priority={priority}
           onError={() => {
             errorCache.add(src);
             setError(true);
@@ -109,6 +110,7 @@ export default function ImageCarousel() {
                 src={`/carousel/${carouselImages[currentIndex]}`}
                 alt={`Memory ${currentIndex + 1}`}
                 className="w-full h-full object-cover"
+                priority={currentIndex === 0}
               />
             </motion.div>
           </AnimatePresence>

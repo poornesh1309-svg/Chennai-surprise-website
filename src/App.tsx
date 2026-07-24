@@ -165,14 +165,14 @@ export default function App() {
                 onExpandedCategoryChange={setExpandedCategoryId} 
               />
             </div>
-            <div id="services">
-              <Services onSelectService={handleSelectServiceFromCard} />
-            </div>
             <div id="gallery-strip" className="mb-12">
               <GalleryStrip onViewAllClick={() => {
                 setActiveTab('gallery');
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }} />
+            </div>
+            <div id="services">
+              <Services onSelectService={handleSelectServiceFromCard} />
             </div>
             <div id="about">
               <About />
