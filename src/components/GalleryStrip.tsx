@@ -39,15 +39,6 @@ export default function GalleryStrip({ onViewAllClick }: GalleryStripProps) {
               Take a peek at our recent sneaky surprises! Handcrafted decorations, sparkling candles, and lots of giggles.
             </p>
           </div>
-
-          <button
-            id="strip-explore-all"
-            onClick={onViewAllClick}
-            className="cute-btn-pink shrink-0"
-          >
-            Open Gallery
-            <ArrowRight className="w-5 h-5" />
-          </button>
         </div>
 
         {/* Polaroid Strip Grid */}
@@ -84,6 +75,18 @@ export default function GalleryStrip({ onViewAllClick }: GalleryStripProps) {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Action Button */}
+        <div className="mt-12 flex justify-center">
+          <button
+            id="strip-explore-all"
+            onClick={onViewAllClick}
+            className="cute-btn-pink"
+          >
+            Open Gallery
+            <ArrowRight className="w-5 h-5" />
+          </button>
         </div>
 
       </div>
