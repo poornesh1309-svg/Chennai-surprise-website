@@ -579,23 +579,6 @@ export const SERVICES: Service[] = [
     ]
   },
   {
-    "id": "romantic-first-night-room-decor-2",
-    "name": "Romantic First Night Room Decor (2)",
-    "shortDesc": "Experience our beautifully crafted Romantic First Night Room Decor (2) package designed to create magical memories.",
-    "longDesc": "Immerse yourself in the magic of our Romantic First Night Room Decor (2) setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
-    "iconName": "Sparkles",
-    "colorTheme": "pink",
-    "tag": "Special Setup",
-    "image": "/new-services/romantic-first-night-room-decor (2).jpg",
-    "priceStart": "₹4,999",
-    "whatsIncluded": [
-      "Premium high-quality decorations tailored to the theme",
-      "Professional setup and seamless execution by our team",
-      "Custom ambient lighting and atmospheric details",
-      "Dedicated event coordinator for a stress-free experience"
-    ]
-  },
-  {
     "id": "romantic-first-night-room-decor",
     "name": "Romantic First Night Room Decor",
     "shortDesc": "Experience our beautifully crafted Romantic First Night Room Decor package designed to create magical memories.",
@@ -1389,7 +1372,6 @@ export const CATEGORY_DATA = [
       'jungle-theme-birthday-decor',
       'mickymouse-birtday-decor',
       'proposal-surprise-2',
-      'romantic-first-night-room-decor-2',
       'romantic-first-night-room-decor',
       'simple-rose-decor-surprise',
       'surprise-love-proposal-decor',
