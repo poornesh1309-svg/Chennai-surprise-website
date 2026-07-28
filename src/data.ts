@@ -163,6 +163,13 @@ export const SERVICES: Service[] = [
       'Public announcement and favorite track playing',
       'Giant gift box containing helium balloons',
       'Surprise dance or singer performance'
+    ],
+    popupGallery: [
+      '/Young_friends_surprising_friend_…_202607182108.jpeg',
+      '/carousel/IMG_1635.jpg',
+      '/carousel/IMG_8405.jpg',
+      '/carousel/IMG_6997.jpg',
+      '/carousel/IMG_7660.JPG.jpeg'
     ]
   },
   {
@@ -181,6 +188,13 @@ export const SERVICES: Service[] = [
       'Flash mob location permissions & sound system setup',
       'Stinger/confetti blast at the climax',
       'Full cinematic multi-angle video recording'
+    ],
+    popupGallery: [
+      '/flashmob.jpg',
+      '/carousel/IMG_1635.jpg',
+      '/carousel/IMG_8405.jpg',
+      '/carousel/IMG_6997.jpg',
+      '/carousel/IMG_7660.JPG.jpeg'
     ]
   },
   {
@@ -199,6 +213,13 @@ export const SERVICES: Service[] = [
       'Custom box of premium handmade chocolates',
       'Rose gold metallic star-shaped balloons',
       'Digital video keepsake of the performance'
+    ],
+    popupGallery: [
+      '/ff.jpg_202607182053.jpeg',
+      '/carousel/IMG_1635.jpg',
+      '/carousel/IMG_8405.jpg',
+      '/carousel/IMG_6997.jpg',
+      '/carousel/IMG_7660.JPG.jpeg'
     ]
   },
   {
@@ -217,6 +238,13 @@ export const SERVICES: Service[] = [
       'Cute helium balloons & rose bouquet',
       'Candid photography/videography',
       'Special greeting mascot (Puffy the cat!)'
+    ],
+    popupGallery: [
+      '/airport.jpg',
+      '/carousel/IMG_1635.jpg',
+      '/carousel/IMG_8405.jpg',
+      '/carousel/IMG_6997.jpg',
+      '/carousel/IMG_7660.JPG.jpeg'
     ]
   },
   {
@@ -253,6 +281,13 @@ export const SERVICES: Service[] = [
       "Professional setup and seamless execution by our team",
       "Custom ambient lighting and atmospheric details",
       "Dedicated event coordinator for a stress-free experience"
+    ],
+    popupGallery: [
+      '/yacht.jpg',
+      '/carousel/IMG_1635.jpg',
+      '/carousel/IMG_8405.jpg',
+      '/carousel/IMG_6997.jpg',
+      '/carousel/IMG_7660.JPG.jpeg'
     ]
   },
   {
