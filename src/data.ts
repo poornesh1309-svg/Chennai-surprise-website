@@ -1964,7 +1964,7 @@ export const CATEGORY_DATA = [
   },
   {
     id: 'decor',
-    name: 'Decor',
+    name: 'Decors',
     image: '/81Y1OwaQp4L._AC_SL1500_-600x600.jpg',
     tag: 'Premium Styling',
     iconName: 'Palmtree',
@@ -2002,7 +2002,7 @@ export const CATEGORY_DATA = [
   },
   {
     id: 'room-decor',
-    name: 'Room Decor',
+    name: 'Romantic Room Decor',
     image: '/new-services/romantic-first-night-room-decor.jpg',
     tag: 'Private Makeovers',
     iconName: 'Heart',
