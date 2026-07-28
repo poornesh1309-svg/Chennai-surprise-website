@@ -529,9 +529,9 @@ export const SERVICES: Service[] = [
   },
   {
     "id": "mickymouse-birtday-decor",
-    "name": "Mickymouse Birtday Decor",
-    "shortDesc": "Experience our beautifully crafted Mickymouse Birtday Decor package designed to create magical memories.",
-    "longDesc": "Immerse yourself in the magic of our Mickymouse Birtday Decor setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "name": "Mickey Mouse Birthday Decor",
+    "shortDesc": "Experience our beautifully crafted Mickey Mouse Birthday Decor package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Mickey Mouse Birthday Decor setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
     "iconName": "Sparkles",
     "colorTheme": "pink",
     "tag": "Special Setup",
