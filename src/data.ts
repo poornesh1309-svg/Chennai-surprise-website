@@ -546,9 +546,9 @@ export const SERVICES: Service[] = [
   },
   {
     "id": "proposal-surprise-2",
-    "name": "Proposal Surprise",
-    "shortDesc": "Experience our beautifully crafted Proposal Surprise package designed to create magical memories.",
-    "longDesc": "Immerse yourself in the magic of our Proposal Surprise setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "name": "Surprise Proposal",
+    "shortDesc": "Experience our beautifully crafted Surprise Proposal package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Surprise Proposal setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
     "iconName": "Sparkles",
     "colorTheme": "pink",
     "tag": "Special Setup",
