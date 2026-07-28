@@ -426,23 +426,6 @@ export const SERVICES: Service[] = [
     ]
   },
   {
-    "id": "fairytail-birthday-surprise",
-    "name": "Fairytale Birthday Surprise",
-    "shortDesc": "Experience our beautifully crafted Fairytale Birthday Surprise package designed to create magical memories.",
-    "longDesc": "Immerse yourself in the magic of our Fairytale Birthday Surprise setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
-    "iconName": "Sparkles",
-    "colorTheme": "pink",
-    "tag": "Special Setup",
-    "image": "/new-services/fairytail-birthday-surprise.jpeg",
-    "priceStart": "₹4,999",
-    "whatsIncluded": [
-      "Premium high-quality decorations tailored to the theme",
-      "Professional setup and seamless execution by our team",
-      "Custom ambient lighting and atmospheric details",
-      "Dedicated event coordinator for a stress-free experience"
-    ]
-  },
-  {
     "id": "flash-mob-birthday-surprise",
     "name": "Flash Mob Birthday Surprise",
     "shortDesc": "Experience our beautifully crafted Flash Mob Birthday Surprise package designed to create magical memories.",
@@ -1363,7 +1346,6 @@ export const CATEGORY_DATA = [
       'birthday-surprise',
       'car-surprise',
       'fairy-style-birthday-decor',
-      'fairytail-birthday-surprise',
       'flash-mob-birthday-surprise',
       'golden-balloon-rush-birthday-decor',
       'grand-birthday-decor',
