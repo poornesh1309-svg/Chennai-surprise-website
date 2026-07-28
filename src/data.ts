@@ -1379,7 +1379,19 @@ export const CATEGORY_DATA = [
     services: [
       'birthday-decor',
       'birthday-party-decor',
-      'flash-mob'
+      'flash-mob',
+      'balloon-rush-birthday-decor',
+      'birthday-home-decor',
+      'birthday-room-surprise-decor',
+      'birthday-surprise-decor',
+      'birthday-surprise',
+      'fairy-style-birthday-decor',
+      'flash-mob-birthday-surprise',
+      'golden-balloon-rush-birthday-decor',
+      'grand-birthday-decor',
+      'grand-first-birthday-decor',
+      'jungle-theme-birthday-decor',
+      'mickymouse-birtday-decor'
     ]
   },
   {
@@ -1395,7 +1407,15 @@ export const CATEGORY_DATA = [
       'proposal-surprise',
       'beach-surprise',
       'romantic-room-decor',
-      'boat-yacht-surprise'
+      'boat-yacht-surprise',
+      'anniversary-surprise',
+      'terrace-wedding-anniversary-surprise',
+      'romantic-first-night-room-decor',
+      'heartin-first-night-room-decor',
+      'simple-rose-decor-surprise',
+      'terrace-camp-decor',
+      'terrace-surprise-decor',
+      'car-surprise'
     ]
   },
   {
@@ -1411,7 +1431,12 @@ export const CATEGORY_DATA = [
       'proposal-surprise',
       'beach-surprise',
       'music-surprise',
-      'mall-surprise'
+      'mall-surprise',
+      'beach-proposal-surprise',
+      'proposal-surprise-2',
+      'surprise-love-proposal-decor',
+      'terrace-prposal-surprise',
+      'theater-surprise-proposal'
     ]
   },
   {
@@ -1428,7 +1453,46 @@ export const CATEGORY_DATA = [
       'birthday-party-decor',
       'proposal-surprise',
       'romantic-room-decor',
-      'beach-surprise'
+      'beach-surprise',
+      'wedding-decor',
+      'balloon-tunnel-surprise',
+      'terrace-air-balloon-surprise',
+      'balloon-rush-birthday-decor',
+      'birthday-home-decor',
+      'birthday-room-surprise-decor',
+      'birthday-surprise-decor',
+      'fairy-style-birthday-decor',
+      'golden-balloon-rush-birthday-decor',
+      'grand-birthday-decor',
+      'grand-first-birthday-decor',
+      'jungle-theme-birthday-decor',
+      'mickymouse-birtday-decor',
+      'surprise-love-proposal-decor',
+      'terrace-camp-decor',
+      'terrace-prposal-surprise',
+      'terrace-surprise-decor',
+      'terrace-wedding-anniversary-surprise',
+      'heartin-first-night-room-decor',
+      'romantic-first-night-room-decor',
+      'simple-rose-decor-surprise'
+    ]
+  },
+  {
+    id: 'room-decor',
+    name: 'Room Decor',
+    image: '/new-services/romantic-first-night-room-decor.jpg',
+    tag: 'Private Makeovers',
+    iconName: 'Heart',
+    colorTheme: 'pink',
+    shortDesc: 'Transform your room into a magical, romantic, or festive paradise.',
+    seoDesc: 'Transform your room into a magical paradise with our professional room decor services. Perfect for first nights, birthdays, and surprise makeovers.',
+    services: [
+      'romantic-room-decor',
+      'birthday-room-surprise-decor',
+      'heartin-first-night-room-decor',
+      'romantic-first-night-room-decor',
+      'simple-rose-decor-surprise',
+      'birthday-home-decor'
     ]
   }
 ];
