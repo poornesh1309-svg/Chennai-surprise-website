@@ -167,21 +167,22 @@ export default function ServiceModal({ selectedService, onClose, onBookNow, onGo
                   ))}
                 </div>
 
-                {onGoToGallery && (
-                  <div className="flex justify-center mt-4">
-                    <motion.button
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      onClick={() => {
-                        onClose();
-                        setTimeout(() => onGoToGallery(), 300);
-                      }}
-                      className="cute-btn-outline !py-2 !px-6 !text-sm flex items-center gap-2"
-                    >
-                      <ImageIcon className="w-4 h-4" /> View Full Gallery
-                    </motion.button>
-                  </div>
-                )}
+              </div>
+            )}
+
+            {onGoToGallery && (
+              <div className="flex justify-center mt-6 pt-6 border-t border-pink-50">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={() => {
+                    onClose();
+                    setTimeout(() => onGoToGallery(), 300);
+                  }}
+                  className="cute-btn-outline !py-2 !px-6 !text-sm flex items-center gap-2"
+                >
+                  <ImageIcon className="w-4 h-4" /> View Full Gallery
+                </motion.button>
               </div>
             )}
           </div>
