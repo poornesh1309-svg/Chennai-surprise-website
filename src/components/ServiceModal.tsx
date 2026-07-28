@@ -54,12 +54,20 @@ export default function ServiceModal({ selectedService, onClose, onBookNow }: Se
 
           {/* Modal Banner */}
           <div className="h-56 relative border-b border-pink-50">
-            <ZoomableImage
-              src={selectedService.image}
-              alt={selectedService.name}
-              referrerPolicy="no-referrer"
-              className="w-full h-full object-cover"
-            />
+            {selectedService.image.endsWith('.mp4') ? (
+              <video 
+                src={selectedService.image}
+                className="w-full h-full object-cover"
+                autoPlay loop muted playsInline
+              />
+            ) : (
+              <ZoomableImage
+                src={selectedService.image}
+                alt={selectedService.name}
+                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover"
+              />
+            )}
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
             
             {/* Title inside Banner */}

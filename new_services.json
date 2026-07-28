@@ -1,0 +1,546 @@
+[
+  {
+    "id": "airport-welcome-surprise",
+    "name": "Airport Welcome Surprise",
+    "shortDesc": "Experience our beautifully crafted Airport Welcome Surprise package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Airport Welcome Surprise setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/airport-welcome-surprise.mp4",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "anniversary-surprise",
+    "name": "Anniversary Surprise",
+    "shortDesc": "Experience our beautifully crafted Anniversary Surprise package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Anniversary Surprise setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/anniversary-surprise.jpg",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "balloon-rush-birthday-decor",
+    "name": "Balloon Rush Birthday Decor",
+    "shortDesc": "Experience our beautifully crafted Balloon Rush Birthday Decor package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Balloon Rush Birthday Decor setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/balloon-rush-birthday-decor.png",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "balloon-tunnel-surprise",
+    "name": "Balloon Tunnel Surprise",
+    "shortDesc": "Experience our beautifully crafted Balloon Tunnel Surprise package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Balloon Tunnel Surprise setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/balloon-tunnel-surprise.jpg",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "beach-proposal-surprise",
+    "name": "Beach Proposal Surprise",
+    "shortDesc": "Experience our beautifully crafted Beach Proposal Surprise package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Beach Proposal Surprise setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/beach-proposal-surprise.jpg",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "birthday-home-decor",
+    "name": "Birthday Home Decor",
+    "shortDesc": "Experience our beautifully crafted Birthday Home Decor package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Birthday Home Decor setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/birthday-home-decor.jpg",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "birthday-room-surprise-decor",
+    "name": "Birthday Room Surprise Decor",
+    "shortDesc": "Experience our beautifully crafted Birthday Room Surprise Decor package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Birthday Room Surprise Decor setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/birthday-room-surprise-decor.JPG",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "birthday-surprise-decor",
+    "name": "Birthday Surprise Decor",
+    "shortDesc": "Experience our beautifully crafted Birthday Surprise Decor package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Birthday Surprise Decor setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/birthday-surprise-decor.jpeg",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "birthday-surprise",
+    "name": "Birthday Surprise",
+    "shortDesc": "Experience our beautifully crafted Birthday Surprise package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Birthday Surprise setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/birthday-surprise.png",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "car-surprise",
+    "name": "Car Surprise",
+    "shortDesc": "Experience our beautifully crafted Car Surprise package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Car Surprise setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/car-surprise.jpg",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "fairy-style-birthday-decor",
+    "name": "Fairy Style Birthday Decor",
+    "shortDesc": "Experience our beautifully crafted Fairy Style Birthday Decor package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Fairy Style Birthday Decor setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/fairy-style-birthday-decor.jpeg",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "fairytail-birthday-surprise",
+    "name": "Fairytail Birthday Surprise",
+    "shortDesc": "Experience our beautifully crafted Fairytail Birthday Surprise package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Fairytail Birthday Surprise setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/fairytail-birthday-surprise.jpeg",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "flash-mob-birthday-surprise",
+    "name": "Flash Mob Birthday Surprise",
+    "shortDesc": "Experience our beautifully crafted Flash Mob Birthday Surprise package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Flash Mob Birthday Surprise setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/flash-mob-birthday-surprise.jpeg",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "golden-balloon-rush-birthday-decor",
+    "name": "Golden Balloon Rush Birthday Decor",
+    "shortDesc": "Experience our beautifully crafted Golden Balloon Rush Birthday Decor package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Golden Balloon Rush Birthday Decor setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/golden-balloon-rush-birthday-decor.jpg",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "grand-birthday-decor",
+    "name": "Grand Birthday Decor",
+    "shortDesc": "Experience our beautifully crafted Grand Birthday Decor package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Grand Birthday Decor setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/grand-birthday-decor.JPG",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "grand-first-birthday-decor",
+    "name": "Grand First Birthday Decor",
+    "shortDesc": "Experience our beautifully crafted Grand First Birthday Decor package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Grand First Birthday Decor setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/grand-first-birthday-decor.jpeg",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "heartin-first-night-room-decor",
+    "name": "Heartin First Night Room Decor",
+    "shortDesc": "Experience our beautifully crafted Heartin First Night Room Decor package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Heartin First Night Room Decor setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/heartin-first-night-room-decor.jpeg",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "jungle-theme-birthday-decor",
+    "name": "Jungle Theme Birthday Decor",
+    "shortDesc": "Experience our beautifully crafted Jungle Theme Birthday Decor package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Jungle Theme Birthday Decor setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/Jungle-Theme-Birthday-decor.jpeg",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "mickymouse-birtday-decor",
+    "name": "Mickymouse Birtday Decor",
+    "shortDesc": "Experience our beautifully crafted Mickymouse Birtday Decor package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Mickymouse Birtday Decor setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/mickymouse-birtday-decor.jpg",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "proposal-surprise-2",
+    "name": "Proposal Surprise (2)",
+    "shortDesc": "Experience our beautifully crafted Proposal Surprise (2) package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Proposal Surprise (2) setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/proposal-surprise (2).png",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "romantic-first-night-room-decor-2",
+    "name": "Romantic First Night Room Decor (2)",
+    "shortDesc": "Experience our beautifully crafted Romantic First Night Room Decor (2) package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Romantic First Night Room Decor (2) setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/romantic-first-night-room-decor (2).jpg",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "romantic-first-night-room-decor",
+    "name": "Romantic First Night Room Decor",
+    "shortDesc": "Experience our beautifully crafted Romantic First Night Room Decor package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Romantic First Night Room Decor setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/romantic-first-night-room-decor.jpg",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "simple-rose-decor-surprise",
+    "name": "Simple Rose Decor Surprise",
+    "shortDesc": "Experience our beautifully crafted Simple Rose Decor Surprise package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Simple Rose Decor Surprise setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/simple-rose-decor-surprise.jpg",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "surprise-love-proposal-decor",
+    "name": "Surprise Love Proposal Decor",
+    "shortDesc": "Experience our beautifully crafted Surprise Love Proposal Decor package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Surprise Love Proposal Decor setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/surprise-love-proposal-decor.jpg",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "terrace-air-balloon-surprise",
+    "name": "Terrace Air Balloon Surprise",
+    "shortDesc": "Experience our beautifully crafted Terrace Air Balloon Surprise package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Terrace Air Balloon Surprise setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/terrace-air-balloon-surprise.png",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "terrace-camp-decor",
+    "name": "Terrace Camp Decor",
+    "shortDesc": "Experience our beautifully crafted Terrace Camp Decor package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Terrace Camp Decor setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/terrace-camp-decor.jpg",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "terrace-prposal-surprise",
+    "name": "Terrace Prposal Surprise",
+    "shortDesc": "Experience our beautifully crafted Terrace Prposal Surprise package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Terrace Prposal Surprise setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/terrace-prposal-surprise.png",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "terrace-surprise-decor",
+    "name": "Terrace Surprise Decor",
+    "shortDesc": "Experience our beautifully crafted Terrace Surprise Decor package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Terrace Surprise Decor setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/terrace-surprise-decor.jpeg",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "terrace-surprise",
+    "name": "Terrace Surprise",
+    "shortDesc": "Experience our beautifully crafted Terrace Surprise package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Terrace Surprise setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/terrace-surprise.jpg",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "terrace-wedding-anniversary-surprise",
+    "name": "Terrace Wedding Anniversary Surprise",
+    "shortDesc": "Experience our beautifully crafted Terrace Wedding Anniversary Surprise package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Terrace Wedding Anniversary Surprise setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/terrace-wedding-anniversary-surprise.jpeg",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "theater-surprise-proposal",
+    "name": "Theater Surprise Proposal",
+    "shortDesc": "Experience our beautifully crafted Theater Surprise Proposal package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Theater Surprise Proposal setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/theater-surprise-proposal.png",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  },
+  {
+    "id": "wedding-decor",
+    "name": "Wedding Decor",
+    "shortDesc": "Experience our beautifully crafted Wedding Decor package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Wedding Decor setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "iconName": "Sparkles",
+    "colorTheme": "pink",
+    "tag": "Special Setup",
+    "image": "/new-services/wedding-decor.png",
+    "priceStart": "₹4,999",
+    "whatsIncluded": [
+      "Premium high-quality decorations tailored to the theme",
+      "Professional setup and seamless execution by our team",
+      "Custom ambient lighting and atmospheric details",
+      "Dedicated event coordinator for a stress-free experience"
+    ]
+  }
+]

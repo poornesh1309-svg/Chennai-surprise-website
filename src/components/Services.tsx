@@ -176,12 +176,20 @@ export default function Services({ onSelectService }: ServicesProps) {
               >
                 {/* Image & Tag */}
                 <div className="h-48 overflow-hidden relative border-b border-pink-50">
-                  <ZoomableImage
-                    src={s.image}
-                    alt={s.name}
-                    referrerPolicy="no-referrer"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
+                  {s.image.endsWith('.mp4') ? (
+                    <video 
+                      src={s.image}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      autoPlay loop muted playsInline
+                    />
+                  ) : (
+                    <ZoomableImage
+                      src={s.image}
+                      alt={s.name}
+                      referrerPolicy="no-referrer"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  )}
                   
                   {/* Floating Tag */}
                   <span className={`absolute top-4 right-4 text-xs font-display font-bold px-3 py-1 bg-white/90 backdrop-blur-md rounded-full border ${theme.border} ${theme.tagText}`}>

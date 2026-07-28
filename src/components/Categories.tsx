@@ -318,12 +318,20 @@ export default function Categories({ onSelectService, expandedCategoryId, onExpa
                           className={`flex flex-col bg-white border-2 ${theme.border} rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group`}
                         >
                           <div className="h-40 overflow-hidden relative border-b border-pink-50">
-                            <ZoomableImage
-                              src={s.image}
-                              alt={s.name}
-                              referrerPolicy="no-referrer"
-                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                            />
+                            {s.image.endsWith('.mp4') ? (
+                              <video 
+                                src={s.image}
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                autoPlay loop muted playsInline
+                              />
+                            ) : (
+                              <ZoomableImage
+                                src={s.image}
+                                alt={s.name}
+                                referrerPolicy="no-referrer"
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                              />
+                            )}
                             <span className={`absolute top-3 right-3 text-[10px] font-display font-bold px-2 py-1 bg-white/90 backdrop-blur-md rounded-full border ${theme.border} ${theme.tagText}`}>
                               {s.tag}
                             </span>
