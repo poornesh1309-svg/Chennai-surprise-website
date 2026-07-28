@@ -3,18 +3,21 @@ import { useLightbox } from '../context/LightboxContext';
 
 export type ZoomableImageProps = React.ComponentProps<'img'> & {
   priority?: boolean;
+  galleryContext?: string[];
 };
 
 export default function ZoomableImage(props: ZoomableImageProps) {
-  const { priority, ...imgProps } = props;
-  const { setImageSrc } = useLightbox();
+  const { priority, galleryContext, ...imgProps } = props;
+  const { openLightbox } = useLightbox();
 
   const handleClick = (e: React.MouseEvent<HTMLImageElement, MouseEvent>) => {
     e.stopPropagation(); // prevent triggering parent clicks like opening a service details modal
     if (imgProps.onClick) {
       imgProps.onClick(e);
     }
-    setImageSrc(imgProps.src || null);
+    if (imgProps.src) {
+      openLightbox(imgProps.src, galleryContext || []);
+    }
   };
 
   return (

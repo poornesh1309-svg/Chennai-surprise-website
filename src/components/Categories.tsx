@@ -36,9 +36,10 @@ interface CategoriesProps {
   onSelectService: (serviceId: string) => void;
   expandedCategoryId?: string | null;
   onExpandedCategoryChange?: (id: string | null) => void;
+  onGoToGallery?: () => void;
 }
 
-export default function Categories({ onSelectService, expandedCategoryId, onExpandedCategoryChange }: CategoriesProps) {
+export default function Categories({ onSelectService, expandedCategoryId, onExpandedCategoryChange, onGoToGallery }: CategoriesProps) {
   const [localExpandedCategory, setLocalExpandedCategory] = useState<string | null>(null);
   const [selectedServiceDetails, setSelectedServiceDetails] = useState<Service | null>(null);
 
@@ -389,6 +390,7 @@ export default function Categories({ onSelectService, expandedCategoryId, onExpa
               setExpandedCategory(null);
               onSelectService(id);
             }} 
+            onGoToGallery={onGoToGallery}
           />
         )}
       </div>

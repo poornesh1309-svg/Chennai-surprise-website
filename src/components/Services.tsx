@@ -37,9 +37,10 @@ const iconMap: Record<string, React.ComponentType<any>> = {
 
 interface ServicesProps {
   onSelectService: (serviceId: string) => void;
+  onGoToGallery?: () => void;
 }
 
-export default function Services({ onSelectService }: ServicesProps) {
+export default function Services({ onSelectService, onGoToGallery }: ServicesProps) {
   const [selectedService, setSelectedService] = useState<Service | null>(null);
 
   // Helper for color styles based on service theme
@@ -244,10 +245,8 @@ export default function Services({ onSelectService }: ServicesProps) {
           <ServiceModal 
             selectedService={selectedService} 
             onClose={() => setSelectedService(null)} 
-            onBookNow={(id) => {
-              setSelectedService(null);
-              onSelectService(id);
-            }} 
+            onBookNow={handleBookNow} 
+            onGoToGallery={onGoToGallery}
           />
         )}
         </AnimatePresence>

@@ -8,10 +8,10 @@ interface ServiceModalProps {
   selectedService: Service;
   onClose: () => void;
   onBookNow: (serviceId: string) => void;
+  onGoToGallery?: () => void;
 }
 
-export default function ServiceModal({ selectedService, onClose, onBookNow }: ServiceModalProps) {
-  const [lightboxImage, setLightboxImage] = useState<string | null>(null);
+export default function ServiceModal({ selectedService, onClose, onBookNow, onGoToGallery }: ServiceModalProps) {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   useBodyScrollLock(true);
@@ -156,47 +156,38 @@ export default function ServiceModal({ selectedService, onClose, onBookNow }: Se
                       whileHover={{ y: -4 }}
                       key={idx} 
                       className="shrink-0 w-36 h-28 sm:w-48 sm:h-32 rounded-xl overflow-hidden cursor-pointer hover:opacity-90 transition-opacity border-2 border-transparent hover:border-pink-300 snap-center shadow-sm"
-                      onClick={() => setLightboxImage(img)}
                     >
-                      <ZoomableImage src={img} alt={`${selectedService.name} - ${idx}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                      <ZoomableImage 
+                        src={img} 
+                        alt={`${selectedService.name} - ${idx}`} 
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
+                        galleryContext={selectedService.popupGallery}
+                      />
                     </motion.div>
                   ))}
                 </div>
+
+                {onGoToGallery && (
+                  <div className="flex justify-center mt-4">
+                    <motion.button
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      onClick={() => {
+                        onClose();
+                        setTimeout(() => onGoToGallery(), 300);
+                      }}
+                      className="cute-btn-outline !py-2 !px-6 !text-sm flex items-center gap-2"
+                    >
+                      <ImageIcon className="w-4 h-4" /> View Full Gallery
+                    </motion.button>
+                  </div>
+                )}
               </div>
             )}
           </div>
         </motion.div>
       </motion.div>
 
-      {/* Lightbox for Gallery */}
-      <AnimatePresence>
-      {lightboxImage && (
-        <motion.div 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className="fixed inset-0 z-[70] flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm"
-          onClick={() => setLightboxImage(null)}
-        >
-          <button 
-            onClick={() => setLightboxImage(null)}
-            className="absolute top-6 right-6 p-2 bg-white/10 hover:bg-white/20 rounded-full text-white transition-colors cursor-pointer"
-          >
-            <X className="w-6 h-6" />
-          </button>
-          <motion.img 
-            initial={{ scale: 0.9, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0.9, opacity: 0 }}
-            transition={{ type: "spring", bounce: 0.3 }}
-            src={lightboxImage} 
-            alt="Enlarged gallery view" 
-            className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
-            onClick={(e) => e.stopPropagation()}
-          />
-        </motion.div>
-      )}
-      </AnimatePresence>
     </>
   );
 }

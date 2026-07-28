@@ -163,6 +163,10 @@ export default function App() {
                 onSelectService={handleSelectServiceFromCard} 
                 expandedCategoryId={expandedCategoryId} 
                 onExpandedCategoryChange={setExpandedCategoryId} 
+                onGoToGallery={() => {
+                  setActiveTab('gallery');
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
               />
             </div>
             <div id="gallery-strip" className="mb-12">
@@ -172,7 +176,13 @@ export default function App() {
               }} />
             </div>
             <div id="services">
-              <Services onSelectService={handleSelectServiceFromCard} />
+              <Services 
+                onSelectService={handleSelectServiceFromCard} 
+                onGoToGallery={() => {
+                  setActiveTab('gallery');
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+              />
             </div>
             <div id="about">
               <About />
