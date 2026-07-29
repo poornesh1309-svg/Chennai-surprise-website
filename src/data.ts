@@ -1070,12 +1070,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-52",
-    title: "Surprise Setup 52",
-    image: "/flashmob.jpg",
-    tag: "photo"
-  },
-  {
     id: "gal-53",
     title: "Surprise Setup 53",
     image: "/grand-birthday-decor.JPG",
@@ -1307,12 +1301,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-91",
     title: "Surprise Setup 91",
     image: "/IMG_9297.JPG",
-    tag: "photo"
-  },
-  {
-    id: "gal-92",
-    title: "Surprise Setup 92",
-    image: "/mall.jpg",
     tag: "photo"
   },
   {
@@ -1556,12 +1544,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-133",
-    title: "Surprise Setup 133",
-    image: "/proposal.jpg",
-    tag: "photo"
-  },
-  {
     id: "gal-134",
     title: "Surprise Setup 134",
     image: "/romantic-beach-surprise.JPEG",
@@ -1628,41 +1610,10 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-145",
-    title: "Surprise Setup 145",
-    image: "/yacht.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-146",
-    title: "Surprise Setup 146",
-    image: "/Young_friends_surprising_friend_2K_202607182136.jpeg",
-    tag: "photo"
-  },
-  {
-    id: "gal-147",
-    title: "Surprise Setup 147",
-    image: "/Young_friends_surprising_friend_…_202607182105.jpeg",
-    tag: "photo"
-  },
-  {
-    id: "gal-148",
-    title: "Surprise Setup 148",
-    image: "/Young_friends_surprising_friend_…_202607182108.jpeg",
-    tag: "photo"
-  },
-  {
     id: "gal-149",
     title: "Surprise Setup 149",
     image: "/Young_man_proposing_to_lover_202607182128.jpeg",
     tag: "photo"
-  },
-  {
-    id: "gal-150",
-    title: "Surprise Setup 150",
-    image: "/new-services/airport-welcome-surprise.mp4",
-    tag: "video",
-    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   }
 ];
 
