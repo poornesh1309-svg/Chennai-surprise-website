@@ -181,7 +181,7 @@ export default function Services({ onSelectService, onGoToGallery }: ServicesPro
                     <video 
                       src={s.image}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      autoPlay loop muted playsInline
+                      autoPlay loop muted playsInline defaultMuted preload="auto"
                     />
                   ) : (
                     <ZoomableImage

@@ -58,7 +58,7 @@ export default function ServiceModal({ selectedService, onClose, onBookNow, onGo
               <video 
                 src={selectedService.image}
                 className="w-full h-full object-cover"
-                autoPlay loop muted playsInline
+                autoPlay loop muted playsInline defaultMuted preload="auto"
               />
             ) : (
               <ZoomableImage
