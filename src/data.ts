@@ -325,7 +325,7 @@ export const SERVICES: Service[] = [
     "iconName": "Sparkles",
     "colorTheme": "pink",
     "tag": "Special Setup",
-    "image": "/new-services/beach-proposal-surprise.jpg",
+    "image": "/romantic-beach-surprise.JPEG",
     "priceStart": "₹4,999",
     "whatsIncluded": [
       "Premium high-quality decorations tailored to the theme",
