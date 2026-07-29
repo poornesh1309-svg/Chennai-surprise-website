@@ -302,9 +302,9 @@ export const SERVICES: Service[] = [
   },
   {
     "id": "balloon-tunnel-surprise",
-    "name": "Balloon Tunnel Surprise",
-    "shortDesc": "Experience our beautifully crafted Balloon Tunnel Surprise package designed to create magical memories.",
-    "longDesc": "Immerse yourself in the magic of our Balloon Tunnel Surprise setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "name": "Balloon Tunnel Decor",
+    "shortDesc": "Experience our beautifully crafted Balloon Tunnel Decor package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Balloon Tunnel Decor setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
     "iconName": "Sparkles",
     "colorTheme": "pink",
     "tag": "Special Setup",
