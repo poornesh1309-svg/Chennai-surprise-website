@@ -872,36 +872,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-27",
-    title: "Surprise Setup 27",
-    image: "/carousel/IMG_7228.JPEG",
-    tag: "photo"
-  },
-  {
-    id: "gal-28",
-    title: "Surprise Setup 28",
-    image: "/carousel/IMG_7657.JPG.jpeg",
-    tag: "photo"
-  },
-  {
-    id: "gal-29",
-    title: "Surprise Setup 29",
-    image: "/carousel/IMG_7658.JPG.jpeg",
-    tag: "photo"
-  },
-  {
-    id: "gal-30",
-    title: "Surprise Setup 30",
-    image: "/carousel/IMG_7660.JPG.jpeg",
-    tag: "photo"
-  },
-  {
-    id: "gal-31",
-    title: "Surprise Setup 31",
-    image: "/carousel/IMG_7661.JPG.jpeg",
-    tag: "photo"
-  },
-  {
     id: "gal-32",
     title: "Surprise Setup 32",
     image: "/carousel/IMG_8097 (1).jpg",
@@ -1127,12 +1097,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-78",
     title: "Surprise Setup 78",
     image: "/new-services/terrace-camp-decor.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-79",
-    title: "Surprise Setup 79",
-    image: "/new-services/terrace-wedding-anniversary-surprise.jpeg",
     tag: "photo"
   },
   {
