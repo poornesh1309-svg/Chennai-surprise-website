@@ -659,14 +659,14 @@ export const SERVICES: Service[] = [
     ]
   },
   {
-    "id": "terrace-prposal-surprise",
-    "name": "Terrace Prposal Surprise",
-    "shortDesc": "Experience our beautifully crafted Terrace Prposal Surprise package designed to create magical memories.",
-    "longDesc": "Immerse yourself in the magic of our Terrace Prposal Surprise setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "id": "terrace-proposal-surprise",
+    "name": "Terrace Proposal Surprise",
+    "shortDesc": "Experience our beautifully crafted Terrace Proposal Surprise package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Terrace Proposal Surprise setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
     "iconName": "Sparkles",
     "colorTheme": "pink",
     "tag": "Special Setup",
-    "image": "/new-services/terrace-prposal-surprise.png",
+    "image": "/new-services/terrace-proposal-surprise.png",
     "priceStart": "₹4,999",
     "whatsIncluded": [
       "Premium high-quality decorations tailored to the theme",
@@ -1528,7 +1528,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 'gal-128',
     title: 'Surprise Setup 128',
-    image: '/new-services/terrace-prposal-surprise.png',
+    image: '/new-services/terrace-proposal-surprise.png',
     tag: 'photo'
   },
   {
@@ -1858,7 +1858,7 @@ export const CATEGORY_DATA = [
       'surprise-love-proposal-decor',
       'terrace-air-balloon-surprise',
       'terrace-camp-decor',
-      'terrace-prposal-surprise',
+      'terrace-proposal-surprise',
       'terrace-surprise-decor',
       'terrace-surprise',
       'terrace-wedding-anniversary-surprise',
@@ -1934,7 +1934,7 @@ export const CATEGORY_DATA = [
       'beach-proposal-surprise',
       'proposal-surprise-2',
       'surprise-love-proposal-decor',
-      'terrace-prposal-surprise',
+      'terrace-proposal-surprise',
       'theater-surprise-proposal'
     ]
   },
@@ -1968,7 +1968,7 @@ export const CATEGORY_DATA = [
       'mickymouse-birtday-decor',
       'surprise-love-proposal-decor',
       'terrace-camp-decor',
-      'terrace-prposal-surprise',
+      'terrace-proposal-surprise',
       'terrace-surprise-decor',
       'terrace-wedding-anniversary-surprise',
       'heartin-first-night-room-decor',
