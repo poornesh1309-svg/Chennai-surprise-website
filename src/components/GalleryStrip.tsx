@@ -1,8 +1,6 @@
 import React from 'react';
-import { motion } from 'motion/react';
-import { Camera, ArrowRight, Heart } from 'lucide-react';
+import { Camera, ArrowRight, Video } from 'lucide-react';
 import ZoomableImage from './ZoomableImage';
-import { GALLERY_ITEMS } from '../data';
 
 interface GalleryStripProps {
   onViewAllClick: () => void;
@@ -16,8 +14,51 @@ function getYoutubeEmbedUrl(url?: string): string | null {
 }
 
 export default function GalleryStrip({ onViewAllClick }: GalleryStripProps) {
-  // Take first 6 items for the homepage strip
-  const previewItems = GALLERY_ITEMS.filter(item => item.id !== 'g5' && item.image !== '/canopy.jpg').slice(0, 6);
+  // Original 6 YouTube videos
+  const previewItems = [
+    {
+      id: "v3",
+      title: "Fairytale Candlelight Proposal surprise",
+      image: "/proposal.jpg",
+      tag: "video",
+      videoUrl: "https://www.youtube.com/watch?v=CvcdDx7e5R0"
+    },
+    {
+      id: "v4",
+      title: "Heartwarming Birthday Surprise",
+      image: "/beach.jpg",
+      tag: "video",
+      videoUrl: "https://youtu.be/oqJwNSH_feA"
+    },
+    {
+      id: "v5",
+      title: "Magical Surprise Moment",
+      image: "/music.jpg",
+      tag: "video",
+      videoUrl: "https://youtube.com/shorts/GJ-AwADCL-E"
+    },
+    {
+      id: "v6",
+      title: "Spectacular Decor Setup",
+      image: "/proposal.jpg",
+      tag: "video",
+      videoUrl: "https://youtube.com/shorts/0PmpUdnNykc"
+    },
+    {
+      id: "v7",
+      title: "Surprise Planning in Action",
+      image: "/music.jpg",
+      tag: "video",
+      videoUrl: "https://youtube.com/shorts/-AJyyJRL7Zg"
+    },
+    {
+      id: "v8",
+      title: "Joyful Moments Captured",
+      image: "/beach.jpg",
+      tag: "video",
+      videoUrl: "https://youtube.com/shorts/u-HoIaaUTKM"
+    }
+  ];
 
   return (
     <section className="py-16 px-4 bg-[#FFF9FB] border-t border-pink-50/50 overflow-hidden">
@@ -27,16 +68,16 @@ export default function GalleryStrip({ onViewAllClick }: GalleryStripProps) {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
           <div className="space-y-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-pink-50 border border-pink-100 rounded-full">
-              <Camera className="w-3.5 h-3.5 text-pink-400" />
+              <Video className="w-3.5 h-3.5 text-pink-400" />
               <span className="font-display text-xs font-bold text-pink-500 uppercase tracking-wider">
-                Magic Snaps
+                Featured Videos
               </span>
             </div>
             <h2 className="font-display text-3xl sm:text-4xl text-[#4A4A4A] font-bold">
-              Real Memories from <span className="text-pink-400">Chennai Couples</span>
+              Watch Our <span className="text-pink-400">Magical Setups</span>
             </h2>
             <p className="font-sans text-gray-500 max-w-xl">
-              Take a peek at our recent sneaky surprises! Handcrafted decorations, sparkling candles, and lots of giggles.
+              Experience the joy and surprise through our carefully crafted event videos. See how we bring dreams to life!
             </p>
           </div>
         </div>
