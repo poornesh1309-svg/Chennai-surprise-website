@@ -275,7 +275,7 @@ export const SERVICES: Service[] = [
     "colorTheme": "pink",
     "tag": "Special Setup",
     "image": "/new-services/anniversary-surprise.jpg",
-    "imagePosition": "object-[center_15%]",
+    "imagePosition": "object-[center_35%]",
     "priceStart": "₹4,999",
     "whatsIncluded": [
       "Premium high-quality decorations tailored to the theme",
