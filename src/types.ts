@@ -10,6 +10,7 @@ export interface Service {
   priceStart: string;
   whatsIncluded: string[];
   popupGallery?: string[];
+  imagePosition?: string;
 }
 
 export interface GalleryItem {

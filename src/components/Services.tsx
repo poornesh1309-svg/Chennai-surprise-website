@@ -188,7 +188,7 @@ export default function Services({ onSelectService, onGoToGallery }: ServicesPro
                       src={s.image}
                       alt={s.name}
                       referrerPolicy="no-referrer"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className={`w-full h-full object-cover ${s.imagePosition || 'object-center'} group-hover:scale-105 transition-transform duration-500`}
                     />
                   )}
                   

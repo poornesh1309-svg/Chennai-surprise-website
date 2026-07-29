@@ -268,13 +268,14 @@ export const SERVICES: Service[] = [
   },
   {
     "id": "anniversary-surprise",
-    "name": "Anniversary Surprise",
-    "shortDesc": "Experience our beautifully crafted Anniversary Surprise package designed to create magical memories.",
-    "longDesc": "Immerse yourself in the magic of our Anniversary Surprise setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "name": "Anniversary Surprise Proposal",
+    "shortDesc": "Experience our beautifully crafted Anniversary Surprise Proposal package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Anniversary Surprise Proposal setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
     "iconName": "Sparkles",
     "colorTheme": "pink",
     "tag": "Special Setup",
     "image": "/new-services/anniversary-surprise.jpg",
+    "imagePosition": "object-[center_15%]",
     "priceStart": "₹4,999",
     "whatsIncluded": [
       "Premium high-quality decorations tailored to the theme",
