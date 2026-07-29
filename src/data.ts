@@ -1027,12 +1027,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     image: "/carousel/new_img_8.png",
     tag: "photo"
   },
-  {
-    id: "gal-45",
-    title: "Surprise Setup 45",
-    image: "/chennai-surprise-logo.png",
-    tag: "photo"
-  },
+
   {
     id: "gal-46",
     title: "Surprise Setup 46",
