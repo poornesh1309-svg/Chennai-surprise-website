@@ -1220,12 +1220,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     image: "/music.jpg",
     tag: "photo"
   },
-  {
-    id: "gal-78",
-    title: "Surprise Setup 78",
-    image: "/new-services/balloon-tunnel-surprise.jpg",
-    tag: "photo"
-  },
+
   {
     id: "gal-79",
     title: "Surprise Setup 79",
