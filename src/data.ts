@@ -872,18 +872,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-21",
-    title: "Surprise Setup 21",
-    image: "/carousel/IMG_1819.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-22",
-    title: "Surprise Setup 22",
-    image: "/carousel/IMG_1820.jpg",
-    tag: "photo"
-  },
-  {
     id: "gal-23",
     title: "Surprise Setup 23",
     image: "/carousel/IMG_1836.JPG.jpeg",
@@ -1109,12 +1097,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-64",
     title: "Surprise Setup 64",
     image: "/IMG_1820.jpg_2K_202607182059.jpeg",
-    tag: "photo"
-  },
-  {
-    id: "gal-65",
-    title: "Surprise Setup 65",
-    image: "/IMG_1840.JPG",
     tag: "photo"
   },
   {
