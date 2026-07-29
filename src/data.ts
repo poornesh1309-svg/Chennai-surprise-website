@@ -788,12 +788,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-5",
-    title: "Surprise Setup 5",
-    image: "/anniversary-surprise.jpg",
-    tag: "photo"
-  },
-  {
     id: "gal-6",
     title: "Surprise Setup 6",
     image: "/beach.jpg",
@@ -1027,13 +1021,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     image: "/carousel/new_img_8.png",
     tag: "photo"
   },
-
-  {
-    id: "gal-46",
-    title: "Surprise Setup 46",
-    image: "/ff.jpg_202607182053.jpeg",
-    tag: "photo"
-  },
   {
     id: "gal-47",
     title: "Surprise Setup 47",
@@ -1191,12 +1178,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-73",
-    title: "Surprise Setup 73",
-    image: "/IMG_5681.JPG",
-    tag: "photo"
-  },
-  {
     id: "gal-74",
     title: "Surprise Setup 74",
     image: "/IMG_7659.JPG",
@@ -1214,13 +1195,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     image: "/IMG_9297.JPG",
     tag: "photo"
   },
-  {
-    id: "gal-77",
-    title: "Surprise Setup 77",
-    image: "/music.jpg",
-    tag: "photo"
-  },
-
   {
     id: "gal-79",
     title: "Surprise Setup 79",
@@ -1261,12 +1235,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-85",
     title: "Surprise Setup 85",
     image: "/new-services/simple-rose-decor-surprise.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-86",
-    title: "Surprise Setup 86",
-    image: "/new-services/surprise-love-proposal-decor.jpg",
     tag: "photo"
   },
   {
