@@ -842,33 +842,9 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-15",
-    title: "Surprise Setup 15",
-    image: "/birthday-surprise/IMG_2049.JPG",
-    tag: "photo"
-  },
-  {
-    id: "gal-16",
-    title: "Surprise Setup 16",
-    image: "/birthday-surprise/IMG_8956.JPG",
-    tag: "photo"
-  },
-  {
     id: "gal-17",
     title: "Surprise Setup 17",
     image: "/birthday.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-19",
-    title: "Surprise Setup 19",
-    image: "/carousel/IMG_1635.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-20",
-    title: "Surprise Setup 20",
-    image: "/carousel/IMG_1636.jpg",
     tag: "photo"
   },
   {
@@ -1136,27 +1112,9 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-72",
-    title: "Surprise Setup 72",
-    image: "/new-services/birthday-surprise-decor.jpeg",
-    tag: "photo"
-  },
-  {
     id: "gal-73",
     title: "Surprise Setup 73",
     image: "/new-services/flash-mob-birthday-surprise.jpeg",
-    tag: "photo"
-  },
-  {
-    id: "gal-75",
-    title: "Surprise Setup 75",
-    image: "/new-services/Jungle-Theme-Birthday-decor.jpeg",
-    tag: "photo"
-  },
-  {
-    id: "gal-76",
-    title: "Surprise Setup 76",
-    image: "/new-services/mickymouse-birtday-decor.jpg",
     tag: "photo"
   },
   {
