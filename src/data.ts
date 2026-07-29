@@ -694,9 +694,9 @@ export const SERVICES: Service[] = [
   },
   {
     "id": "terrace-surprise",
-    "name": "Terrace Surprise",
-    "shortDesc": "Experience our beautifully crafted Terrace Surprise package designed to create magical memories.",
-    "longDesc": "Immerse yourself in the magic of our Terrace Surprise setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
+    "name": "Terrace Birthday Surprise",
+    "shortDesc": "Experience our beautifully crafted Terrace Birthday Surprise package designed to create magical memories.",
+    "longDesc": "Immerse yourself in the magic of our Terrace Birthday Surprise setup. Carefully curated with premium elements, this package provides everything you need to leave them absolutely speechless and create an unforgettable moment.",
     "iconName": "Sparkles",
     "colorTheme": "pink",
     "tag": "Special Setup",
