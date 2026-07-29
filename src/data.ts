@@ -788,507 +788,489 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
+    id: "gal-5",
+    title: "Surprise Setup 5",
+    image: "/beach.jpg",
+    tag: "photo"
+  },
+  {
     id: "gal-6",
     title: "Surprise Setup 6",
-    image: "/beach.jpg",
+    image: "/birthday-room-surprise-decor.JPG",
     tag: "photo"
   },
   {
     id: "gal-7",
     title: "Surprise Setup 7",
-    image: "/birthday-room-surprise-decor.JPG",
+    image: "/birthday-surprise/bday_new_1.png",
     tag: "photo"
   },
   {
     id: "gal-8",
     title: "Surprise Setup 8",
-    image: "/birthday-surprise/bday_new_1.png",
+    image: "/birthday-surprise/bday_new_2.png",
     tag: "photo"
   },
   {
     id: "gal-9",
     title: "Surprise Setup 9",
-    image: "/birthday-surprise/bday_new_2.png",
+    image: "/birthday-surprise/bday_new_3.png",
     tag: "photo"
   },
   {
     id: "gal-10",
     title: "Surprise Setup 10",
-    image: "/birthday-surprise/bday_new_3.png",
+    image: "/birthday-surprise/bday_new_4.png",
     tag: "photo"
   },
   {
     id: "gal-11",
     title: "Surprise Setup 11",
-    image: "/birthday-surprise/bday_new_4.png",
+    image: "/birthday-surprise/IMG-20260709-WA0006.jpg",
     tag: "photo"
   },
   {
     id: "gal-12",
     title: "Surprise Setup 12",
-    image: "/birthday-surprise/IMG-20260709-WA0006.jpg",
+    image: "/birthday-surprise/IMG-20260709-WA0010.jpg",
     tag: "photo"
   },
   {
     id: "gal-13",
     title: "Surprise Setup 13",
-    image: "/birthday-surprise/IMG-20260709-WA0010.jpg",
+    image: "/birthday-surprise/IMG-20260709-WA0013.jpg",
     tag: "photo"
   },
   {
     id: "gal-14",
     title: "Surprise Setup 14",
-    image: "/birthday-surprise/IMG-20260709-WA0013.jpg",
+    image: "/birthday-surprise/IMG-20260709-WA0020.jpg",
     tag: "photo"
   },
   {
     id: "gal-15",
     title: "Surprise Setup 15",
-    image: "/birthday-surprise/IMG-20260709-WA0020.jpg",
+    image: "/birthday-surprise/IMG_2049.JPG",
     tag: "photo"
   },
   {
     id: "gal-16",
     title: "Surprise Setup 16",
-    image: "/birthday-surprise/IMG_2049.JPG",
+    image: "/birthday-surprise/IMG_8956.JPG",
     tag: "photo"
   },
   {
     id: "gal-17",
     title: "Surprise Setup 17",
-    image: "/birthday-surprise/IMG_8956.JPG",
+    image: "/birthday.jpg",
     tag: "photo"
   },
   {
     id: "gal-18",
     title: "Surprise Setup 18",
-    image: "/birthday.jpg",
+    image: "/canopy.jpg",
     tag: "photo"
   },
   {
     id: "gal-19",
     title: "Surprise Setup 19",
-    image: "/canopy.jpg",
+    image: "/carousel/IMG_1635.jpg",
     tag: "photo"
   },
   {
     id: "gal-20",
     title: "Surprise Setup 20",
-    image: "/carousel/IMG_1635.jpg",
+    image: "/carousel/IMG_1636.jpg",
     tag: "photo"
   },
   {
     id: "gal-21",
     title: "Surprise Setup 21",
-    image: "/carousel/IMG_1636.jpg",
+    image: "/carousel/IMG_1819.jpg",
     tag: "photo"
   },
   {
     id: "gal-22",
     title: "Surprise Setup 22",
-    image: "/carousel/IMG_1819.jpg",
+    image: "/carousel/IMG_1820.jpg",
     tag: "photo"
   },
   {
     id: "gal-23",
     title: "Surprise Setup 23",
-    image: "/carousel/IMG_1820.jpg",
+    image: "/carousel/IMG_1836.JPG.jpeg",
     tag: "photo"
   },
   {
     id: "gal-24",
     title: "Surprise Setup 24",
-    image: "/carousel/IMG_1836.JPG.jpeg",
+    image: "/carousel/IMG_2478.JPG.jpeg",
     tag: "photo"
   },
   {
     id: "gal-25",
     title: "Surprise Setup 25",
-    image: "/carousel/IMG_2478.JPG.jpeg",
+    image: "/carousel/IMG_5285.JPG.jpeg",
     tag: "photo"
   },
   {
     id: "gal-26",
     title: "Surprise Setup 26",
-    image: "/carousel/IMG_5285.JPG.jpeg",
+    image: "/carousel/IMG_6997.jpg",
     tag: "photo"
   },
   {
     id: "gal-27",
     title: "Surprise Setup 27",
-    image: "/carousel/IMG_6997.jpg",
+    image: "/carousel/IMG_7228.JPEG",
     tag: "photo"
   },
   {
     id: "gal-28",
     title: "Surprise Setup 28",
-    image: "/carousel/IMG_7228.JPEG",
+    image: "/carousel/IMG_7657.JPG.jpeg",
     tag: "photo"
   },
   {
     id: "gal-29",
     title: "Surprise Setup 29",
-    image: "/carousel/IMG_7657.JPG.jpeg",
+    image: "/carousel/IMG_7658.JPG.jpeg",
     tag: "photo"
   },
   {
     id: "gal-30",
     title: "Surprise Setup 30",
-    image: "/carousel/IMG_7658.JPG.jpeg",
+    image: "/carousel/IMG_7660.JPG.jpeg",
     tag: "photo"
   },
   {
     id: "gal-31",
     title: "Surprise Setup 31",
-    image: "/carousel/IMG_7660.JPG.jpeg",
+    image: "/carousel/IMG_7661.JPG.jpeg",
     tag: "photo"
   },
   {
     id: "gal-32",
     title: "Surprise Setup 32",
-    image: "/carousel/IMG_7661.JPG.jpeg",
+    image: "/carousel/IMG_8097 (1).jpg",
     tag: "photo"
   },
   {
     id: "gal-33",
     title: "Surprise Setup 33",
-    image: "/carousel/IMG_8097 (1).jpg",
+    image: "/carousel/IMG_8405.jpg",
     tag: "photo"
   },
   {
     id: "gal-34",
     title: "Surprise Setup 34",
-    image: "/carousel/IMG_8405.jpg",
+    image: "/carousel/IMG_8521.jpg",
     tag: "photo"
   },
   {
     id: "gal-35",
     title: "Surprise Setup 35",
-    image: "/carousel/IMG_8521.jpg",
+    image: "/carousel/IMG_9040.JPG.jpeg",
     tag: "photo"
   },
   {
     id: "gal-36",
     title: "Surprise Setup 36",
-    image: "/carousel/IMG_9040.JPG.jpeg",
+    image: "/carousel/IMG_9045.JPG.jpeg",
     tag: "photo"
   },
   {
     id: "gal-37",
     title: "Surprise Setup 37",
-    image: "/carousel/IMG_9045.JPG.jpeg",
+    image: "/carousel/IMG_9082.JPG.jpeg",
     tag: "photo"
   },
   {
     id: "gal-38",
     title: "Surprise Setup 38",
-    image: "/carousel/IMG_9082.JPG.jpeg",
+    image: "/carousel/new_img_1.png",
     tag: "photo"
   },
   {
     id: "gal-39",
     title: "Surprise Setup 39",
-    image: "/carousel/new_img_1.png",
+    image: "/carousel/new_img_10.png",
     tag: "photo"
   },
   {
     id: "gal-40",
     title: "Surprise Setup 40",
-    image: "/carousel/new_img_10.png",
+    image: "/carousel/new_img_3.png",
     tag: "photo"
   },
   {
     id: "gal-41",
     title: "Surprise Setup 41",
-    image: "/carousel/new_img_3.png",
+    image: "/carousel/new_img_4.png",
     tag: "photo"
   },
   {
     id: "gal-42",
     title: "Surprise Setup 42",
-    image: "/carousel/new_img_4.png",
+    image: "/carousel/new_img_7.png",
     tag: "photo"
   },
   {
     id: "gal-43",
     title: "Surprise Setup 43",
-    image: "/carousel/new_img_7.png",
+    image: "/carousel/new_img_8.png",
     tag: "photo"
   },
   {
     id: "gal-44",
     title: "Surprise Setup 44",
-    image: "/carousel/new_img_8.png",
+    image: "/IMG-0506-Copy-scaled.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-45",
+    title: "Surprise Setup 45",
+    image: "/IMG-20260709-WA0004.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-46",
+    title: "Surprise Setup 46",
+    image: "/IMG-20260709-WA0005.jpg",
     tag: "photo"
   },
   {
     id: "gal-47",
     title: "Surprise Setup 47",
-    image: "/IMG-0506-Copy-scaled.jpg",
+    image: "/IMG-20260709-WA0007.jpg",
     tag: "photo"
   },
   {
     id: "gal-48",
     title: "Surprise Setup 48",
-    image: "/IMG-20260709-WA0004.jpg",
+    image: "/IMG-20260709-WA0008.jpg",
     tag: "photo"
   },
   {
     id: "gal-49",
     title: "Surprise Setup 49",
-    image: "/IMG-20260709-WA0005.jpg",
+    image: "/IMG-20260709-WA0009.jpg",
     tag: "photo"
   },
   {
     id: "gal-50",
     title: "Surprise Setup 50",
-    image: "/IMG-20260709-WA0007.jpg",
+    image: "/IMG-20260709-WA0011.jpg",
     tag: "photo"
   },
   {
     id: "gal-51",
     title: "Surprise Setup 51",
-    image: "/IMG-20260709-WA0008.jpg",
+    image: "/IMG-20260709-WA0016.jpg",
     tag: "photo"
   },
   {
     id: "gal-52",
     title: "Surprise Setup 52",
-    image: "/IMG-20260709-WA0009.jpg",
+    image: "/IMG-20260709-WA0017.jpg",
     tag: "photo"
   },
   {
     id: "gal-53",
     title: "Surprise Setup 53",
-    image: "/IMG-20260709-WA0011.jpg",
+    image: "/IMG-20260709-WA0018.jpg",
     tag: "photo"
   },
   {
     id: "gal-54",
     title: "Surprise Setup 54",
-    image: "/IMG-20260709-WA0016.jpg",
+    image: "/IMG-20260709-WA0019.jpg",
     tag: "photo"
   },
   {
     id: "gal-55",
     title: "Surprise Setup 55",
-    image: "/IMG-20260709-WA0017.jpg",
+    image: "/IMG-20260709-WA0021.jpg",
     tag: "photo"
   },
   {
     id: "gal-56",
     title: "Surprise Setup 56",
-    image: "/IMG-20260709-WA0018.jpg",
+    image: "/IMG-20260709-WA0023.jpg",
     tag: "photo"
   },
   {
     id: "gal-57",
     title: "Surprise Setup 57",
-    image: "/IMG-20260709-WA0019.jpg",
+    image: "/IMG-20260709-WA0024.jpg",
     tag: "photo"
   },
   {
     id: "gal-58",
     title: "Surprise Setup 58",
-    image: "/IMG-20260709-WA0021.jpg",
+    image: "/IMG-20260709-WA0025.jpg",
     tag: "photo"
   },
   {
     id: "gal-59",
     title: "Surprise Setup 59",
-    image: "/IMG-20260709-WA0023.jpg",
+    image: "/IMG-20260709-WA0026.jpg",
     tag: "photo"
   },
   {
     id: "gal-60",
     title: "Surprise Setup 60",
-    image: "/IMG-20260709-WA0024.jpg",
+    image: "/IMG-20260709-WA0027.jpg",
     tag: "photo"
   },
   {
     id: "gal-61",
     title: "Surprise Setup 61",
-    image: "/IMG-20260709-WA0025.jpg",
+    image: "/IMG-2079-300x300.jpg",
     tag: "photo"
   },
   {
     id: "gal-62",
     title: "Surprise Setup 62",
-    image: "/IMG-20260709-WA0026.jpg",
+    image: "/IMG-2148-300x300.jpg",
     tag: "photo"
   },
   {
     id: "gal-63",
     title: "Surprise Setup 63",
-    image: "/IMG-20260709-WA0027.jpg",
+    image: "/IMG_1727.JPG",
     tag: "photo"
   },
   {
     id: "gal-64",
     title: "Surprise Setup 64",
-    image: "/IMG-2079-300x300.jpg",
+    image: "/IMG_1820.jpg_2K_202607182059.jpeg",
     tag: "photo"
   },
   {
     id: "gal-65",
     title: "Surprise Setup 65",
-    image: "/IMG-2148-300x300.jpg",
+    image: "/IMG_1840.JPG",
     tag: "photo"
   },
   {
     id: "gal-66",
     title: "Surprise Setup 66",
-    image: "/IMG_1727.JPG",
+    image: "/IMG_2038.JPG",
     tag: "photo"
   },
   {
     id: "gal-67",
     title: "Surprise Setup 67",
-    image: "/IMG_1820.jpg_2K_202607182059.jpeg",
+    image: "/IMG_5411.JPG",
     tag: "photo"
   },
   {
     id: "gal-68",
     title: "Surprise Setup 68",
-    image: "/IMG_1840.JPG",
+    image: "/IMG_5414.JPG",
     tag: "photo"
   },
   {
     id: "gal-69",
     title: "Surprise Setup 69",
-    image: "/IMG_2038.JPG",
+    image: "/IMG_5675.JPG",
     tag: "photo"
   },
   {
     id: "gal-70",
     title: "Surprise Setup 70",
-    image: "/IMG_5411.JPG",
+    image: "/IMG_9296.JPG",
     tag: "photo"
   },
   {
     id: "gal-71",
     title: "Surprise Setup 71",
-    image: "/IMG_5414.JPG",
+    image: "/IMG_9297.JPG",
     tag: "photo"
   },
   {
     id: "gal-72",
     title: "Surprise Setup 72",
-    image: "/IMG_5675.JPG",
+    image: "/new-services/birthday-surprise-decor.jpeg",
+    tag: "photo"
+  },
+  {
+    id: "gal-73",
+    title: "Surprise Setup 73",
+    image: "/new-services/flash-mob-birthday-surprise.jpeg",
     tag: "photo"
   },
   {
     id: "gal-74",
     title: "Surprise Setup 74",
-    image: "/IMG_7659.JPG",
+    image: "/new-services/heartin-first-night-room-decor.jpeg",
     tag: "photo"
   },
   {
     id: "gal-75",
     title: "Surprise Setup 75",
-    image: "/IMG_9296.JPG",
+    image: "/new-services/Jungle-Theme-Birthday-decor.jpeg",
     tag: "photo"
   },
   {
     id: "gal-76",
     title: "Surprise Setup 76",
-    image: "/IMG_9297.JPG",
+    image: "/new-services/mickymouse-birtday-decor.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-77",
+    title: "Surprise Setup 77",
+    image: "/new-services/simple-rose-decor-surprise.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-78",
+    title: "Surprise Setup 78",
+    image: "/new-services/terrace-camp-decor.jpg",
     tag: "photo"
   },
   {
     id: "gal-79",
     title: "Surprise Setup 79",
-    image: "/new-services/beach-proposal-surprise.jpg",
+    image: "/new-services/terrace-wedding-anniversary-surprise.jpeg",
     tag: "photo"
   },
   {
     id: "gal-80",
     title: "Surprise Setup 80",
-    image: "/new-services/birthday-surprise-decor.jpeg",
+    image: "/new-services/wedding-decor.png",
     tag: "photo"
   },
   {
     id: "gal-81",
     title: "Surprise Setup 81",
-    image: "/new-services/flash-mob-birthday-surprise.jpeg",
+    image: "/proposal-planning/IMG_0482.JPG.jpeg",
     tag: "photo"
   },
   {
     id: "gal-82",
     title: "Surprise Setup 82",
-    image: "/new-services/heartin-first-night-room-decor.jpeg",
+    image: "/proposal-planning/IMG_3755.jpg",
     tag: "photo"
   },
   {
     id: "gal-83",
     title: "Surprise Setup 83",
-    image: "/new-services/Jungle-Theme-Birthday-decor.jpeg",
+    image: "/proposal-planning/IMG_7009.jpg",
     tag: "photo"
   },
   {
     id: "gal-84",
     title: "Surprise Setup 84",
-    image: "/new-services/mickymouse-birtday-decor.jpg",
+    image: "/romantic-room/IMG_2481.JPG.jpeg",
     tag: "photo"
   },
   {
     id: "gal-85",
     title: "Surprise Setup 85",
-    image: "/new-services/simple-rose-decor-surprise.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-87",
-    title: "Surprise Setup 87",
-    image: "/new-services/terrace-camp-decor.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-88",
-    title: "Surprise Setup 88",
-    image: "/new-services/terrace-wedding-anniversary-surprise.jpeg",
-    tag: "photo"
-  },
-  {
-    id: "gal-89",
-    title: "Surprise Setup 89",
-    image: "/new-services/wedding-decor.png",
-    tag: "photo"
-  },
-  {
-    id: "gal-90",
-    title: "Surprise Setup 90",
-    image: "/proposal-planning/IMG_0482.JPG.jpeg",
-    tag: "photo"
-  },
-  {
-    id: "gal-91",
-    title: "Surprise Setup 91",
-    image: "/proposal-planning/IMG_3755.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-92",
-    title: "Surprise Setup 92",
-    image: "/proposal-planning/IMG_7009.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-93",
-    title: "Surprise Setup 93",
-    image: "/romantic-room/IMG_2481.JPG.jpeg",
-    tag: "photo"
-  },
-  {
-    id: "gal-94",
-    title: "Surprise Setup 94",
     image: "/romantic-room/IMG_9048.JPG.jpeg",
-    tag: "photo"
-  },
-  {
-    id: "gal-95",
-    title: "Surprise Setup 95",
-    image: "/Young_man_proposing_to_lover_202607182128.jpeg",
     tag: "photo"
   }
 ];
