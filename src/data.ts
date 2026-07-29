@@ -782,12 +782,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-4",
-    title: "Surprise Setup 4",
-    image: "/airport.jpg",
-    tag: "photo"
-  },
-  {
     id: "gal-5",
     title: "Surprise Setup 5",
     image: "/beach.jpg",
@@ -863,12 +857,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-17",
     title: "Surprise Setup 17",
     image: "/birthday.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-18",
-    title: "Surprise Setup 18",
-    image: "/canopy.jpg",
     tag: "photo"
   },
   {
@@ -1064,30 +1052,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-51",
-    title: "Surprise Setup 51",
-    image: "/IMG-20260709-WA0016.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-52",
-    title: "Surprise Setup 52",
-    image: "/IMG-20260709-WA0017.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-53",
-    title: "Surprise Setup 53",
-    image: "/IMG-20260709-WA0018.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-54",
-    title: "Surprise Setup 54",
-    image: "/IMG-20260709-WA0019.jpg",
-    tag: "photo"
-  },
-  {
     id: "gal-55",
     title: "Surprise Setup 55",
     image: "/IMG-20260709-WA0021.jpg",
@@ -1202,12 +1166,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-74",
-    title: "Surprise Setup 74",
-    image: "/new-services/heartin-first-night-room-decor.jpeg",
-    tag: "photo"
-  },
-  {
     id: "gal-75",
     title: "Surprise Setup 75",
     image: "/new-services/Jungle-Theme-Birthday-decor.jpeg",
@@ -1259,18 +1217,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-83",
     title: "Surprise Setup 83",
     image: "/proposal-planning/IMG_7009.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-84",
-    title: "Surprise Setup 84",
-    image: "/romantic-room/IMG_2481.JPG.jpeg",
-    tag: "photo"
-  },
-  {
-    id: "gal-85",
-    title: "Surprise Setup 85",
-    image: "/romantic-room/IMG_9048.JPG.jpeg",
     tag: "photo"
   }
 ];
