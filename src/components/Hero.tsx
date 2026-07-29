@@ -25,7 +25,7 @@ interface HeroProps {
 }
 
 export default function Hero({ onPlanClick, onServicesClick }: HeroProps) {
-  const [mascotBubble, setMascotBubble] = useState("Hi! I'm Puffy, your surprise helper! Let's make someone smile today!");
+  const [mascotBubble, setMascotBubble] = useState("Wanna make a call to my idea king?");
   const [wiggleMascot, setWiggleMascot] = useState(false);
 
   const mascotPhrases = [
