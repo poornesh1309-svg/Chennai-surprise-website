@@ -222,31 +222,7 @@ export const SERVICES: Service[] = [
       '/carousel/IMG_7660.JPG.jpeg'
     ]
   },
-  {
-    id: 'airport-surprise',
-    name: 'Airport Welcome Surprise',
-    shortDesc: 'A grand, emotional welcome right as they step out of Chennai Airport! We are your premier airport surprise planner Chennai services.',
-    longDesc: 'Make their arrival unforgettable with our specialized airport welcome surprise Chennai packages! Whether they are returning home after years or arriving in Chennai for the first time, our dedicated team acts as a professional airport surprise planner Chennai coordinator. We set up an adorable greeting party right outside the arrivals gate with customized cute placards, a professional guitarist playing their favorite song, beautiful helium balloons, and a bouquet of fresh lilies!',
-    iconName: 'Plane',
-    colorTheme: 'blue',
-    tag: 'Welcome Back',
-    image: '/airport.jpg',
-    priceStart: '₹4,999',
-    whatsIncluded: [
-      'Cute customized welcome board / banner',
-      'Professional guitarist playing 3 songs',
-      'Cute helium balloons & rose bouquet',
-      'Candid photography/videography',
-      'Special greeting mascot (Puffy the cat!)'
-    ],
-    popupGallery: [
-      '/airport.jpg',
-      '/carousel/IMG_1635.jpg',
-      '/carousel/IMG_8405.jpg',
-      '/carousel/IMG_6997.jpg',
-      '/carousel/IMG_7660.JPG.jpeg'
-    ]
-  },
+
   {
     id: 'boat-yacht-surprise',
     name: 'Yacht & Boat Surprise',
@@ -1855,7 +1831,6 @@ export const CATEGORY_DATA = [
       'mall-surprise',
       'flash-mob',
       'music-surprise',
-      'airport-surprise',
       'boat-yacht-surprise'
     ,
       'airport-welcome-surprise',
