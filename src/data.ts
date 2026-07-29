@@ -788,12 +788,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-6",
-    title: "Surprise Setup 6",
-    image: "/birthday-room-surprise-decor.JPG",
-    tag: "photo"
-  },
-  {
     id: "gal-17",
     title: "Surprise Setup 17",
     image: "/birthday.jpg",
@@ -914,45 +908,9 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-63",
-    title: "Surprise Setup 63",
-    image: "/IMG_1727.JPG",
-    tag: "photo"
-  },
-  {
-    id: "gal-66",
-    title: "Surprise Setup 66",
-    image: "/IMG_2038.JPG",
-    tag: "photo"
-  },
-  {
-    id: "gal-67",
-    title: "Surprise Setup 67",
-    image: "/IMG_5411.JPG",
-    tag: "photo"
-  },
-  {
-    id: "gal-68",
-    title: "Surprise Setup 68",
-    image: "/IMG_5414.JPG",
-    tag: "photo"
-  },
-  {
     id: "gal-69",
     title: "Surprise Setup 69",
     image: "/IMG_5675.JPG",
-    tag: "photo"
-  },
-  {
-    id: "gal-70",
-    title: "Surprise Setup 70",
-    image: "/IMG_9296.JPG",
-    tag: "photo"
-  },
-  {
-    id: "gal-71",
-    title: "Surprise Setup 71",
-    image: "/IMG_9297.JPG",
     tag: "photo"
   },
   {
