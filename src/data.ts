@@ -794,54 +794,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-7",
-    title: "Surprise Setup 7",
-    image: "/birthday-surprise/bday_new_1.png",
-    tag: "photo"
-  },
-  {
-    id: "gal-8",
-    title: "Surprise Setup 8",
-    image: "/birthday-surprise/bday_new_2.png",
-    tag: "photo"
-  },
-  {
-    id: "gal-9",
-    title: "Surprise Setup 9",
-    image: "/birthday-surprise/bday_new_3.png",
-    tag: "photo"
-  },
-  {
-    id: "gal-10",
-    title: "Surprise Setup 10",
-    image: "/birthday-surprise/bday_new_4.png",
-    tag: "photo"
-  },
-  {
-    id: "gal-11",
-    title: "Surprise Setup 11",
-    image: "/birthday-surprise/IMG-20260709-WA0006.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-12",
-    title: "Surprise Setup 12",
-    image: "/birthday-surprise/IMG-20260709-WA0010.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-13",
-    title: "Surprise Setup 13",
-    image: "/birthday-surprise/IMG-20260709-WA0013.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-14",
-    title: "Surprise Setup 14",
-    image: "/birthday-surprise/IMG-20260709-WA0020.jpg",
-    tag: "photo"
-  },
-  {
     id: "gal-17",
     title: "Surprise Setup 17",
     image: "/birthday.jpg",
@@ -950,78 +902,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-45",
-    title: "Surprise Setup 45",
-    image: "/IMG-20260709-WA0004.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-46",
-    title: "Surprise Setup 46",
-    image: "/IMG-20260709-WA0005.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-47",
-    title: "Surprise Setup 47",
-    image: "/IMG-20260709-WA0007.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-48",
-    title: "Surprise Setup 48",
-    image: "/IMG-20260709-WA0008.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-49",
-    title: "Surprise Setup 49",
-    image: "/IMG-20260709-WA0009.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-50",
-    title: "Surprise Setup 50",
-    image: "/IMG-20260709-WA0011.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-55",
-    title: "Surprise Setup 55",
-    image: "/IMG-20260709-WA0021.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-56",
-    title: "Surprise Setup 56",
-    image: "/IMG-20260709-WA0023.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-57",
-    title: "Surprise Setup 57",
-    image: "/IMG-20260709-WA0024.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-58",
-    title: "Surprise Setup 58",
-    image: "/IMG-20260709-WA0025.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-59",
-    title: "Surprise Setup 59",
-    image: "/IMG-20260709-WA0026.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-60",
-    title: "Surprise Setup 60",
-    image: "/IMG-20260709-WA0027.jpg",
-    tag: "photo"
-  },
-  {
     id: "gal-61",
     title: "Surprise Setup 61",
     image: "/IMG-2079-300x300.jpg",
@@ -1037,12 +917,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-63",
     title: "Surprise Setup 63",
     image: "/IMG_1727.JPG",
-    tag: "photo"
-  },
-  {
-    id: "gal-64",
-    title: "Surprise Setup 64",
-    image: "/IMG_1820.jpg_2K_202607182059.jpeg",
     tag: "photo"
   },
   {
