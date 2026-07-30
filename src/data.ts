@@ -90,9 +90,9 @@ export const SERVICES: Service[] = [
       '/birthday-surprise/IMG-20260709-WA0020.jpg',
       '/carousel/IMG_8951.JPG.jpeg',
       '/IMG-0506-Copy-scaled.jpg',
-      '/ff.jpg',
+      '/IMG_8954.JPG.jpeg',
       '/IMG_9296.JPG',
-      '/2.png',
+      '/IMG_8955.JPG.jpeg',
       '/carousel/IMG_8097 (1).jpg'
     ]
   },
