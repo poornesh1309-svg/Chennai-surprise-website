@@ -764,12 +764,6 @@ export const SERVICES: Service[] = [
 
 export const GALLERY_ITEMS: GalleryItem[] = [
   {
-    id: "gal-all-4",
-    title: "Project Image 4",
-    image: "/airport.jpg",
-    tag: "photo"
-  },
-  {
     id: "gal-all-5",
     title: "Project Image 5",
     image: "/anniversary-surprise.jpg",
@@ -938,12 +932,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-all-74",
-    title: "Project Image 74",
-    image: "/IMG-2079-300x300.jpg",
-    tag: "photo"
-  },
-  {
     id: "gal-all-75",
     title: "Project Image 75",
     image: "/IMG-2148-300x300.jpg",
@@ -977,12 +965,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-all-92",
     title: "Project Image 92",
     image: "/mall.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-93",
-    title: "Project Image 93",
-    image: "/music.jpg",
     tag: "photo"
   },
   {
@@ -1235,36 +1217,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-all-144",
     title: "Project Image 144",
     image: "/wedding-decor.png",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-145",
-    title: "Project Image 145",
-    image: "/yacht.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-146",
-    title: "Project Image 146",
-    image: "/Young_friends_surprising_friend_2K_202607182136.jpeg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-147",
-    title: "Project Image 147",
-    image: "/Young_friends_surprising_friend_…_202607182105.jpeg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-148",
-    title: "Project Image 148",
-    image: "/Young_friends_surprising_friend_…_202607182108.jpeg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-149",
-    title: "Project Image 149",
-    image: "/Young_man_proposing_to_lover_202607182128.jpeg",
     tag: "photo"
   }
 ];
