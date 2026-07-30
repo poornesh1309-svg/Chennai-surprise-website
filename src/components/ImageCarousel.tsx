@@ -22,7 +22,7 @@ const carouselSlides: CarouselSlide[] = [
   { src: 'new_img_9.png', copy: "Breathtaking setups, just for you.", positionClass: "bottom-20 left-6 md:bottom-24 md:left-16 text-left items-start" },
   { src: 'new_img_7.png', copy: "Love is in the air.", positionClass: "bottom-20 right-6 md:bottom-24 md:right-16 text-right items-end" },
   { src: 'IMG_8521.jpg', copy: "A day as special as your love.", positionClass: "top-12 right-6 md:top-20 md:right-16 text-right items-end" },
-  { src: 'IMG_7660.JPG.jpeg', copy: "Saying 'I do' to unforgettable memories.", positionClass: "bottom-24 left-1/2 -translate-x-1/2 text-center items-center" },
+  { src: 'IMG_7660.JPG.jpeg', copy: "A spectacular birthday celebration!", positionClass: "top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center items-center" },
   { src: 'IMG_8405.jpg', copy: "The perfect backdrop for your perfect moment.", positionClass: "bottom-20 left-6 md:bottom-24 md:left-16 text-left items-start" },
   { src: 'IMG_8097 (1).jpg', copy: "Smiles guaranteed.", positionClass: "top-12 left-6 md:top-20 md:left-16 text-left items-start" },
   { src: 'IMG_1836.JPG.jpeg', copy: "Your vision, brought to life.", positionClass: "bottom-20 right-6 md:bottom-24 md:right-16 text-right items-end" },
