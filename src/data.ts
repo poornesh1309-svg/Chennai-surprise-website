@@ -250,13 +250,6 @@ export const SERVICES: Service[] = [
       "Professional setup and seamless execution by our team",
       "Custom ambient lighting and atmospheric details",
       "Dedicated event coordinator for a stress-free experience"
-    ],
-    popupGallery: [
-      '/yacht.jpg',
-      '/carousel/IMG_1635.jpg',
-      '/carousel/IMG_8405.jpg',
-      '/carousel/IMG_6997.jpg',
-      '/carousel/IMG_7660.JPG.jpeg'
     ]
   },
   {
