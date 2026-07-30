@@ -10,7 +10,7 @@ interface GalleryStripProps {
 function getYoutubeEmbedUrl(url?: string): string | null {
   if (!url) return null;
   const match = url.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?|shorts)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i);
-  return match ? `https://www.youtube.com/embed/${match[1]}` : null;
+  return match ? `https://www.youtube.com/embed/${match[1]}?autoplay=1&mute=1&loop=1&playlist=${match[1]}` : null;
 }
 
 export default function GalleryStrip({ onViewAllClick }: GalleryStripProps) {
