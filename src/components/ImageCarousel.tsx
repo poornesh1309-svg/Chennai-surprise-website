@@ -83,8 +83,8 @@ export default function ImageCarousel() {
   const currentSlide = carouselSlides[currentIndex];
 
   return (
-    <section className="relative w-full min-h-[calc(100dvh-76px)] sm:min-h-[calc(100dvh-88px)] bg-gray-900 overflow-hidden flex flex-col items-center justify-center group">
-      {/* Full Screen Image Container */}
+    <section className="relative w-full aspect-[4/3] sm:aspect-video md:aspect-auto md:min-h-[calc(100dvh-88px)] bg-gray-900 overflow-hidden flex flex-col items-center justify-center group">
+      {/* Image Container */}
       <AnimatePresence mode="wait">
         <motion.div
           key={currentIndex}
