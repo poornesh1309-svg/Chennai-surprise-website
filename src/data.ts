@@ -920,12 +920,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-all-51",
-    title: "Project Image 51",
-    image: "/ff.jpg_202607182053.jpeg",
-    tag: "photo"
-  },
-  {
     id: "gal-all-52",
     title: "Project Image 52",
     image: "/flashmob.jpg",
