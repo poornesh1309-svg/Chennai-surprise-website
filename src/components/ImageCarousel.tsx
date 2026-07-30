@@ -83,7 +83,7 @@ export default function ImageCarousel() {
   const currentSlide = carouselSlides[currentIndex];
 
   return (
-    <section className="relative w-full aspect-video md:aspect-auto md:min-h-[calc(100dvh-88px)] bg-gray-900 overflow-hidden flex flex-col items-center justify-center group">
+    <section className="relative w-full aspect-[9/16] md:aspect-auto md:min-h-[calc(100dvh-88px)] bg-gray-900 overflow-hidden flex flex-col items-center justify-center group">
       {/* Image Container */}
       <AnimatePresence mode="wait">
         <motion.div
@@ -97,7 +97,7 @@ export default function ImageCarousel() {
           <SmartImage
             src={`/carousel/${currentSlide.src}`}
             alt={`Memory ${currentIndex + 1}`}
-            className="w-full h-full object-cover opacity-90 brightness-[0.85]"
+            className="w-full h-full object-contain md:object-cover opacity-90 brightness-[0.85]"
             priority={currentIndex === 0}
           />
           {/* Subtle gradient overlay to ensure text readability */}
