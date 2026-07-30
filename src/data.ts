@@ -1062,6 +1062,96 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     title: "Mall",
     image: "/mall.jpg",
     tag: "photo"
+  },
+  {
+    id: "gal-new-300",
+    title: "Terrace camp decor",
+    image: "/new-services/terrace-camp-decor.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-301",
+    title: "Terrace surprise",
+    image: "/new-services/terrace-surprise.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-302",
+    title: "Wedding decor",
+    image: "/new-services/wedding-decor.png",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-303",
+    title: "Romantic beach surprise",
+    image: "/romantic-beach-surprise.JPEG",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-304",
+    title: "Simple rose decor surprise",
+    image: "/new-services/simple-rose-decor-surprise.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-305",
+    title: "ChatGPT Image Jul 23, 2026, 01 03 36 PM",
+    image: "/ChatGPT Image Jul 23, 2026, 01_03_36 PM.png",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-306",
+    title: "ChatGPT Image Jul 23, 2026, 01 05 26 PM",
+    image: "/ChatGPT Image Jul 23, 2026, 01_05_26 PM.png",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-307",
+    title: "ChatGPT Image Jul 23, 2026, 01 08 59 PM",
+    image: "/ChatGPT Image Jul 23, 2026, 01_08_59 PM.png",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-308",
+    title: "ChatGPT Image Jul 23, 2026, 01 11 10 PM",
+    image: "/ChatGPT Image Jul 23, 2026, 01_11_10 PM.png",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-309",
+    title: "ChatGPT Image Jul 23, 2026, 01 12 26 PM",
+    image: "/ChatGPT Image Jul 23, 2026, 01_12_26 PM.png",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-310",
+    title: "ChatGPT Image Jul 23, 2026, 01 14 11 PM",
+    image: "/ChatGPT Image Jul 23, 2026, 01_14_11 PM.png",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-311",
+    title: "ChatGPT Image Jul 23, 2026, 01 15 40 PM",
+    image: "/ChatGPT Image Jul 23, 2026, 01_15_40 PM.png",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-312",
+    title: "ChatGPT Image Jul 23, 2026, 01 58 22 PM",
+    image: "/ChatGPT Image Jul 23, 2026, 01_58_22 PM.png",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-313",
+    title: "ChatGPT Image Jul 23, 2026, 02 01 14 PM",
+    image: "/ChatGPT Image Jul 23, 2026, 02_01_14 PM.png",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-314",
+    title: "Untitled design 86",
+    image: "/proposal-planning/Untitled-design-86.png",
+    tag: "photo"
   }
 ];
 
