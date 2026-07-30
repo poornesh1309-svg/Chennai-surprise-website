@@ -762,7 +762,99 @@ export const SERVICES: Service[] = [
   }
 ];
 
-export const GALLERY_ITEMS: GalleryItem[] = [];
+export const GALLERY_ITEMS: GalleryItem[] = [
+  {
+    id: "gal-new-1",
+    title: "Birthday",
+    image: "/birthday.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-2",
+    title: "81Y1OwaQp4L. AC SL1500  600x600",
+    image: "/81Y1OwaQp4L._AC_SL1500_-600x600.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-3",
+    title: "Ae4b625d0c3c62f9d6d4aa81434a9728",
+    image: "/ae4b625d0c3c62f9d6d4aa81434a9728.png",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-4",
+    title: "1 1",
+    image: "/1-1.png",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-5",
+    title: "Balloon tunnel surprise",
+    image: "/balloon-tunnel-surprise.HEIC",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-6",
+    title: "Anniversary surprise",
+    image: "/anniversary-surprise.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-7",
+    title: "Beach",
+    image: "/beach.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-8",
+    title: "Butterfly style birthday decor",
+    image: "/butterfly-style-birthday-decor.HEIC",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-9",
+    title: "Canopy",
+    image: "/canopy.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-10",
+    title: "Birthday room surprise decor",
+    image: "/birthday-room-surprise-decor.JPG",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-11",
+    title: "Grand birthday decor",
+    image: "/grand-birthday-decor.JPG",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-12",
+    title: "IMG 1636",
+    image: "/carousel/IMG_1636.HEIC",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-13",
+    title: "IMG 1641",
+    image: "/IMG_1641.HEIC",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-14",
+    title: "IMG 1653",
+    image: "/IMG_1653.HEIC",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-15",
+    title: "IMG 1688",
+    image: "/IMG_1688.HEIC",
+    tag: "photo"
+  }
+];
+
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: 't0',
