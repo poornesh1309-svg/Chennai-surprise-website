@@ -790,7 +790,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: "gal-new-5",
     title: "Balloon tunnel surprise",
-    image: "/balloon-tunnel-surprise.HEIC",
+    image: "/balloon-tunnel-surprise.jpg",
     tag: "photo"
   },
   {
@@ -808,7 +808,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: "gal-new-8",
     title: "Butterfly style birthday decor",
-    image: "/butterfly-style-birthday-decor.HEIC",
+    image: "/butterfly-style-birthday-decor.jpg",
     tag: "photo"
   },
   {
@@ -832,25 +832,25 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: "gal-new-12",
     title: "IMG 1636",
-    image: "/carousel/IMG_1636.HEIC",
+    image: "/carousel/IMG_1636.jpg",
     tag: "photo"
   },
   {
     id: "gal-new-13",
     title: "IMG 1641",
-    image: "/IMG_1641.HEIC",
+    image: "/IMG_1641.jpg",
     tag: "photo"
   },
   {
     id: "gal-new-14",
     title: "IMG 1653",
-    image: "/IMG_1653.HEIC",
+    image: "/IMG_1653.jpg",
     tag: "photo"
   },
   {
     id: "gal-new-15",
     title: "IMG 1688",
-    image: "/IMG_1688.HEIC",
+    image: "/IMG_1688.jpg",
     tag: "photo"
   }
 ];
