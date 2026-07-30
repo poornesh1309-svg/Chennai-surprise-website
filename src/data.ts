@@ -992,12 +992,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-all-94",
-    title: "Project Image 94",
-    image: "/new-services/anniversary-surprise.jpg",
-    tag: "photo"
-  },
-  {
     id: "gal-all-95",
     title: "Project Image 95",
     image: "/new-services/balloon-rush-birthday-decor.png",
@@ -1037,12 +1031,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-all-106",
     title: "Project Image 106",
     image: "/new-services/golden-balloon-rush-birthday-decor.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-107",
-    title: "Project Image 107",
-    image: "/new-services/grand-birthday-decor.JPG",
     tag: "photo"
   },
   {
@@ -1148,12 +1136,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-all-127",
-    title: "Project Image 127",
-    image: "/proposal-planning/IMG_5681.JPG",
-    tag: "photo"
-  },
-  {
     id: "gal-all-128",
     title: "Project Image 128",
     image: "/proposal-planning/IMG_7009.jpg",
@@ -1214,33 +1196,9 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-all-140",
-    title: "Project Image 140",
-    image: "/simple-rose-decor-surprise.jpg",
-    tag: "photo"
-  },
-  {
     id: "gal-all-141",
     title: "Project Image 141",
     image: "/terrace-birthday-decor.JPG",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-142",
-    title: "Project Image 142",
-    image: "/terrace-camp-decor.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-143",
-    title: "Project Image 143",
-    image: "/terrace-surprise.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-144",
-    title: "Project Image 144",
-    image: "/wedding-decor.png",
     tag: "photo"
   },
   {
