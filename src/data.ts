@@ -1218,6 +1218,78 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     title: "IMG 9040.JPG",
     image: "/carousel/IMG_9040.JPG.jpeg",
     tag: "photo"
+  },
+  {
+    id: "gal-new-600",
+    title: "IMG 0482.JPG",
+    image: "/IMG_0482.JPG.jpeg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-601",
+    title: "IMG 0509",
+    image: "/IMG_0509.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-602",
+    title: "IMG 0510",
+    image: "/IMG_0510.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-603",
+    title: "IMG 1720.JPG",
+    image: "/IMG_1720.JPG.jpeg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-604",
+    title: "IMG 2046.JPG",
+    image: "/IMG_2046.JPG.jpeg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-605",
+    title: "IMG 5391.JPG",
+    image: "/IMG_5391.JPG.jpeg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-606",
+    title: "IMG 7970",
+    image: "/IMG_7970.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-607",
+    title: "IMG 8410",
+    image: "/IMG_8410.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-608",
+    title: "IMG 8890",
+    image: "/IMG_8890.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-609",
+    title: "IMG 8908",
+    image: "/IMG_8908.PNG",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-610",
+    title: "IMG 8954.JPG",
+    image: "/IMG_8954.JPG.jpeg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-611",
+    title: "IMG 8955.JPG",
+    image: "/IMG_8955.JPG.jpeg",
+    tag: "photo"
   }
 ];
 
