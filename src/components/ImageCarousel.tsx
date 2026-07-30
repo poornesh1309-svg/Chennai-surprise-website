@@ -83,7 +83,7 @@ export default function ImageCarousel() {
   const currentSlide = carouselSlides[currentIndex];
 
   return (
-    <section className="relative w-full aspect-[9/16] md:aspect-auto md:min-h-[calc(100dvh-88px)] bg-gray-900 overflow-hidden flex flex-col items-center justify-center group">
+    <section className="relative w-full aspect-video md:aspect-auto md:min-h-[calc(100dvh-88px)] bg-gray-900 overflow-hidden flex flex-col items-center justify-center group">
       {/* Image Container */}
       <AnimatePresence mode="wait">
         <motion.div
@@ -97,7 +97,7 @@ export default function ImageCarousel() {
           <SmartImage
             src={`/carousel/${currentSlide.src}`}
             alt={`Memory ${currentIndex + 1}`}
-            className="w-full h-full object-contain md:object-cover opacity-90 brightness-[0.85]"
+            className="w-full h-full object-cover opacity-90 brightness-[0.85]"
             priority={currentIndex === 0}
           />
           {/* Subtle gradient overlay to ensure text readability */}
@@ -113,10 +113,10 @@ export default function ImageCarousel() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className={`absolute flex flex-col z-10 px-6 w-full max-w-4xl pointer-events-none ${currentSlide.positionClass}`}
+          className={`absolute flex flex-col z-10 px-4 md:px-6 w-full max-w-4xl pointer-events-none ${currentSlide.positionClass}`}
         >
-          <div className="inline-block p-4 sm:p-6">
-            <h2 className="font-display text-2xl md:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-xl leading-tight">
+          <div className="inline-block p-2 md:p-6">
+            <h2 className="font-display text-lg sm:text-2xl md:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-xl leading-tight">
               {currentSlide.copy}
             </h2>
           </div>
@@ -124,14 +124,14 @@ export default function ImageCarousel() {
       </AnimatePresence>
 
       {/* Navigation Overlay (Dots) */}
-      <div className="absolute bottom-6 left-0 right-0 flex justify-center gap-2 z-20 px-4 flex-wrap">
+      <div className="absolute bottom-2 md:bottom-6 left-0 right-0 flex justify-center gap-1.5 md:gap-2 z-20 px-4 flex-wrap scale-75 md:scale-100 origin-bottom">
         {carouselSlides.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+            className={`w-2 h-2 md:w-2.5 md:h-2.5 rounded-full transition-all duration-300 ${
               index === currentIndex 
-                ? 'bg-white scale-125 w-6 shadow-[0_0_10px_rgba(255,255,255,0.8)]' 
+                ? 'bg-white scale-125 w-4 md:w-6 shadow-[0_0_10px_rgba(255,255,255,0.8)]' 
                 : 'bg-white/50 hover:bg-white/80'
             }`}
             aria-label={`Go to slide ${index + 1}`}
