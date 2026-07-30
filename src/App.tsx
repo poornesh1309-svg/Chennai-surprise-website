@@ -180,10 +180,8 @@ export default function App() {
         {activeTab === 'home' ? (
           <main className="flex-1 w-full">
             <div id="home">
-              <Hero onPlanClick={scrollToBooking} onServicesClick={scrollToServices} />
-            </div>
-            <div className="py-8 bg-white border-y border-pink-100">
               <ImageCarousel />
+              <Hero onPlanClick={scrollToBooking} onServicesClick={scrollToServices} />
             </div>
             <div id="categories">
               <Categories 
