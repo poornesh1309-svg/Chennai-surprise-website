@@ -228,7 +228,7 @@ export default function Navbar({ activeTab, setActiveTab, onPlanClick, onCategor
             animate={{ opacity: 1, height: 'auto', scale: 1 }}
             exit={{ opacity: 0, height: 0, scale: 0.95 }}
             transition={{ duration: 0.25, ease: 'easeInOut' }}
-            className="lg:hidden mt-3 p-4 bg-white border-t border-pink-100 rounded-2xl flex flex-col gap-1.5 shadow-inner overflow-hidden max-h-[80vh] overflow-y-auto"
+            className="lg:hidden mt-3 p-4 bg-white border-t border-pink-100 rounded-2xl flex flex-col gap-1.5 shadow-inner overflow-hidden max-h-[80dvh] overflow-y-auto"
           >
             {NAV_ITEMS.map((item) => (
               <div key={item.id} className="flex flex-col">

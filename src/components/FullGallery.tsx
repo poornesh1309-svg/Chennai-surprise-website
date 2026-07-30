@@ -26,7 +26,7 @@ export default function FullGallery({ onSelectService }: FullGalleryProps) {
   };
 
   return (
-    <div className="py-12 px-4 sm:px-6 bg-[#FFF9FB] min-h-screen">
+    <div className="py-12 px-4 sm:px-6 bg-[#FFF9FB] min-h-[100dvh]">
       <div className="max-w-7xl mx-auto space-y-12 animate-fade-in">
         
         {/* Gallery Title Block */}
