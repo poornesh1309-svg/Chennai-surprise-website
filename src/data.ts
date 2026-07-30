@@ -794,12 +794,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-new-6",
-    title: "Anniversary surprise",
-    image: "/anniversary-surprise.jpg",
-    tag: "photo"
-  },
-  {
     id: "gal-new-7",
     title: "Beach",
     image: "/beach.jpg",
