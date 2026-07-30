@@ -764,24 +764,6 @@ export const SERVICES: Service[] = [
 
 export const GALLERY_ITEMS: GalleryItem[] = [
   {
-    id: "gal-all-1",
-    title: "Project Image 1",
-    image: "/1-1.png",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-2",
-    title: "Project Image 2",
-    image: "/81Y1OwaQp4L._AC_SL1500_-600x600.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-3",
-    title: "Project Image 3",
-    image: "/ae4b625d0c3c62f9d6d4aa81434a9728.png",
-    tag: "photo"
-  },
-  {
     id: "gal-all-4",
     title: "Project Image 4",
     image: "/airport.jpg",
@@ -800,105 +782,9 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-all-7",
-    title: "Project Image 7",
-    image: "/birthday-room-surprise-decor.JPG",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-8",
-    title: "Project Image 8",
-    image: "/birthday-surprise/bday_new_1.png",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-9",
-    title: "Project Image 9",
-    image: "/birthday-surprise/bday_new_2.png",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-10",
-    title: "Project Image 10",
-    image: "/birthday-surprise/bday_new_3.png",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-11",
-    title: "Project Image 11",
-    image: "/birthday-surprise/bday_new_4.png",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-12",
-    title: "Project Image 12",
-    image: "/birthday-surprise/IMG-20260709-WA0006.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-13",
-    title: "Project Image 13",
-    image: "/birthday-surprise/IMG-20260709-WA0010.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-14",
-    title: "Project Image 14",
-    image: "/birthday-surprise/IMG-20260709-WA0013.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-15",
-    title: "Project Image 15",
-    image: "/birthday-surprise/IMG-20260709-WA0020.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-16",
-    title: "Project Image 16",
-    image: "/birthday-surprise/IMG_2049.JPG",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-17",
-    title: "Project Image 17",
-    image: "/birthday-surprise/IMG_8956.JPG",
-    tag: "photo"
-  },
-  {
     id: "gal-all-18",
     title: "Project Image 18",
     image: "/birthday.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-19",
-    title: "Project Image 19",
-    image: "/canopy.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-20",
-    title: "Project Image 20",
-    image: "/carousel/IMG_1635.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-21",
-    title: "Project Image 21",
-    image: "/carousel/IMG_1636.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-22",
-    title: "Project Image 22",
-    image: "/carousel/IMG_1819.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-23",
-    title: "Project Image 23",
-    image: "/carousel/IMG_1820.jpg",
     tag: "photo"
   },
   {
@@ -929,30 +815,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-all-28",
     title: "Project Image 28",
     image: "/carousel/IMG_7228.JPEG",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-29",
-    title: "Project Image 29",
-    image: "/carousel/IMG_7657.JPG.jpeg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-30",
-    title: "Project Image 30",
-    image: "/carousel/IMG_7658.JPG.jpeg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-31",
-    title: "Project Image 31",
-    image: "/carousel/IMG_7660.JPG.jpeg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-32",
-    title: "Project Image 32",
-    image: "/carousel/IMG_7661.JPG.jpeg",
     tag: "photo"
   },
   {
@@ -1058,12 +920,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-all-50",
-    title: "Project Image 50",
-    image: "/chennai-surprise-logo.png",
-    tag: "photo"
-  },
-  {
     id: "gal-all-51",
     title: "Project Image 51",
     image: "/ff.jpg_202607182053.jpeg",
@@ -1088,120 +944,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-all-55",
-    title: "Project Image 55",
-    image: "/IMG-20260709-WA0004.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-56",
-    title: "Project Image 56",
-    image: "/IMG-20260709-WA0005.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-57",
-    title: "Project Image 57",
-    image: "/IMG-20260709-WA0006.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-58",
-    title: "Project Image 58",
-    image: "/IMG-20260709-WA0007.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-59",
-    title: "Project Image 59",
-    image: "/IMG-20260709-WA0008.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-60",
-    title: "Project Image 60",
-    image: "/IMG-20260709-WA0009.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-61",
-    title: "Project Image 61",
-    image: "/IMG-20260709-WA0011.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-62",
-    title: "Project Image 62",
-    image: "/IMG-20260709-WA0013.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-63",
-    title: "Project Image 63",
-    image: "/IMG-20260709-WA0016.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-64",
-    title: "Project Image 64",
-    image: "/IMG-20260709-WA0017.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-65",
-    title: "Project Image 65",
-    image: "/IMG-20260709-WA0018.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-66",
-    title: "Project Image 66",
-    image: "/IMG-20260709-WA0019.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-67",
-    title: "Project Image 67",
-    image: "/IMG-20260709-WA0020.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-68",
-    title: "Project Image 68",
-    image: "/IMG-20260709-WA0021.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-69",
-    title: "Project Image 69",
-    image: "/IMG-20260709-WA0023.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-70",
-    title: "Project Image 70",
-    image: "/IMG-20260709-WA0024.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-71",
-    title: "Project Image 71",
-    image: "/IMG-20260709-WA0025.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-72",
-    title: "Project Image 72",
-    image: "/IMG-20260709-WA0026.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-73",
-    title: "Project Image 73",
-    image: "/IMG-20260709-WA0027.jpg",
-    tag: "photo"
-  },
-  {
     id: "gal-all-74",
     title: "Project Image 74",
     image: "/IMG-2079-300x300.jpg",
@@ -1214,45 +956,9 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-all-76",
-    title: "Project Image 76",
-    image: "/IMG_1727.JPG",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-77",
-    title: "Project Image 77",
-    image: "/IMG_1820.jpg_2K_202607182059.jpeg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-78",
-    title: "Project Image 78",
-    image: "/IMG_1840.JPG",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-79",
-    title: "Project Image 79",
-    image: "/IMG_2038.JPG",
-    tag: "photo"
-  },
-  {
     id: "gal-all-80",
     title: "Project Image 80",
     image: "/IMG_2478.JPG",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-81",
-    title: "Project Image 81",
-    image: "/IMG_5411.JPG",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-82",
-    title: "Project Image 82",
-    image: "/IMG_5414.JPG",
     tag: "photo"
   },
   {
@@ -1268,45 +974,9 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-all-85",
-    title: "Project Image 85",
-    image: "/IMG_7657.JPG",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-86",
-    title: "Project Image 86",
-    image: "/IMG_7658.JPG",
-    tag: "photo"
-  },
-  {
     id: "gal-all-87",
     title: "Project Image 87",
     image: "/IMG_7659.JPG",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-88",
-    title: "Project Image 88",
-    image: "/IMG_7660.JPG",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-89",
-    title: "Project Image 89",
-    image: "/IMG_7661.JPG",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-90",
-    title: "Project Image 90",
-    image: "/IMG_9296.JPG",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-91",
-    title: "Project Image 91",
-    image: "/IMG_9297.JPG",
     tag: "photo"
   },
   {
@@ -1334,12 +1004,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-all-96",
-    title: "Project Image 96",
-    image: "/new-services/balloon-tunnel-surprise.jpg",
-    tag: "photo"
-  },
-  {
     id: "gal-all-97",
     title: "Project Image 97",
     image: "/new-services/beach-proposal-surprise.jpg",
@@ -1352,12 +1016,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     tag: "photo"
   },
   {
-    id: "gal-all-99",
-    title: "Project Image 99",
-    image: "/new-services/birthday-room-surprise-decor.JPG",
-    tag: "photo"
-  },
-  {
     id: "gal-all-100",
     title: "Project Image 100",
     image: "/new-services/birthday-surprise-decor.jpeg",
@@ -1367,24 +1025,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-all-101",
     title: "Project Image 101",
     image: "/new-services/birthday-surprise.png",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-102",
-    title: "Project Image 102",
-    image: "/new-services/car-surprise.jpg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-103",
-    title: "Project Image 103",
-    image: "/new-services/fairy-style-birthday-decor.jpeg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-104",
-    title: "Project Image 104",
-    image: "/new-services/fairytail-birthday-surprise.jpeg",
     tag: "photo"
   },
   {
@@ -1415,18 +1055,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-all-109",
     title: "Project Image 109",
     image: "/new-services/heartin-first-night-room-decor.jpeg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-110",
-    title: "Project Image 110",
-    image: "/new-services/Jungle-Theme-Birthday-decor.jpeg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-111",
-    title: "Project Image 111",
-    image: "/new-services/mickymouse-birtday-decor.jpg",
     tag: "photo"
   },
   {
@@ -1571,18 +1199,6 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-all-135",
     title: "Project Image 135",
     image: "/romantic-room/IMG_2481.JPG.jpeg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-136",
-    title: "Project Image 136",
-    image: "/romantic-room/IMG_5411.JPG.jpeg",
-    tag: "photo"
-  },
-  {
-    id: "gal-all-137",
-    title: "Project Image 137",
-    image: "/romantic-room/IMG_5414.JPG.jpeg",
     tag: "photo"
   },
   {
