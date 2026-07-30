@@ -115,8 +115,8 @@ export default function ImageCarousel() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className={`absolute flex flex-col z-10 px-6 w-full max-w-4xl pointer-events-none ${currentSlide.positionClass}`}
         >
-          <div className="inline-block p-4 sm:p-6 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl">
-            <h2 className="font-display text-2xl md:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-md leading-tight">
+          <div className="inline-block p-4 sm:p-6">
+            <h2 className="font-display text-2xl md:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-xl leading-tight">
               {currentSlide.copy}
             </h2>
           </div>
