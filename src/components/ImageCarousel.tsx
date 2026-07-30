@@ -10,22 +10,22 @@ interface CarouselSlide {
 }
 
 const carouselSlides: CarouselSlide[] = [
-  { src: 'new_img_2.png', copy: "Unforgettable moments crafted with love.", positionClass: "bottom-20 left-6 md:bottom-24 md:left-16 text-left items-start" },
-  { src: 'new_img_10.png', copy: "Celebrate life's biggest milestones.", positionClass: "bottom-20 right-6 md:bottom-24 md:right-16 text-right items-end" },
-  { src: 'new_img_5.png', copy: "Every detail, flawlessly executed.", positionClass: "top-12 left-6 md:top-20 md:left-16 text-left items-start" },
-  { src: 'new_img_6.png', copy: "Surprises that leave them speechless.", positionClass: "bottom-24 left-1/2 -translate-x-1/2 text-center items-center" },
-  { src: 'IMG_6997.jpg', copy: "A magical setting for a magical day.", positionClass: "bottom-20 left-6 md:bottom-24 md:left-16 text-left items-start" },
-  { src: 'new_img_1.png', copy: "Turning dreams into beautiful reality.", positionClass: "bottom-20 left-6 md:bottom-24 md:left-16 text-left items-start" },
-  { src: 'new_img_3.png', copy: "Because they deserve the absolute best.", positionClass: "bottom-20 right-6 md:bottom-24 md:right-16 text-right items-end" },
-  { src: 'new_img_4.png', copy: "Creating memories that last a lifetime.", positionClass: "top-12 left-6 md:top-20 md:left-16 text-left items-start" },
-  { src: 'new_img_8.png', copy: "Joy in every single surprise.", positionClass: "top-12 left-6 md:top-20 md:left-16 text-left items-start" },
-  { src: 'new_img_9.png', copy: "Breathtaking setups, just for you.", positionClass: "bottom-20 left-6 md:bottom-24 md:left-16 text-left items-start" },
-  { src: 'new_img_7.png', copy: "Love is in the air.", positionClass: "bottom-20 right-6 md:bottom-24 md:right-16 text-right items-end" },
-  { src: 'IMG_8521.jpg', copy: "A day as special as your love.", positionClass: "top-12 right-6 md:top-20 md:right-16 text-right items-end" },
-  { src: 'IMG_7660.JPG.jpeg', copy: "A spectacular birthday celebration!", positionClass: "top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center items-center" },
-  { src: 'IMG_8405.jpg', copy: "The perfect backdrop for your perfect moment.", positionClass: "bottom-20 left-6 md:bottom-24 md:left-16 text-left items-start" },
-  { src: 'IMG_8097 (1).jpg', copy: "Smiles guaranteed.", positionClass: "top-12 left-6 md:top-20 md:left-16 text-left items-start" },
-  { src: 'IMG_1836.JPG.jpeg', copy: "Your vision, brought to life.", positionClass: "bottom-20 right-6 md:bottom-24 md:right-16 text-right items-end" },
+  { src: 'new_img_2.png', copy: "Unforgettable moments crafted with love.", positionClass: "md:bottom-24 md:left-16 md:text-left md:items-start" },
+  { src: 'new_img_10.png', copy: "Celebrate life's biggest milestones.", positionClass: "md:bottom-24 md:right-16 md:left-auto md:text-right md:items-end" },
+  { src: 'new_img_5.png', copy: "Every detail, flawlessly executed.", positionClass: "md:top-20 md:bottom-auto md:left-16 md:text-left md:items-start" },
+  { src: 'new_img_6.png', copy: "Surprises that leave them speechless.", positionClass: "md:bottom-24 md:left-1/2 md:-translate-x-1/2 md:text-center md:items-center" },
+  { src: 'IMG_6997.jpg', copy: "A magical setting for a magical day.", positionClass: "md:bottom-24 md:left-16 md:text-left md:items-start" },
+  { src: 'new_img_1.png', copy: "Turning dreams into beautiful reality.", positionClass: "md:bottom-24 md:left-16 md:text-left md:items-start" },
+  { src: 'new_img_3.png', copy: "Because they deserve the absolute best.", positionClass: "md:bottom-24 md:right-16 md:left-auto md:text-right md:items-end" },
+  { src: 'new_img_4.png', copy: "Creating memories that last a lifetime.", positionClass: "md:top-20 md:bottom-auto md:left-16 md:text-left md:items-start" },
+  { src: 'new_img_8.png', copy: "Joy in every single surprise.", positionClass: "md:top-20 md:bottom-auto md:left-16 md:text-left md:items-start" },
+  { src: 'new_img_9.png', copy: "Breathtaking setups, just for you.", positionClass: "md:bottom-24 md:left-16 md:text-left md:items-start" },
+  { src: 'new_img_7.png', copy: "Love is in the air.", positionClass: "md:bottom-24 md:right-16 md:left-auto md:text-right md:items-end" },
+  { src: 'IMG_8521.jpg', copy: "A day as special as your love.", positionClass: "md:top-20 md:bottom-auto md:right-16 md:left-auto md:text-right md:items-end" },
+  { src: 'IMG_7660.JPG.jpeg', copy: "A spectacular birthday celebration!", positionClass: "md:top-1/2 md:-translate-y-1/2 md:bottom-auto md:left-1/2 md:-translate-x-1/2 md:text-center md:items-center" },
+  { src: 'IMG_8405.jpg', copy: "The perfect backdrop for your perfect moment.", positionClass: "md:bottom-24 md:left-16 md:text-left md:items-start" },
+  { src: 'IMG_8097 (1).jpg', copy: "Smiles guaranteed.", positionClass: "md:top-20 md:bottom-auto md:left-16 md:text-left md:items-start" },
+  { src: 'IMG_1836.JPG.jpeg', copy: "Your vision, brought to life.", positionClass: "md:bottom-24 md:right-16 md:left-auto md:text-right md:items-end" },
 ];
 
 const errorCache = new Set<string>();
@@ -113,7 +113,7 @@ export default function ImageCarousel() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className={`absolute flex flex-col z-10 px-4 md:px-6 w-full max-w-4xl pointer-events-none ${currentSlide.positionClass}`}
+          className={`absolute flex flex-col z-10 px-4 md:px-6 w-full max-w-4xl pointer-events-none bottom-8 left-0 right-0 items-center text-center ${currentSlide.positionClass}`}
         >
           <div className="inline-block p-2 md:p-6">
             <h2 className="font-display text-lg sm:text-2xl md:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-xl leading-tight">
