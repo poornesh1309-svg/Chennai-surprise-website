@@ -26,7 +26,34 @@ const SEOContent = lazy(() => import('./components/SEOContent'));
 const Footer = lazy(() => import('./components/Footer'));
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState<'home' | 'gallery'>('home');
+  const [activeTab, setActiveTab] = useState<'home' | 'gallery'>(() => {
+    return window.location.hash === '#gallery' ? 'gallery' : 'home';
+  });
+
+  useEffect(() => {
+    if (activeTab === 'gallery') {
+      if (window.location.hash !== '#gallery') {
+        window.history.pushState(null, '', '#gallery');
+      }
+    } else {
+      if (window.location.hash === '#gallery') {
+        window.history.pushState(null, '', window.location.pathname + window.location.search);
+      }
+    }
+  }, [activeTab]);
+
+  useEffect(() => {
+    const handlePopState = () => {
+      if (window.location.hash === '#gallery') {
+        setActiveTab('gallery');
+      } else {
+        setActiveTab('home');
+      }
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
   const [selectedServiceId, setSelectedServiceId] = useState<string>('');
   const [expandedCategoryId, setExpandedCategoryId] = useState<string | null>(null);
   const bookingSectionRef = useRef<HTMLDivElement | null>(null);
