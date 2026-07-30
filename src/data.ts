@@ -213,13 +213,6 @@ export const SERVICES: Service[] = [
       'Custom box of premium handmade chocolates',
       'Rose gold metallic star-shaped balloons',
       'Digital video keepsake of the performance'
-    ],
-    popupGallery: [
-      '/ff.jpg_202607182053.jpeg',
-      '/carousel/IMG_1635.jpg',
-      '/carousel/IMG_8405.jpg',
-      '/carousel/IMG_6997.jpg',
-      '/carousel/IMG_7660.JPG.jpeg'
     ]
   },
 
