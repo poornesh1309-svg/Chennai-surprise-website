@@ -25,7 +25,7 @@ export const SERVICES: Service[] = [
       '/birthday-surprise/bday_new_4.png',
       '/birthday-surprise/IMG-20260709-WA0006.jpg',
       '/birthday-surprise/IMG-20260709-WA0010.jpg',
-      '/IMG-20260709-WA0003.jpg',
+      '/IMG-20260709-WA0004.jpg',
       '/1-1.png',
       '/carousel/IMG_1635.jpg',
       '/carousel/IMG_8097 (1).jpg',
