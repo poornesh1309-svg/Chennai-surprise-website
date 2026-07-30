@@ -1152,6 +1152,72 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     title: "Untitled design 86",
     image: "/proposal-planning/Untitled-design-86.png",
     tag: "photo"
+  },
+  {
+    id: "gal-new-400",
+    title: "Birthday surprise decor",
+    image: "/new-services/birthday-surprise-decor.jpeg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-401",
+    title: "Terrace wedding anniversary surprise",
+    image: "/new-services/terrace-wedding-anniversary-surprise.jpeg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-402",
+    title: "Flash mob birthday surprise",
+    image: "/new-services/flash-mob-birthday-surprise.jpeg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-403",
+    title: "Mickymouse birtday decor",
+    image: "/new-services/mickymouse-birtday-decor.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-404",
+    title: "IMG 9082.JPG",
+    image: "/carousel/IMG_9082.JPG.jpeg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-405",
+    title: "IMG 8097 (1)",
+    image: "/carousel/IMG_8097 (1).jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-406",
+    title: "IMG 5285.JPG",
+    image: "/carousel/IMG_5285.JPG.jpeg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-407",
+    title: "IMG 8405",
+    image: "/carousel/IMG_8405.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-408",
+    title: "IMG 8521",
+    image: "/carousel/IMG_8521.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-409",
+    title: "IMG 9045.JPG",
+    image: "/carousel/IMG_9045.JPG.jpeg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-410",
+    title: "IMG 9040.JPG",
+    image: "/carousel/IMG_9040.JPG.jpeg",
+    tag: "photo"
   }
 ];
 
