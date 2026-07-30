@@ -852,6 +852,222 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     title: "IMG 1688",
     image: "/IMG_1688.jpg",
     tag: "photo"
+  },
+  {
+    id: "gal-new-100",
+    title: "IMG 1727",
+    image: "/IMG_1727.JPG",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-101",
+    title: "IMG 1819",
+    image: "/carousel/IMG_1819.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-102",
+    title: "IMG 1820",
+    image: "/carousel/IMG_1820.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-103",
+    title: "IMG 1840",
+    image: "/IMG_1840.JPG",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-104",
+    title: "IMG 2038",
+    image: "/IMG_2038.JPG",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-105",
+    title: "IMG 2478",
+    image: "/IMG_2478.JPG",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-106",
+    title: "IMG 3755",
+    image: "/IMG_3755.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-107",
+    title: "IMG 4993",
+    image: "/IMG_4993.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-108",
+    title: "IMG 5112",
+    image: "/IMG_5112.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-109",
+    title: "IMG 5411",
+    image: "/IMG_5411.JPG",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-110",
+    title: "IMG 5414",
+    image: "/IMG_5414.JPG",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-111",
+    title: "IMG 5675",
+    image: "/IMG_5675.JPG",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-112",
+    title: "IMG 5681",
+    image: "/IMG_5681.JPG",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-113",
+    title: "IMG 6002",
+    image: "/IMG_6002.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-114",
+    title: "IMG 6306",
+    image: "/IMG_6306.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-115",
+    title: "IMG 6997",
+    image: "/carousel/IMG_6997.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-116",
+    title: "IMG 7009",
+    image: "/IMG_7009.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-117",
+    title: "IMG 7657",
+    image: "/IMG_7657.JPG",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-118",
+    title: "IMG 7658",
+    image: "/IMG_7658.JPG",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-119",
+    title: "IMG 7661",
+    image: "/IMG_7661.JPG",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-120",
+    title: "IMG 9296",
+    image: "/IMG_9296.JPG",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-121",
+    title: "IMG 9297",
+    image: "/IMG_9297.JPG",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-122",
+    title: "IMG 0506 Copy scaled",
+    image: "/IMG-0506-Copy-scaled.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-123",
+    title: "IMG 2148 300x300",
+    image: "/IMG-2148-300x300.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-124",
+    title: "IMG 20260709 WA0004",
+    image: "/IMG-20260709-WA0004.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-125",
+    title: "IMG 20260709 WA0006",
+    image: "/birthday-surprise/IMG-20260709-WA0006.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-126",
+    title: "IMG 20260709 WA0008",
+    image: "/IMG-20260709-WA0008.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-127",
+    title: "IMG 20260709 WA0009",
+    image: "/IMG-20260709-WA0009.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-128",
+    title: "IMG 20260709 WA0011",
+    image: "/IMG-20260709-WA0011.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-129",
+    title: "IMG 20260709 WA0016",
+    image: "/IMG-20260709-WA0016.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-130",
+    title: "IMG 20260709 WA0017",
+    image: "/IMG-20260709-WA0017.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-131",
+    title: "IMG 20260709 WA0018",
+    image: "/IMG-20260709-WA0018.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-132",
+    title: "IMG 20260709 WA0013",
+    image: "/birthday-surprise/IMG-20260709-WA0013.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-133",
+    title: "IMG 20260709 WA0021",
+    image: "/IMG-20260709-WA0021.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-134",
+    title: "IMG 20260709 WA0025",
+    image: "/IMG-20260709-WA0025.jpg",
+    tag: "photo"
+  },
+  {
+    id: "gal-new-135",
+    title: "Mall",
+    image: "/mall.jpg",
+    tag: "photo"
   }
 ];
 
