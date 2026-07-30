@@ -97,7 +97,7 @@ export default function ImageCarousel() {
           <SmartImage
             src={`/carousel/${currentSlide.src}`}
             alt={`Memory ${currentIndex + 1}`}
-            className="w-full h-full object-cover opacity-90 brightness-[0.85]"
+            className="w-full h-full object-contain md:object-cover opacity-90 brightness-[0.85]"
             priority={currentIndex === 0}
           />
           {/* Subtle gradient overlay to ensure text readability */}
