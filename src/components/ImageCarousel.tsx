@@ -17,7 +17,7 @@ const carouselSlides: CarouselSlide[] = [
   { src: 'IMG_6997.jpg', copy: "A magical setting for a magical day.", positionClass: "bottom-20 left-6 md:bottom-24 md:left-16 text-left items-start" },
   { src: 'new_img_1.png', copy: "Turning dreams into beautiful reality.", positionClass: "bottom-20 left-6 md:bottom-24 md:left-16 text-left items-start" },
   { src: 'new_img_3.png', copy: "Because they deserve the absolute best.", positionClass: "bottom-20 right-6 md:bottom-24 md:right-16 text-right items-end" },
-  { src: 'new_img_4.png', copy: "Creating memories that last a lifetime.", positionClass: "bottom-24 left-1/2 -translate-x-1/2 text-center items-center" },
+  { src: 'new_img_4.png', copy: "Creating memories that last a lifetime.", positionClass: "top-12 left-6 md:top-20 md:left-16 text-left items-start" },
   { src: 'new_img_8.png', copy: "Joy in every single surprise.", positionClass: "top-12 left-6 md:top-20 md:left-16 text-left items-start" },
   { src: 'new_img_9.png', copy: "Breathtaking setups, just for you.", positionClass: "bottom-20 left-6 md:bottom-24 md:left-16 text-left items-start" },
   { src: 'new_img_7.png', copy: "Love is in the air.", positionClass: "bottom-20 right-6 md:bottom-24 md:right-16 text-right items-end" },
