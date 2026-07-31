@@ -132,7 +132,7 @@ export default function Hero({ onPlanClick, onServicesClick }: HeroProps) {
         >
           <div className="flex flex-col items-center gap-4">
             <span className="font-display text-lg text-pink-500 font-bold bg-pink-50/50 px-4 py-2 rounded-full border border-pink-100 shadow-sm text-center">
-              haven't got a surprise idea
+              Haven't Got A Surprise Idea?
             </span>
             <a 
               href="tel:+919791117291" 
