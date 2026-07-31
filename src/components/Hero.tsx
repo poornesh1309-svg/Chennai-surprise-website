@@ -130,8 +130,8 @@ export default function Hero({ onPlanClick, onServicesClick }: HeroProps) {
           className="lg:col-span-5 flex flex-col items-center relative justify-center" 
           id="hero-mascot-container"
         >
-          <div className="flex flex-col items-center gap-4">
-            <span className="font-display text-lg text-pink-500 font-bold bg-pink-50/50 px-4 py-2 rounded-full border border-pink-100 shadow-sm text-center">
+          <div className="flex flex-col items-center gap-3 sm:gap-4 mt-6 lg:mt-0">
+            <span className="font-display text-base sm:text-lg text-pink-500 font-bold bg-pink-50/50 px-4 py-2 rounded-full border border-pink-100 shadow-sm text-center">
               Haven't Got A Surprise Idea?
             </span>
             <a 
@@ -139,9 +139,9 @@ export default function Hero({ onPlanClick, onServicesClick }: HeroProps) {
               className="cursor-pointer md:cursor-default md:pointer-events-none hover:scale-105 transition-transform duration-300 relative group block"
               title="Click to call Idea King"
             >
-              <div className="absolute inset-0 bg-pink-100 rounded-[40px] filter blur-xl opacity-40 group-hover:opacity-60 transition-opacity" />
-              <div className="relative border-4 border-yellow-100 rounded-[40px] bg-white p-4 shadow-lg flex items-center justify-center">
-                 <img src="/Idea-king.png" alt="Idea King" className="w-56 h-auto object-contain rounded-[24px]" />
+              <div className="absolute inset-0 bg-pink-100 rounded-[32px] sm:rounded-[40px] filter blur-xl opacity-40 group-hover:opacity-60 transition-opacity" />
+              <div className="relative border-4 border-yellow-100 rounded-[32px] sm:rounded-[40px] bg-white p-3 sm:p-4 shadow-lg flex items-center justify-center">
+                 <img src="/Idea-king.png" alt="Idea King" className="w-40 sm:w-56 h-auto object-contain rounded-[20px] sm:rounded-[24px]" />
               </div>
             </a>
           </div>
