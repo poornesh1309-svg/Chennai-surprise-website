@@ -61,7 +61,7 @@ export default function ServiceModal({ selectedService, onClose, onBookNow, onGo
                 autoPlay loop muted playsInline defaultMuted preload="auto"
               />
             ) : (
-              <ZoomableImage
+              <img
                 src={selectedService.image}
                 alt={selectedService.name}
                 referrerPolicy="no-referrer"
@@ -118,7 +118,7 @@ export default function ServiceModal({ selectedService, onClose, onBookNow, onGo
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   id="modal-whatsapp-link"
-                  href={`https://wa.me/919791197692?text=Hi%20Chennai%20Surprise!%20I%20am%20interested%20in%20booking%20the%20${encodeURIComponent(selectedService.name)}.`}
+                  href={`https://wa.me/919791117291?text=Hi%20Chennai%20Surprise!%20I%20am%20interested%20in%20booking%20the%20${encodeURIComponent(selectedService.name)}.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="cute-btn-blue text-base w-full sm:w-auto bg-[#25D366] hover:bg-[#128C7E] text-white border border-[#25D366] shadow-sm font-bold"

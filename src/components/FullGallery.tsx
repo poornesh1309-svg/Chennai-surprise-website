@@ -121,7 +121,7 @@ export default function FullGallery({ onSelectService }: FullGalleryProps) {
             </button>
             <a
               id="gallery-cta-whatsapp"
-              href="https://wa.me/919791197692?text=Hi%20Chennai%20Surprise,%20I%20would%20like%20to%20plan%20a%20surprise."
+              href="https://wa.me/919791117291?text=Hi%20Chennai%20Surprise,%20I%20would%20like%20to%20plan%20a%20surprise."
               target="_blank"
               rel="noopener noreferrer"
               className="cute-btn-blue text-base px-8 py-3.5 bg-[#25D366] hover:bg-[#128C7E] text-white border border-[#25D366] shadow-md hover:shadow-lg transition-all font-bold flex items-center justify-center gap-2 w-full sm:w-auto"
@@ -202,7 +202,7 @@ export default function FullGallery({ onSelectService }: FullGalleryProps) {
                   </button>
                   <a
                     id="lightbox-whatsapp-link"
-                    href="https://wa.me/919791197692?text=Hi%20Chennai%20Surprise,%20I%20would%20like%20to%20plan%20a%20surprise."
+                    href="https://wa.me/919791117291?text=Hi%20Chennai%20Surprise,%20I%20would%20like%20to%20plan%20a%20surprise."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="cute-btn-blue text-sm w-full sm:w-auto bg-[#25D366] hover:bg-[#128C7E] text-white border border-[#25D366] shadow-sm font-bold flex items-center justify-center gap-1"

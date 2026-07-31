@@ -121,7 +121,7 @@ export default function Footer({ onNavClick }: FooterProps) {
             </li>
             <li className="flex items-center gap-2">
               <Phone className="w-4 h-4 text-pink-400 shrink-0" />
-              <span>09791197692</span>
+              <span>+91 97911 17291</span>
             </li>
           </ul>
         </div>

@@ -11,7 +11,7 @@ export default function SEOHelmet() {
       "image": "https://ais-pre-5fo244uk2yrdmirx7gp3qp-119892219702.asia-southeast1.run.app/beach.jpg",
       "@id": "https://ais-pre-5fo244uk2yrdmirx7gp3qp-119892219702.asia-southeast1.run.app",
       "url": "https://ais-pre-5fo244uk2yrdmirx7gp3qp-119892219702.asia-southeast1.run.app",
-      "telephone": "+919791197692",
+      "telephone": "+919791117291",
       "priceRange": "₹₹",
       "address": {
         "@type": "PostalAddress",

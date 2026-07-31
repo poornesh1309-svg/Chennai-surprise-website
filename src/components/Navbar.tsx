@@ -198,7 +198,7 @@ export default function Navbar({ activeTab, setActiveTab, onPlanClick, onCategor
 
           <a
             id="nav-plan-btn"
-            href="https://wa.me/919791197692?text=Hi!%20I%20want%20to%20plan%20a%20surprise%20with%20Chennai%20Surprise!"
+            href="https://wa.me/919791117291?text=Hi!%20I%20want%20to%20plan%20a%20surprise%20with%20Chennai%20Surprise!"
             target="_blank"
             rel="noopener noreferrer"
             className="cute-btn-pink !py-1.5 !px-4 xl:!px-5 text-xs xl:text-sm uppercase tracking-wider shrink-0 ml-1 flex items-center gap-2"
@@ -280,7 +280,7 @@ export default function Navbar({ activeTab, setActiveTab, onPlanClick, onCategor
 
             <a
               id="mobile-nav-plan"
-              href="https://wa.me/919791197692?text=Hi!%20I%20want%20to%20plan%20a%20surprise%20with%20Chennai%20Surprise!"
+              href="https://wa.me/919791117291?text=Hi!%20I%20want%20to%20plan%20a%20surprise%20with%20Chennai%20Surprise!"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}

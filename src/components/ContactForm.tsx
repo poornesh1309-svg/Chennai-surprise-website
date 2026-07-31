@@ -278,7 +278,7 @@ export default function ContactForm({ selectedServiceId, setSelectedServiceId }:
                   value={formData.contactNumber}
                   onChange={handleInputChange}
                   required
-                  placeholder="e.g. 09791197692"
+                  placeholder="e.g. +91 97911 17291"
                   className="w-full px-4 py-3 bg-white border border-pink-100 rounded-2xl focus:border-pink-300 outline-none font-sans text-sm shadow-xs transition-all"
                 />
               </div>
@@ -338,7 +338,7 @@ export default function ContactForm({ selectedServiceId, setSelectedServiceId }:
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.95 }}
                   id="direct-whatsapp-book"
-                  href={`https://wa.me/919791197692?text=${getWhatsAppMessage()}`}
+                  href={`https://wa.me/919791117291?text=${getWhatsAppMessage()}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="cute-btn-blue text-base w-full sm:w-auto bg-[#25D366] hover:bg-[#128C7E] text-white border border-[#25D366] shadow-sm font-bold flex items-center justify-center gap-2"
@@ -358,7 +358,7 @@ export default function ContactForm({ selectedServiceId, setSelectedServiceId }:
         {/* Hot Quick Connect Info cards */}
         <div className="grid grid-cols-1 gap-6 max-w-xs mx-auto">
           <a
-            href="tel:+919791197692"
+            href="tel:+919791117291"
             className="border border-sky-100 p-4 rounded-3xl bg-sky-50/20 hover:bg-sky-50/50 flex items-center gap-4 transition-colors text-center sm:text-left justify-center sm:justify-start shadow-xs group"
           >
             <div className="p-3 bg-[#29B6F6] text-white rounded-full border border-sky-400 shadow-xs shrink-0 group-hover:scale-105 transition-transform">
@@ -366,7 +366,7 @@ export default function ContactForm({ selectedServiceId, setSelectedServiceId }:
             </div>
             <div>
               <span className="text-[10px] uppercase font-bold text-gray-400 block tracking-wide">Call</span>
-              <span className="font-display text-base font-bold text-gray-700 block">09791197692</span>
+              <span className="font-display text-base font-bold text-gray-700 block">+91 97911 17291</span>
             </div>
           </a>
         </div>
@@ -415,7 +415,7 @@ export default function ContactForm({ selectedServiceId, setSelectedServiceId }:
             <div className="space-y-2">
               <h3 className="font-display text-2xl text-pink-500 font-bold">Letter Received!</h3>
               <p className="font-sans text-gray-500 text-sm">
-                Woohoo! Puffy has delivered your secret request to our Chennai team. We are already blushing and brainstorming!
+                Woohoo! Your secret request has been delivered to our Chennai team. We are already blushing and brainstorming!
               </p>
             </div>
 
@@ -428,7 +428,7 @@ export default function ContactForm({ selectedServiceId, setSelectedServiceId }:
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 id="success-whatsapp-send"
-                href={`https://wa.me/919791197692?text=${getWhatsAppMessage()}`}
+                href={`https://wa.me/919791117291?text=${getWhatsAppMessage()}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cute-btn-blue text-sm w-full bg-[#25D366] hover:bg-[#128C7E] text-white border border-[#25D366] shadow-sm font-bold animate-pulse"
